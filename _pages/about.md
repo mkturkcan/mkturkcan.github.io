@@ -1,6 +1,6 @@
 ---
 layout: about
-title: about
+title: About
 permalink: /
 subtitle: Postdoctoral Research Scientist in <a href="http://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Electrical Engineering</a> at <a href="http://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a>
 
