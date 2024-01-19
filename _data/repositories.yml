@@ -2,10 +2,8 @@ github_users:
   - mkturkcan
 
 github_repos:
-  - alshedivat/al-folio
-  - twbs/bootstrap
-  - jekyll/jekyll
-  - jquery/jquery
-  - FortAwesome/Font-Awesome
-  - jpswalsh/academicons
-  - mathjax/MathJax
+  - mkturkcan/generative-agents
+  - mkturkcan/GPTune
+  - mkturkcan/Kaulos
+  - FlyBrainLab/FlyBrainLab
+  - FlyBrainLab/FBLClient
