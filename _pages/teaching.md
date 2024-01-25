@@ -7,8 +7,8 @@ nav: true
 nav_order: 6
 ---
 
-This page is under construction.
+# 2023
 
-# EECS E6691: Advanced Deep Learning (Spring 2023)
+## EECS E6691: Advanced Deep Learning (Spring 2023)
 
-# ECBM E4040: Neural Networks and Deep Learning (Fall 2023)
+## ECBM E4040: Neural Networks and Deep Learning (Fall 2023)
