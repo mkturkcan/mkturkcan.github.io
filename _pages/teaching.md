@@ -11,6 +11,8 @@ nav_order: 6
 
 ## EECS E6691: Advanced Deep Learning (Spring 2023)
 
-
+[Syllabus and Links (.pdf)](https://mkturkcan.github.io/assets/pdf/E4040_Syllabus.pdf)
 
 ## ECBM E4040: Neural Networks and Deep Learning (Fall 2023)
+
+[Syllabus and Links (.pdf)](https://mkturkcan.github.io/assets/pdf/E4040_Syllabus.pdf)
