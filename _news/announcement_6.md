@@ -5,4 +5,4 @@ inline: true
 related_posts: false
 ---
 
-Our paper, "Evaluating Zero-Shot Image Tagging for Urban Traffic Intersection Scenes", has been accepted at the VAND Workshop at CVPR 2024!
+Our paper, "Evaluating Zero-Shot Image Tagging for Urban Traffic Intersection Scenes", has been accepted into the VAND Workshop at CVPR 2024!
