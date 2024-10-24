@@ -2,5 +2,32 @@
   url: https://aapt.scitation.org/journal/ajp
   color: "#00369f"
 
-"PhysRev":
-  url: https://journals.aps.org/
+"eLife":
+  url: https://elifesciences.org/
+
+"CVPR":
+  url: https://cvpr.thecvf.com/
+
+"BioRxiv":
+  url: https://www.biorxiv.org/
+
+"ArXiv":
+  url: https://arxiv.org/
+
+"EDM":
+  url: https://educationaldatamining.org/
+
+"IEEE IV":
+  url: https://ieee-iv.org/2024/
+
+"Bioengineering":
+  url: https://www.mdpi.com/journal/bioengineering/
+
+"UIST":
+  url: https://uist.acm.org/2024/
+
+"FACS":
+  url: https://www.facs.org/
+
+"Frontiers":
+  url: https://www.frontiersin.org/journals/neuroinformatics
