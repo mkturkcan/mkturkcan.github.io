@@ -1,7 +1,4 @@
 ukani2019fruit:
-  label: Platform engineering contribution
-  summary: Improved the open-source Fruit Fly Brain Observatory platform after its initial prototype, as documented in the paper's author-contribution statement.
-  source: https://www.biorxiv.org/content/10.1101/580290v1.full.pdf
   display_authors:
     - Mehmet Kerem Turkcan
     - Nikul H. Ukani
@@ -20,9 +17,6 @@ ukani2019fruit:
     - Aurel A. Lazar
 
 lazar2021accelerating:
-  label: Lead platform engineering contribution
-  summary: Co-conceived the FlyBrainLab architecture and developed the platform, user-side and utility libraries, validation workflows, visualizations, and comparative circuit models.
-  source: https://elifesciences.org/articles/62362
   display_authors:
     - Mehmet Kerem Turkcan
     - Aurel A. Lazar
@@ -30,9 +24,6 @@ lazar2021accelerating:
     - Yiyin Zhou
 
 lazar2022programmable:
-  label: Lead software contribution
-  summary: Developed NeuroNLP++ and the FeedbackCircuits library, and evaluated the antennal-lobe feedback circuit; the paper explicitly states that its published author list is alphabetical.
-  source: https://www.frontiersin.org/journals/neuroinformatics/articles/10.3389/fninf.2022.853098/full
   display_authors:
     - Mehmet Kerem Turkcan
     - Aurel A. Lazar

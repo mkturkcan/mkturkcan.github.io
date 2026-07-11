@@ -103,14 +103,6 @@
       {%- endif -%}
     </div>
 
-    {%- if contribution -%}
-    <div class="publication-contribution">
-      <strong>{{ contribution.label | default: "Lead engineering contribution" }}:</strong> {{ contribution.summary }}
-      {%- if contribution.source %} <a href="{{ contribution.source }}">Publisher contribution statement</a>.{%- endif %}
-      <span class="publication-contribution__order">Author names are presented contribution-first here; citation exports retain the published order.</span>
-    </div>
-    {%- endif -%}
-
     {%- assign proceedings = "inproceedings,incollection" | split: ',' -%}
     {%- assign thesis = "thesis,mastersthesis,phdthesis" | split: ',' -%}
     {%- if entry.type == "article" -%}
@@ -129,16 +121,16 @@
     {%- if entry.note %}<div class="periodical">{{ entry.note | strip }}</div>{% endif -%}
 
     <div class="links">
-      {%- if entry.abstract %}<button type="button" class="abstract btn btn-sm z-depth-0">Abstract</button>{% endif -%}
+      {%- if entry.abstract %}<button type="button" class="abstract btn btn-sm z-depth-0" title="Abstract" aria-label="Show abstract">Abs</button>{% endif -%}
       {%- if entry.arxiv %}<a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0">arXiv</a>{% endif -%}
-      {%- if page.publication_citations %}<button type="button" class="bibtex btn btn-sm z-depth-0">BibTeX</button>{% endif -%}
+      {%- if page.publication_citations %}<button type="button" class="bibtex btn btn-sm z-depth-0" title="BibTeX" aria-label="Show BibTeX citation">Bib</button>{% endif -%}
       {%- if entry.doi %}<a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0">DOI</a>{% endif -%}
       {%- if entry.html %}<a href="{{ entry.html }}" class="btn btn-sm z-depth-0">HTML</a>{% endif -%}
       {%- if entry.pdf -%}
         <a href="{% if entry.pdf contains '://' %}{{ entry.pdf }}{% else %}{{ entry.pdf | prepend: '/assets/pdf/' | relative_url }}{% endif %}" class="btn btn-sm z-depth-0">PDF</a>
       {%- endif -%}
       {%- if entry.supp -%}
-        <a href="{% if entry.supp contains '://' %}{{ entry.supp }}{% else %}{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}{% endif %}" class="btn btn-sm z-depth-0">Supplement</a>
+        <a href="{% if entry.supp contains '://' %}{{ entry.supp }}{% else %}{{ entry.supp | prepend: '/assets/pdf/' | relative_url }}{% endif %}" class="btn btn-sm z-depth-0" title="Supplementary material">Supp</a>
       {%- endif -%}
       {%- if entry.video %}<button type="button" class="abstract btn btn-sm z-depth-0">Video</button>{% endif -%}
       {%- if entry.blog %}<a href="{{ entry.blog }}" class="btn btn-sm z-depth-0">Blog</a>{% endif -%}

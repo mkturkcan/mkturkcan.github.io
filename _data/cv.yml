@@ -12,7 +12,7 @@
     - "<b>Work at leading venues:</b> Recent work in CVPR, ICML, ACM UIST, ACM/IEEE SEC, IEEE INFOCOM, IEEE PerCom, EDM, eLife, and Surgical Endoscopy."
     - "<b>Publication and systems record:</b> 30+ public publications, preprints, software systems, and datasets spanning urban AI, medical robotics, neuroscience, and education."
     - "<b>Open-source systems:</b> Built public AI systems including DART and generative-agents with 1,200+ combined GitHub stars."
-    - "<b>Research leadership:</b> Collaborating across CS3 teams spanning 5 institutions and 30+ principal investigators; research support and challenge recognition from NVIDIA, EmpireAI, and INRIX x MetroLab."
+    - "<b>Sponsored research:</b> Proposal development, technical reporting, sponsor reviews, and engineering delivery across approximately $30M in institutional research supported by NSF, DARPA, AFOSR, and Con Edison, with additional project support from NVIDIA and EmpireAI."
     - "<b>Teaching and mentorship:</b> Taught Columbia graduate deep learning courses, mentored Master's and high-school researchers, and served as the main engineering instructor for the CS3 Research Experience for Teachers in 2024-2026."
 
 - title: Experience
@@ -26,7 +26,7 @@
         - Created DART, a real-time open-vocabulary detector with TensorRT deployment and 300+ GitHub stars; led UrbanOmniDetect, an oral paper at the CVPR 2026 DriveX Workshop with public code, models, and data.
         - Published and released public work on adaptive data collection, distributed VLMs, real-time edge analytics, edge-cloud security, and medical-robotics foundation-model datasets.
         - Designed and led the engineering curriculum for the CS3 Research Experience for Teachers in 2024, 2025, and 2026.
-        - Secured or contributed to research support and challenge recognition from NVIDIA, EmpireAI, and INRIX x MetroLab.
+        - Contributed technical plans and engineering work supporting research awards from NVIDIA and EmpireAI and challenge recognition from INRIX x MetroLab.
     - title: Postdoctoral Research Scientist
       institution: Columbia University, Electrical Engineering
       year: 2022 - 2024
@@ -46,6 +46,57 @@
       description:
         - Built FlyBrainLab from scratch as an early research-oriented AI workbench, combining free-form scientific querying with literature and ontology retrieval, an OrientDB-backed connectome knowledge graph, large-scale executable queries, GPU-accelerated neural simulation, and interactive 3D visualization through a TypeScript/JupyterLab interface.
         - Published connectome-scale computational neuroscience work in eLife and Frontiers in Neuroinformatics.
+
+- title: Sponsored Research Contributions
+  type: time_table
+  contents:
+    - title: NSF Engineering Research Center for Smart Streetscapes (CS3)
+      institution: NSF EEC-2133516 · $26M center award
+      year: 2022 - Present
+      description:
+        - Coordinate applied-AI research, annual reporting, and cross-team demonstrations across a five-institution center; present DART, UrbanOmniDetect, and related systems at annual NSF site visits.
+      linkitems:
+        - linkname: Award record
+          link: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2133516
+    - title: "NSF CPS: Hybrid Twins for Urban Transportation"
+      institution: NSF CNS-2038984 · $1.3M Columbia award
+      year: 2021 - Present
+      description:
+        - Led engineering delivery, prepared annual technical reports, and presented project reviews to NSF for intersection-to-citywide traffic sensing, prediction, and digital-twin systems.
+      linkitems:
+        - linkname: Award record
+          link: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2038984
+    - title: DARPA Robust Learning in Brain Circuits of Synthetic Miniature Insects
+      institution: DARPA HR0011-19-9-0035 · $620K Columbia award
+      year: 2019 - 2020
+      description:
+        - Contributed to proposal development, authored project reports, and conducted grant-supported doctoral research on robust learning and executable brain-circuit models.
+      linkitems:
+        - linkname: Funding record
+          link: https://elifesciences.org/articles/62362
+    - title: AFOSR Foundations of Neuroinformation Processing
+      institution: AFOSR FA9550-16-1-0410 · $1.11M Columbia award
+      year: 2017 - 2021
+      description:
+        - Developed computational systems and models for phase- and spike-based neural information processing, including work underlying the FlyBrainLab platform.
+      linkitems:
+        - linkname: Award record
+          link: https://www.usaspending.gov/award/ASST_NON_FA95501610410_097
+    - title: "NSF Collaborative Research: The Digital Fly Brain"
+      institution: NSF DBI-1544383 · $795K Columbia award
+      year: 2017 - 2019
+      description:
+        - Engineered connectome data, graph-query, simulation, and visualization capabilities for the open-source Fruit Fly Brain Observatory and FlyBrainLab systems.
+      linkitems:
+        - linkname: Award record
+          link: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=1544383
+    - title: Con Edison Underground Infrastructure and Public-Safety Analytics
+      institution: Con Edison CU09-1331, Amendments 21-23
+      year: 2015 - 2016
+      description:
+        - "Graduate Researcher: Developed theoretical models, implementations, and data-processing pipelines for a Visual Data Capture pilot using thermal imagery, high-resolution photographs, and video of underground electrical structures. The work examined automated hotspot detection, inspection targeting, and estimation of avoided serious events."
+        - Extended the analysis system with infrared-camera data assimilation, equipment and cable-density models, temperature-differential extraction along cable lengths, and visual features associated with later failures; delivered project outputs to Con Edison.
+        - Contributed cost-benefit and portfolio-optimization analysis for Con Edison's secondary public-safety programs.
 
 - title: Awards and Recognition
   type: time_table
