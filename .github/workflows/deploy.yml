@@ -39,6 +39,11 @@ jobs:
           ruby-version: '3.2.2'
           bundler-cache: true
 
+      - name: Refresh repository metadata
+        run: ruby scripts/update_repository_stats.rb
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
       - name: Build site
         run: |
           export JEKYLL_ENV=production

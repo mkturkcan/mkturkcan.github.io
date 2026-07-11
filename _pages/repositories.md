@@ -12,14 +12,36 @@ I publish research software, models, and datasets with the implementation, evalu
 
 <div class="open-source-grid">
   {% for repository in site.data.repositories.repositories %}
+  {% assign repository_stats = site.data.repository_stats.repositories[repository.name] %}
   <article class="open-source-card">
     <div>
-      <h2>{{ repository.name }}</h2>
+      <h2>{% if repository.project %}<a href="{{ repository.project | relative_url }}">{{ repository.name }}</a>{% else %}{{ repository.name }}{% endif %}</h2>
       <p>{{ repository.description }}</p>
     </div>
+    {% if repository_stats.github or repository_stats.huggingface %}
+    <div class="open-source-metrics" aria-label="Public repository statistics">
+      {% if repository.github and repository_stats.github %}
+        {% if repository_stats.github.stars and repository_stats.github.stars > 0 %}<span title="GitHub stars"><i class="fa-solid fa-star" aria-hidden="true"></i> {{ repository_stats.github.stars }}</span>{% endif %}
+        {% if repository_stats.github.forks and repository_stats.github.forks > 0 %}<span title="GitHub forks"><i class="fa-solid fa-code-fork" aria-hidden="true"></i> {{ repository_stats.github.forks }}</span>{% endif %}
+        {% if repository_stats.github.license %}<span>{{ repository_stats.github.license }}</span>{% endif %}
+      {% endif %}
+      {% if repository.huggingface and repository_stats.huggingface %}
+        {% if repository_stats.huggingface.downloads and repository_stats.huggingface.downloads > 0 %}<span title="Hugging Face downloads"><i class="fa-solid fa-download" aria-hidden="true"></i> {{ repository_stats.huggingface.downloads }}</span>{% endif %}
+        {% if repository_stats.huggingface.likes and repository_stats.huggingface.likes > 0 %}<span title="Hugging Face likes"><i class="fa-solid fa-heart" aria-hidden="true"></i> {{ repository_stats.huggingface.likes }}</span>{% endif %}
+      {% endif %}
+    </div>
+    {% endif %}
     <div class="open-source-card__footer">
-      <div class="open-source-tags" aria-label="Technologies">
-        {% for tag in repository.tags %}<span>{{ tag }}</span>{% endfor %}
+      <div>
+        <div class="open-source-tags" aria-label="Technologies">
+          {% for tag in repository.tags %}<span>{{ tag }}</span>{% endfor %}
+        </div>
+        {% if repository.project or repository.paper %}
+        <div class="open-source-artifacts">
+          {% if repository.project %}<a href="{{ repository.project | relative_url }}">Project</a>{% endif %}
+          {% if repository.paper %}<a href="{{ repository.paper }}">Paper</a>{% endif %}
+        </div>
+        {% endif %}
       </div>
       {% if repository.github != blank or repository.huggingface != blank %}
       <div class="open-source-links">

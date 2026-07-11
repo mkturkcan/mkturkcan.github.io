@@ -24,18 +24,10 @@ layout: default
               {% endif %}
 
               {% capture sizes %}(min-width: {{site.max_width}}) {{ site.max_width | minus: 30 | times: 0.3}}px, (min-width: 576px) 30vw, 95vw{% endcapture %}
-              
-              {% include figure.html
-                path = profile_image_path
-                class = profile_image_class
-                sizes = sizes
-                width = page.profile.image_width
-                height = page.profile.image_height
-                alt = page.profile.image_alt
-                cache_bust = true
-                loading = "eager"
-                fetchpriority = "high"
-              %}
+              {%- assign profile_image_small = profile_image_path | replace: '.webp', '-240.webp' -%}
+              <figure>
+                <img src="{{ profile_image_path | relative_url | bust_file_cache }}" srcset="{{ profile_image_small | relative_url }} 240w, {{ profile_image_path | replace: '.webp', '-360.webp' | relative_url }} 360w, {{ profile_image_path | relative_url }} 480w" sizes="{{ sizes }}" class="{{ profile_image_class }}" width="{{ page.profile.image_width }}" height="{{ page.profile.image_height }}" alt="{{ page.profile.image_alt }}" loading="eager" decoding="async" fetchpriority="high">
+              </figure>
             {% endif -%}
             {%- if page.profile.more_info %}
             <div class="more-info">

@@ -9,8 +9,10 @@
   <div class="card project-card hoverable">
     <a class="project-card__main" href="{{ project_url }}">
       {%- if project.img %}
+      {%- assign project_image = project.thumb | default: project.img -%}
+      {%- assign project_image_small = project_image | replace: '.webp', '-360.webp' -%}
       <div class="project-card__media">
-        <img class="project-card__image" src="{{ project.thumb | default: project.img | relative_url }}" alt="{{ project.title }} thumbnail" width="720" height="405" loading="eager" decoding="async">
+        <img class="project-card__image" src="{{ project_image | relative_url }}" srcset="{{ project_image_small | relative_url }} 360w, {{ project_image | relative_url }} 720w" sizes="(max-width: 575px) calc(100vw - 30px), 385px" alt="{{ project.title }} thumbnail" width="720" height="405" loading="{% if forloop.index <= 2 %}eager{% else %}lazy{% endif %}" decoding="async">
       </div>
       {%- endif %}
       <div class="project-card__body">

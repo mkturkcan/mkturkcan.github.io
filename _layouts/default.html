@@ -52,8 +52,10 @@
     {%- include footer.html %}
 
     <!-- JavaScripts -->
-    {% include scripts/jquery.html %}
-    {% include scripts/bootstrap.html %}
+    {% if page.toc and page.toc.sidebar %}
+      {% include scripts/jquery.html %}
+      {% include scripts/bootstrap.html %}
+    {% endif %}
     {% include scripts/masonry.html %}
     {% include scripts/mermaid.html %}
     {% include scripts/misc.html %}
@@ -62,5 +64,8 @@
     {% include scripts/analytics.html %}
     {% include scripts/progressBar.html %}
     {% include scripts/wechatModal.html %}
+    {% if page.publication_filters %}
+      <script defer src="{{ '/assets/js/publications.js' | relative_url | bust_file_cache }}"></script>
+    {% endif %}
   </body>
 </html>

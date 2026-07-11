@@ -1,14 +1,11 @@
     <!-- Metadata, OpenGraph and Schema.org -->
     {% include metadata.html %}
 
-    <!-- Bootstrap & MDB -->
+    <!-- Layout -->
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
-    <!-- <link rel="stylesheet" href="{{ '/assets/css/mdb.min.css' | relative_url | bust_file_cache }}"> -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdbootstrap@{{ site.mdb.version }}/css/mdb.min.css" integrity="{{ site.mdb.integrity.css }}" crossorigin="anonymous" />
 
-    <!-- Fonts & Icons -->
+    <!-- Icons -->
     <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
-    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700|Material+Icons">
 
     <!-- Code Syntax Highlighting -->
     <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" media="" id="highlight_theme_light" />
@@ -32,8 +29,15 @@
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
-    <!-- Dark Mode -->
+    <!-- Apply the saved theme before paint, then load the full controls without blocking rendering. -->
     {% if site.enable_darkmode %}
+    <script>
+      (function () {
+        var theme = localStorage.getItem("theme");
+        if (!theme && window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) theme = "dark";
+        if (theme) document.documentElement.setAttribute("data-theme", theme);
+      })();
+    </script>
     <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-native.css' | relative_url | bust_file_cache }}" media="none" id="highlight_theme_dark" />
-    <script src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
+    <script defer src="{{ '/assets/js/theme.js' | relative_url | bust_file_cache }}"></script>
     {% endif %}

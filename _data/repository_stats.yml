@@ -1,0 +1,61 @@
+---
+generated_at: '2026-07-11T13:58:20Z'
+repositories:
+  DART:
+    github:
+      stars: 300
+      forks: 43
+      language: Python
+      updated_at: '2026-03-26T14:25:49Z'
+    huggingface:
+      type: model
+      downloads: 27
+      likes: 15
+      updated_at: '2026-03-30T14:05:06.000Z'
+  UrbanOmniDetect:
+    github:
+      stars: 2
+      forks: 0
+      language: Python
+      updated_at: '2026-06-08T01:09:11Z'
+    huggingface:
+      type: model
+      downloads: 773
+      likes: 1
+      updated_at: '2026-06-03T22:10:21.000Z'
+  Loom:
+    github:
+      stars: 5
+      forks: 0
+      language: Python
+      license: Apache-2.0
+      updated_at: '2026-04-13T01:59:11Z'
+    huggingface:
+      type: model
+      downloads: 0
+      likes: 0
+      updated_at: '2026-04-13T12:05:48.000Z'
+  bikeped:
+    github:
+      stars: 0
+      forks: 0
+      language: Python
+      updated_at: '2026-05-06T17:51:22Z'
+    huggingface:
+      type: dataset
+      downloads: 88
+      likes: 0
+      updated_at: '2026-05-06T17:13:33.000Z'
+  GPTune:
+    github:
+      stars: 20
+      forks: 5
+      language: Python
+      updated_at: '2019-09-05T13:22:27Z'
+  FlyBrainLab:
+    github:
+      stars: 49
+      forks: 6
+      language: Shell
+      license: BSD-3-Clause
+      updated_at: '2025-09-29T00:20:15Z'

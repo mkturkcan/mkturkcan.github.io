@@ -2,30 +2,41 @@ profile: mkturkcan
 
 repositories:
   - name: DART
+    project: /projects/dart/
+    paper: https://arxiv.org/abs/2603.11441
     github: https://github.com/mkturkcan/DART
     huggingface: https://huggingface.co/mehmetkeremturkcan/DART
     description: Real-time open-vocabulary detection using shared frontier-model backbones, batched decoding, distillation, and TensorRT.
     tags: [PyTorch, TensorRT, Open Vocabulary]
   - name: UrbanOmniDetect
+    project: /projects/urbanomnidetect/
+    paper: https://openaccess.thecvf.com/CVPR2026_workshops/DriveX
     github: https://github.com/mkturkcan/urbanomnidetect
     huggingface: https://huggingface.co/mehmetkeremturkcan/UrbanOmniDetect
     description: Calibration-free monocular 3D detection across ego-vehicle, infrastructure, and aerial viewpoints.
     tags: [Monocular 3D, V2X, CVPR 2026]
   - name: Loom
+    project: /projects/loom/
+    paper: https://arxiv.org/abs/2604.08816
     github: https://github.com/mkturkcan/Loom
     huggingface: https://huggingface.co/mehmetkeremturkcan/Loom
     description: Analytical looped-transformer computer with C compilation, ONNX/WebGPU demos, FPGA verification, and regression tests.
     tags: [Transformers, ONNX, WebGPU]
   - name: bikeped
+    project: /projects/bikeped/
+    paper: https://arxiv.org/abs/2604.17046
     github: https://github.com/mkturkcan/bikeped
     huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/bikeped
     description: Real-time fisheye perception, safety alerts, simulator scenarios, and conformance testing for urban intersections.
     tags: [Edge AI, Fisheye, CARLA]
   - name: GPTune
+    project: /projects/gptune/
     github: https://github.com/mkturkcan/GPTune
     description: Early GPT-2 fine-tuning and sampling toolkit for adapting the 774M-parameter model on a single GPU.
     tags: [GPT-2, Fine Tuning, CLI]
   - name: FlyBrainLab
+    project: /projects/flybrainlab/
+    paper: https://doi.org/10.7554/eLife.62362
     github: https://github.com/FlyBrainLab/FlyBrainLab
     description: Natural-language and ontology interfaces, OrientDB graph querying, GPU simulation, and interactive scientific visualization.
     tags: [TypeScript, Graph Database, Scientific AI]

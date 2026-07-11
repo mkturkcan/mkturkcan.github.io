@@ -30,17 +30,17 @@ At <a href="https://cs3-erc.org/" target="_blank" rel="noopener noreferrer">the 
 
 <div class="home-work-samples my-4" aria-label="Examples of applied AI systems">
   <a class="home-work-sample" href="{{ '/projects/dart/' | relative_url }}">
-    <img src="{{ '/assets/img/project_thumbnails/dart.webp' | relative_url }}" alt="DART qualitative detections in a crowded street scene" width="720" height="405" decoding="async">
+    <img src="{{ '/assets/img/project_thumbnails/dart.webp' | relative_url }}" srcset="{{ '/assets/img/project_thumbnails/dart-360.webp' | relative_url }} 360w, {{ '/assets/img/project_thumbnails/dart.webp' | relative_url }} 720w" sizes="(max-width: 575px) 96px, 240px" alt="DART qualitative detections in a crowded street scene" width="720" height="405" decoding="async">
     <span class="home-work-sample__label">DART</span>
     <span class="home-work-sample__detail">Open-vocabulary detection at deployment speed</span>
   </a>
   <a class="home-work-sample" href="{{ '/projects/urbanomnidetect/' | relative_url }}">
-    <img src="{{ '/assets/img/project_thumbnails/urbanomni.webp' | relative_url }}" alt="UrbanOmniView examples across urban camera viewpoints" width="720" height="405" loading="lazy" decoding="async">
+    <img src="{{ '/assets/img/project_thumbnails/urbanomni.webp' | relative_url }}" srcset="{{ '/assets/img/project_thumbnails/urbanomni-360.webp' | relative_url }} 360w, {{ '/assets/img/project_thumbnails/urbanomni.webp' | relative_url }} 720w" sizes="(max-width: 575px) 96px, 240px" alt="UrbanOmniView examples across urban camera viewpoints" width="720" height="405" loading="lazy" decoding="async">
     <span class="home-work-sample__label">UrbanOmniDetect</span>
     <span class="home-work-sample__detail">View-agnostic urban detection</span>
   </a>
   <a class="home-work-sample" href="{{ '/projects/medical-robotics-foundation-models/' | relative_url }}">
-    <img src="{{ '/assets/img/project_thumbnails/openh.webp' | relative_url }}" alt="Open-H-Embodiment dataset overview" width="720" height="405" loading="lazy" decoding="async">
+    <img src="{{ '/assets/img/project_thumbnails/openh.webp' | relative_url }}" srcset="{{ '/assets/img/project_thumbnails/openh-360.webp' | relative_url }} 360w, {{ '/assets/img/project_thumbnails/openh.webp' | relative_url }} 720w" sizes="(max-width: 575px) 96px, 240px" alt="Open-H-Embodiment dataset overview" width="720" height="405" loading="lazy" decoding="async">
     <span class="home-work-sample__label">Medical Robotics</span>
     <span class="home-work-sample__detail">Open datasets and world models for training</span>
   </a>

@@ -5,6 +5,7 @@
 
 // Dimensions
 $max-content-width: {{ site.max_width }};
+$fa-font-display: swap;
 
 @import
   "variables",
