@@ -1,80 +1,25 @@
 ---
 layout: page
-title: project 5
-description: a project with a background image
-img: assets/img/1.jpg
-importance: 3
-category: fun
+title: Medical Robotics Foundation Models
+permalink: /projects/medical-robotics-foundation-models/
+description: Surgical world models, Open-H-Embodiment, and computer vision for robotic training workflows.
+img: assets/img/project_media/openh.webp
+thumb: assets/img/project_thumbnails/openh.webp
+importance: 5
+category: medical ai
+topic: medical robotics
+github: https://github.com/mkturkcan/suturingmodels
+huggingface: https://huggingface.co/mehmetkeremturkcan/Suturing-Wan2.1-1.3B-T2V
+related_publications: openh2026, turkcan2025suturing
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+My medical robotics work applies computer vision and generative models to surgical training, robotic manipulation, and future foundation models for healthcare robotics.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<img class="img-fluid rounded z-depth-1 mb-3" src="{{ '/assets/img/project_media/openh.webp' | relative_url }}" alt="Open-H-Embodiment dataset overview" width="1200" height="675" decoding="async">
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The public work spans diffusion-based suturing world models, Open-H-Embodiment contributions, surgical phase recognition, and computer-vision scoring for endoscopy training. Together, these projects show how deployed perception and generative modeling can support training, assessment, simulation, and eventually more capable medical robots.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- **Role:** Technical project lead or contributing author across medical AI projects with Columbia and Northwell Health collaborators
+- **Keywords:** Video diffusion, surgical action modeling, foundation-model datasets, automated skill assessment, surgical workflow understanding, medical robotics
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+Links: <a href="https://github.com/mkturkcan/suturingmodels" target="_blank" rel="noopener noreferrer">Suturing GitHub</a>, <a href="https://github.com/open-h/open-h-embodiment" target="_blank" rel="noopener noreferrer">Open-H GitHub</a>, <a href="https://huggingface.co/mehmetkeremturkcan/Suturing-Wan2.1-1.3B-T2V" target="_blank" rel="noopener noreferrer">Hugging Face model</a>, <a href="https://mkturkcan.github.io/suturingmodels/" target="_blank" rel="noopener noreferrer">Suturing World Models</a>, <a href="https://arxiv.org/abs/2503.12531" target="_blank" rel="noopener noreferrer">suturing arXiv</a>, <a href="https://open-h.github.io/open-h-embodiment/" target="_blank" rel="noopener noreferrer">Open-H project</a>, <a href="https://arxiv.org/abs/2604.21017" target="_blank" rel="noopener noreferrer">Open-H arXiv</a>.

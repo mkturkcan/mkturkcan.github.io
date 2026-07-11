@@ -1,4 +1,5 @@
-{%- assign img_path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" | remove: ".gif" -%}
+{%- assign img_path = include.path | remove: ".jpg" | remove: ".jpeg" | remove: ".png" | remove: ".tiff" | remove: ".gif" | remove: ".webp" -%}
+{%- assign image_loading = include.loading | default: "lazy" -%}
 
 <figure>
   <picture>
@@ -25,7 +26,9 @@
       {% if include.alt %}alt="{{ include.alt }}"{% endif %}
       {% if include.title %}title="{{ include.title }}"{% endif %}
       {% if include.zoomable %}data-zoomable{% endif %}
-      onerror="this.onerror=null; $('.responsive-img-srcset').remove();"
+      loading="{{ image_loading }}"
+      decoding="async"
+      {% if include.fetchpriority %}fetchpriority="{{ include.fetchpriority }}"{% endif %}
     />
   </picture>
 

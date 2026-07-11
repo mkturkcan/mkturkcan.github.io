@@ -3,19 +3,19 @@
 # -----------------------------------------------------------------------------
 
 title: blank # the website title (if blank, full name will be used instead)
-first_name: Mehmet Kerem
-middle_name:
+first_name: Mehmet
+middle_name: Kerem
 last_name: Turkcan
 email: mkt2126@columbia.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Postdoctoral Research Scientist at Columbia University
+  Applied AI research scientist building deployable computer vision and multimodal AI systems for real-world, resource-constrained urban and medical environments.
 footer_text: >
   Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
   Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
-keywords: jekyll, jekyll-theme, academic-website, portfolio-website  # add your own keywords or leave empty
+keywords: applied AI, computer vision, multimodal AI, edge AI, vision-language models, robotics, smart cities, medical AI, real-time systems
 
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
-icon: 🔬  # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
+icon: favicon.png # local portrait favicon in /assets/img/
 
 url: https://mkturkcan.github.io # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
@@ -30,7 +30,7 @@ impressum_path:  # set to path to include impressum link in the footer, use the 
 repo_theme_light: default       # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_theme_dark: dark           # https://github.com/anuraghazra/github-readme-stats/blob/master/themes/README.md
 repo_trophies:
-  enabled: true
+  enabled: false
   theme_light: flat    # https://github.com/ryo-ma/github-profile-trophy
   theme_dark: gitdimmed  # https://github.com/ryo-ma/github-profile-trophy
 
@@ -40,14 +40,14 @@ repo_trophies:
 # will use title and url fields
 # Take a look to https://github.com/jekyll/jekyll-feed for more customization
 
-rss_icon: true
+rss_icon: false
 
 # -----------------------------------------------------------------------------
 # Layout
 # -----------------------------------------------------------------------------
 
 navbar_fixed: true
-footer_fixed: true
+footer_fixed: false
 
 # Dimensions
 max_width: 800px
@@ -59,9 +59,9 @@ max_width: 800px
 # -----------------------------------------------------------------------------
 # Display links to the page with a preview object on social media.
 # see https://schema.org/docs/faq.html for more information
-serve_og_meta: false # Include Open Graph meta tags in the HTML head
-serve_schema_org: false # Include Schema.org in the HTML head
-og_image: # The site-wide (default for all links) Open Graph preview image
+serve_og_meta: true # Include Open Graph meta tags in the HTML head
+serve_schema_org: true # Include Schema.org in the HTML head
+og_image: https://mkturkcan.github.io/assets/img/social-preview.jpg
 
 # -----------------------------------------------------------------------------
 # Social integration
@@ -71,12 +71,12 @@ github_username: mkturkcan # your GitHub user name
 gitlab_username: # your GitLab user name
 x_username: mkturkcan # your X handle
 mastodon_username: # your mastodon instance+username in the format instance.tld/@username
-linkedin_username: # your LinkedIn user name
+linkedin_username: mehmet-kerem-t%C3%BCrkcan-0560b95b # your LinkedIn user name
 telegram_username: # your Telegram user name
 scholar_userid: 306TgWoAAAAJ # your Google Scholar ID
 semanticscholar_id: # your Semantic Scholar ID
 whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-orcid_id: # your ORCID ID
+orcid_id: 0000-0002-2356-6627 # your ORCID ID
 medium_username: # your Medium username
 quora_username: # your Quora username
 publons_id: # your ID on Publons
@@ -157,9 +157,7 @@ disqus_shortname: al-folio # put your disqus shortname
 # External sources.
 # If you have blog posts published on medium.com or other external sources,
 # you can display them in your blog by adding a link to the RSS feed.
-external_sources:
-  - name: medium.com
-    rss_url: https://medium.com/@al-folio/feed
+external_sources: []
 
 # -----------------------------------------------------------------------------
 # Collections
@@ -169,19 +167,18 @@ collections:
   news:
     defaults:
       layout: post
-    output: true
-    permalink: /news/:path/
+    output: false
   projects:
     output: true
     permalink: /projects/:path/
 
 announcements:
   enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
+  scrollable: false
+  limit: 8 # the full archive remains available on the News page
 
 latest_posts:
-  enabled: true
+  enabled: false
   scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
   limit: 3 # leave blank to include all the blog posts
 
@@ -208,6 +205,7 @@ exclude:
   - bin
   - Gemfile
   - Gemfile.lock
+  - cv_source
   - vendor
 keep_files:
   - CNAME
@@ -216,19 +214,13 @@ keep_files:
 
 # Plug-ins
 plugins:
-  - jekyll-archives
   - jekyll-email-protect
-  - jekyll-feed
   - jekyll-get-json
-  - jekyll-imagemagick
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
-  - jekyll-paginate-v2
   - jekyll/scholar
   - jekyll-sitemap
   - jekyll-toc
-  - jekyll-twitter-plugin
   - jemoji
 
 # Sitemap settings
@@ -247,26 +239,6 @@ sass:
 
 jekyll-minifier:
   exclude: ['robots.txt']
-  uglifier_args:
-    harmony: true
-
-# -----------------------------------------------------------------------------
-# Jekyll Archives
-# -----------------------------------------------------------------------------
-
-jekyll-archives:
-  enabled: [year, tags, categories] # enables year, tag and category archives (remove if you need to disable one of them).
-  layouts:
-    year: archive-year
-    tag: archive-tag
-    category: archive-category
-  permalinks:
-    year: '/blog/:year/'
-    tag: '/blog/tag/:name/'
-    category: '/blog/category/:name/'
-
-display_tags: ['formatting', 'images', 'links', 'math', 'code'] # these tags will be displayed on the front page of your blog
-display_categories: ['blockquotes'] # these categories will be displayed on the front page of your blog
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar
@@ -274,11 +246,13 @@ display_categories: ['blockquotes'] # these categories will be displayed on the 
 
 scholar:
 
-  last_name: [Einstein]
-  first_name: [Albert, A.]
+  last_name: [Turkcan]
+  first_name: [Mehmet, Mehmet Kerem, Mehmet K, Mehmet K., M. K.]
 
   style: apa
   locale: en
+  sort_by: year, month
+  order: descending, descending
 
   source: /_bibliography/
   bibliography: papers.bib
@@ -305,10 +279,10 @@ enable_publication_badges:
   dimensions: true # Dimensions badge (https://badge.dimensions.ai/)
 
 # Filter out certain bibtex entry keywords used internally from the bib output
-filtered_bibtex_keywords: [abbr, abstract, altmetric, arxiv, bibtex_show, blog, code, html, pdf, poster, preview, selected, slides, supp, video, website]
+filtered_bibtex_keywords: [abbr, abstract, altmetric, arxiv, bibtex_show, blog, code, dataset, html, model, pdf, poster, preview, selected, slides, supp, video, website]
 
 # Maximum number of authors to be shown for each publication (more authors are visible on click)
-max_author_limit: 3  # leave blank to always show all authors
+max_author_limit: 15  # keeps Mehmet Kerem Turkcan visible on large collaborations
 more_authors_animation_delay: 10  # more authors are revealed on click using animation; smaller delay means faster animation
 
 # Enables publication thumbnails. If disabled, none of the publications will display thumbnails, even if specified in the bib entry.
@@ -333,7 +307,7 @@ external_links:
 # MAKE SURE imagemagick is installed and on your PATH before enabling imagemagick. In a terminal, run:
 #   convert -version
 imagemagick:
-  enabled: true # enables responsive images for your site (recommended, see https://github.com/alshedivat/al-folio/issues/537)
+  enabled: false
   widths:
     - 480
     - 800
@@ -358,12 +332,12 @@ enable_google_analytics:    false  # enables google analytics
 enable_cronitor_analytics:  false  # enables cronitor RUM analytics
 enable_google_verification: false  # enables google site verification
 enable_bing_verification:   false  # enables bing site verification
-enable_masonry:             true   # enables automatic project cards arrangement
+enable_masonry:             false  # the project index uses a fixed CSS grid
 enable_math:                true   # enables math typesetting (uses MathJax)
 enable_tooltips:            false  # enables automatic tooltip links generated for each section titles on pages and posts
 enable_darkmode:            true   # enables switching between light/dark modes
 enable_navbar_social:       false  # enables displaying social links in the navbar on the about page
-enable_project_categories:  true   # enables categorization of projects into multiple categories
+enable_project_categories:  false  # projects are presented in one curated sequence
 enable_medium_zoom:         true   # enables image zoom feature (as on medium.com)
 enable_progressbar:         true   # enables a horizontal progress bar linked to the vertical scroll position
 
@@ -371,8 +345,6 @@ enable_progressbar:         true   # enables a horizontal progress bar linked to
 # Library versions
 # -----------------------------------------------------------------------------
 
-bootstrap-table:
-  version: "1.22.1"
 jquery:
   version: "3.6.0"
   integrity: "sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
@@ -394,19 +366,5 @@ medium_zoom:
 # Get external JSON data
 # -----------------------------------------------------------------------------
 
-jekyll_get_json:
-  - data: resume
-    json: assets/json/resume.json # it can also be an url
-jsonresume:
-  - basics
-  - work
-  - education
-  - publications
-  - projects
-  - volunteer
-  - awards
-  - certificates
-  - skills
-  - languages
-  - interests
-  - references
+jekyll_get_json: []
+jsonresume: []

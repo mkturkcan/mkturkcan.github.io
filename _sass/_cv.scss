@@ -109,47 +109,68 @@ div.list-group {
   margin-bottom: 2rem;
 }
 
-td.list-group-category {
+.list-group-category {
+  width: 100%;
+  margin: 0 0 0.4rem;
   color: var(--global-theme-color);
-  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+  font-weight: 600;
 }
 
-td.list-group-category-icon {
+.list-group-category i {
   font-size: 0.8rem;
-  color: var(--global-theme-color);
-  width: 1.4rem;
-  padding-right: 0.4rem;
+  margin-right: 0.35rem;
 }
 
-td.list-group-name {
+.list-group-table {
+  width: 100%;
+  margin: 0;
+}
+
+.list-group-row {
+  display: grid;
+  grid-template-columns: minmax(7rem, 0.8fr) minmax(0, 1.7fr);
+  gap: 0.75rem;
+  width: 100%;
+  padding: 0.65rem 0;
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.list-group-name {
+  margin: 0;
   font-size: 0.8rem;
+  line-height: 1.45;
 }
 
-td.list-group-level {
+.list-group-level {
+  margin: 0;
   font-size: 0.8rem;
-  padding-left: 0.5rem;
+  line-height: 1.45;
 }
 
-td.list-group-school {
+.list-group-school {
+  display: block;
+  margin-top: 0.25rem;
   font-size: 0.7rem;
-  padding-left: 0.5rem;
-  text-align: center;
 }
 
-p.list-group-time {
+.list-group-time {
+  display: block;
   font-size: 0.7rem;
-  padding-left: 0.5rem;
 }
 
-td.list-group-link {
-  padding-left: 0.5rem;
+@media (max-width: 575.98px) {
+  .list-group-row {
+    grid-template-columns: 1fr;
+    gap: 0.18rem;
+  }
 }
 
 /*****************************
  * CV TOC styles
  *****************************/
 
-a.anchor {
+.anchor {
   display: block;
   position: relative;
   top: -50px;

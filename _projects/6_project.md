@@ -1,80 +1,26 @@
 ---
 layout: page
-title: project 6
-description: a project with no image
-img:
-importance: 4
-category: fun
+title: FlyBrainLab
+permalink: /projects/flybrainlab/
+description: Open-source graph-database, retrieval, simulation, and visualization platform for connectome-scale neuroscience.
+img: assets/img/project_media/neuromynerva_example.webp
+thumb: assets/img/project_thumbnails/flybrainlab.webp
+importance: 12
+category: open platforms
+topic: research platform
+github: https://github.com/FlyBrainLab/FlyBrainLab
+related_publications: lazar2021accelerating, lazar2022programmable
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+FlyBrainLab is an open-source platform for exploring, querying, visualizing, and simulating fruit fly brain circuits at connectome and synaptome scale.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<img class="img-fluid rounded z-depth-1 mb-3" src="{{ '/assets/img/project_media/neuromynerva_example.webp' | relative_url }}" alt="FlyBrainLab graph, simulation, and visualization interface" width="1080" height="1080" decoding="async">
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+FlyBrainLab can be understood as an early incarnation of the research-oriented AI workbenches now emerging around LLMs. Its NeuroNLP++ interface accepted free-form scientific questions and coordinated access to published research, programmable ontologies, and structured connectome data, then connected the results to executable graph queries, GPU-backed simulations, and interactive 3D visualizations. This system shape closely resembles tools such as <a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener noreferrer">Claude Science</a>, with a natural-language interface spanning literature, domain databases, computation, and scientific artifacts. FlyBrainLab predated modern general-purpose LLMs, so its language layer instead combined ontology-backed knowledge bases, literature-linked entity retrieval, dense passage retrieval, and biomedical BERT question answering. Building it gave me direct experience with many of the same grounding, retrieval, tool-integration, and provenance problems that define current agentic research systems.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+The platform combined a TypeScript/JupyterLab front end, an OrientDB-backed NeuroArch graph database, RPC APIs, and large-scale connectome and synaptome querying with the simulation and visualization stack.
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
+- **Role:** Lead author
+- **Keywords:** TypeScript/JupyterLab front-end development, OrientDB graph databases, NeuroArch APIs, large-scale graph querying, ontology-backed retrieval, dense passage retrieval, domain-specific QA, GPU simulation, 3D visualization
 
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+Links: <a href="https://github.com/FlyBrainLab/FlyBrainLab" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://flybrainlab.fruitflybrain.org/" target="_blank" rel="noopener noreferrer">platform</a>, <a href="https://doi.org/10.7554/eLife.62362" target="_blank" rel="noopener noreferrer">eLife paper</a>, <a href="https://doi.org/10.3389/fninf.2022.853098" target="_blank" rel="noopener noreferrer">programmable ontology paper</a>.

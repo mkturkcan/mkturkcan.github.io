@@ -1,37 +1,43 @@
 <!-- _includes/projects.html -->
-<div class="grid-sizer"></div>
 <div class="grid-item">
+  {%- assign project_topic = project.topic | default: project.category -%}
   {% if project.redirect -%}
-  <a href="{{ project.redirect }}">
-    {%- else -%}
-    <a href="{{ project.url | relative_url }}">
+    {%- assign project_url = project.redirect -%}
+  {%- else -%}
+    {%- assign project_url = project.url | relative_url -%}
+  {%- endif %}
+  <div class="card project-card hoverable">
+    <a class="project-card__main" href="{{ project_url }}">
+      {%- if project.img %}
+      <div class="project-card__media">
+        <img class="project-card__image" src="{{ project.thumb | default: project.img | relative_url }}" alt="{{ project.title }} thumbnail" width="720" height="405" loading="eager" decoding="async">
+      </div>
       {%- endif %}
-      <div class="card hoverable">
-        {%- if project.img %}
-        {%- include figure.html
-          path=project.img
-          sizes = "250px"
-          alt="project thumbnail" -%}
-        {%- endif %}
-        <div class="card-body">
-          <h2 class="card-title text-lowercase">{{ project.title }}</h2>
-          <p class="card-text">{{ project.description }}</p>
-          <div class="row ml-1 mr-1 p-0">
-            {%- if project.github -%}
-            <div class="github-icon">
-              <div class="icon" data-toggle="tooltip" title="Code Repository">
-                <a href="{{ project.github }}"><i class="fa-brands fa-github gh-icon"></i></a>
-              </div>
-              {%- if project.github_stars -%}
-              <span class="stars" data-toggle="tooltip" title="GitHub Stars">
-                <i class="fa-solid fa-star"></i>
-                <span id="{{ project.github_stars }}-stars"></span>
-              </span>
-              {%- endif %}
-            </div>
-            {%- endif %}
-          </div>
-        </div>
+      <div class="project-card__body">
+        <h2 class="card-title">{{ project.title }}</h2>
+        <p class="card-text">{{ project.description }}</p>
       </div>
     </a>
+    <div class="project-card__meta">
+      {%- if project.github != blank or project.huggingface != blank -%}
+      <div class="project-card__links">
+        {%- if project.github != blank -%}
+        <a class="project-card__icon" href="{{ project.github }}" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="GitHub" aria-label="Open {{ project.title }} on GitHub">
+          <i class="fa-brands fa-github" aria-hidden="true"></i>
+        </a>
+        {%- endif -%}
+        {%- if project.huggingface != blank -%}
+        <a class="project-card__icon project-card__icon--huggingface" href="{{ project.huggingface }}" target="_blank" rel="noopener noreferrer" data-toggle="tooltip" title="Hugging Face" aria-label="Open {{ project.title }} on Hugging Face">
+          <img src="{{ '/assets/img/icons/huggingface.svg' | relative_url }}" alt="" width="19" height="18" aria-hidden="true">
+        </a>
+        {%- endif -%}
+      </div>
+      {%- else -%}
+      <span class="project-card__links" aria-hidden="true"></span>
+      {%- endif %}
+      {%- if project_topic -%}
+      <span class="project-card__topic">{{ project_topic }}</span>
+      {%- endif %}
+    </div>
+  </div>
 </div>

@@ -2,7 +2,7 @@
 layout: page
 permalink: /publications/
 title: Publications
-description: A list of all my publications (last updated on October 2024).
+description: Selected and complete publication record, updated through 2026.
 nav: true
 nav_order: 2
 ---

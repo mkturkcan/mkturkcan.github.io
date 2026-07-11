@@ -20,6 +20,14 @@
 "IEEE IV":
   url: https://ieee-iv.org/2024/
 
+"INFOCOM":
+  url: https://infocom2026.ieee-infocom.org/
+  color: "#1D4F91"
+
+"VehicleSec":
+  url: https://www.usenix.org/conference/vehiclesec26
+  color: "#003087"
+
 "Bioengineering":
   url: https://www.mdpi.com/journal/bioengineering/
 

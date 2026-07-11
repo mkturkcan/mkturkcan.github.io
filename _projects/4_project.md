@@ -1,80 +1,24 @@
 ---
 layout: page
-title: project 4
-description: another without an image
-img:
-importance: 3
-category: fun
+title: PAVE and Urban Safety Edge Analytics
+permalink: /projects/pave-urban-safety/
+description: Real-time video analytics for pedestrian safety over edge and end devices.
+img: assets/img/project_media/pave.webp
+thumb: assets/img/project_thumbnails/pave.webp
+importance: 4
+category: urban ai
+topic: edge ai
+related_publications: ghasemi2025realtime
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+PAVE-style urban safety analytics combine street-camera perception, edge computing, and end-device alerts to support real-time pedestrian safety while preserving privacy.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<img class="img-fluid rounded z-depth-1 mb-3" src="{{ '/assets/img/project_media/pave.webp' | relative_url }}" alt="PAVE edge analytics and pedestrian alert workflow" width="1200" height="675" decoding="async">
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The SEC 2025 paper received a Best Paper Award and demonstrates a scalable architecture for processing live video feeds, detecting pedestrians and vehicles, predicting vehicle trajectories, and sending anonymized danger-zone information to end-user devices.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- **Role:** Co-author and applied AI contributor
+- **Recognition:** Best Paper Award, ACM/IEEE Symposium on Edge Computing 2025
+- **Keywords:** Edge video analytics, trajectory prediction, privacy-preserving warning systems, real-time deployment, pedestrian safety, city-scale sensing
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+Links: <a href="https://dl.acm.org/doi/10.1145/3769102.3770618" target="_blank" rel="noopener noreferrer">ACM DOI</a>, <a href="https://wimnet.ee.columbia.edu/ghasemi-best-paper-award/" target="_blank" rel="noopener noreferrer">Best Paper note</a>, <a href="https://cs3-erc.org/research/situational-awareness/" target="_blank" rel="noopener noreferrer">CS3 Situational Awareness</a>.

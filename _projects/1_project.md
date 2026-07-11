@@ -1,81 +1,26 @@
 ---
 layout: page
-title: project 1
-description: a project with a background image
-img: assets/img/12.jpg
+title: DART
+permalink: /projects/dart/
+description: Real-time open-vocabulary object detection from frontier vision models.
+img: assets/img/project_media/dart.webp
+thumb: assets/img/project_thumbnails/dart.webp
 importance: 1
-category: work
-related_publications: einstein1956investigations, einstein1950meaning
+category: featured
+topic: frontier vision
+github: https://github.com/mkturkcan/DART
+huggingface: https://huggingface.co/mehmetkeremturkcan/DART
+related_publications: turkcan2026dart
 ---
 
-Every project has a beautiful feature showcase page.
-It's easy to include images in a flexible 3-column grid format.
-Make your photos 1/3, 2/3, or full width.
+DART turns a promptable frontier vision model into a real-time multi-class open-vocabulary detector. The project targets a practical deployment gap: Strong promptable segmentation models can describe almost anything, but repeated per-class inference is too slow for many real-world systems.
 
-To give your project a background in the portfolio page, just add the img tag to the front matter like so:
+<img class="img-fluid rounded z-depth-1 mb-3" src="{{ '/assets/img/project_media/dart.webp' | relative_url }}" alt="DART qualitative detections in a crowded street scene" width="640" height="453" decoding="async">
 
-    ---
-    layout: page
-    title: project
-    description: a project with a background image
-    img: /assets/img/12.jpg
-    ---
+The public release includes code, benchmarks, TensorRT deployment paths, distilled student backbones, and Hugging Face weights.
 
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/1.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/3.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    Caption photos easily. On the left, a road goes through a tunnel. Middle, leaves artistically fall in a hipster photoshoot. Right, in another hipster photoshoot, a lumberjack grasps a handful of pine needles.
-</div>
-<div class="row">
-    <div class="col-sm mt-3 mt-md-0">
-        {% include figure.html path="assets/img/5.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    This image can also have a caption. It's like magic.
-</div>
+- **Role:** Creator and maintainer
+- **Adoption:** 300+ GitHub stars and 43 forks as of July 2026
+- **Keywords:** Open-vocabulary detection, real-time inference, backbone sharing, batched multi-class decoding, TensorRT FP16 optimization, adapter distillation, release engineering
 
-You can also put regular text between your rows of images.
-Say you wanted to write a little bit about your project before you posted the rest of the images.
-You describe how you toiled, sweated, *bled* for your project, and then... you reveal its glory in the next row of images.
-
-
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-<div class="caption">
-    You can also have artistically styled 2/3 + 1/3 images, like these.
-</div>
-
-
-The code is simple.
-Just wrap your images with `<div class="col-sm">` and place them inside `<div class="row">` (read more about the <a href="https://getbootstrap.com/docs/4.4/layout/grid/">Bootstrap Grid</a> system).
-To make images responsive, add `img-fluid` class to each; for rounded corners and shadows use `rounded` and `z-depth-1` classes.
-Here's the code for the last row of images above:
-
-{% raw %}
-```html
-<div class="row justify-content-sm-center">
-    <div class="col-sm-8 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/6.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-    <div class="col-sm-4 mt-3 mt-md-0">
-        {% include figure.html path="assets/img/11.jpg" title="example image" class="img-fluid rounded z-depth-1" %}
-    </div>
-</div>
-```
-{% endraw %}
+Links: <a href="https://github.com/mkturkcan/DART" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://arxiv.org/abs/2603.11441" target="_blank" rel="noopener noreferrer">arXiv</a>, <a href="https://huggingface.co/mehmetkeremturkcan/DART" target="_blank" rel="noopener noreferrer">Hugging Face</a>.

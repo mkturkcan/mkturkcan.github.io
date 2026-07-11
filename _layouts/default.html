@@ -12,11 +12,13 @@
   <!-- Body -->
   <body class="{% if site.navbar_fixed %}fixed-top-nav{% endif %} {% unless site.footer_fixed %}sticky-bottom-footer{% endunless %}">
 
+    <a class="skip-link" href="#main-content">Skip to main content</a>
+
     <!-- Header -->
     {%- include header.html %}
 
     <!-- Content -->
-    <div class="container mt-5">
+    <main class="container mt-5" id="main-content">
       {% if page.toc and page.toc.sidebar %}
         {% if page.toc.sidebar == "right" %}
         <div class="row">
@@ -44,7 +46,7 @@
       {% else %}
         {{ content }}
       {% endif %}
-    </div>
+    </main>
 
     <!-- Footer -->
     {%- include footer.html %}

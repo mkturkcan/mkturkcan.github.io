@@ -2,28 +2,60 @@
 layout: about
 title: About
 permalink: /
-subtitle: Associate Research Scientist in <a href="http://www.civil.columbia.edu/" target="_blank" rel="noopener noreferrer">Civil Engineering & Engineering Mechanics</a> at <a href="http://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a>
+subtitle: Associate Research Scientist in <a href="https://www.civil.columbia.edu/" target="_blank" rel="noopener noreferrer">Civil Engineering &amp; Engineering Mechanics</a> at <a href="https://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a>
+description: Applied AI research scientist building deployable computer vision, multimodal, and data systems for demanding real-world environments.
+og_image: https://mkturkcan.github.io/assets/img/social-preview.jpg
 
 profile:
   align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
+  image: prof_pic.webp
+  image_alt: Portrait of Mehmet Kerem Turkcan
+  image_width: 480
+  image_height: 720
+  image_circular: false
   more_info: >
-    <p>210E 2276 12th Avenue</p>
     <p>Columbia University</p>
-    <p>New York, New York 10027</p>
+    <p>New York, NY</p>
+    <p><a href="mailto:mkt2126@columbia.edu">mkt2126@columbia.edu</a></p>
 
-news: true  # includes a list of news items
-latest_posts: false  # includes a list of the newest posts
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true  # includes social icons at the bottom of the page
+news: true
+latest_posts: false
+selected_papers: true
+social: true
 ---
 
+I build and deploy AI systems for settings where latency, reliability, and real-world context matter, from city streets and surgical training workflows to complex scientific data. Across these domains, my work turns deep learning research into practical computer-vision, multimodal, and data systems that can be tested outside the lab.
 
-Greetings! I am currently an associate research scientist in <a href="https://cs3-erc.org/" target="_blank" rel="noopener noreferrer">the Center for Smart Streetscapes (CS3)</a> and <a href="https://www.civil.columbia.edu/" target="_blank" rel="noopener noreferrer">Civil Engineering & Engineering Mechanics</a> at <a href="http://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a> specializing in computer vision and deep learning applications. Before, I was a postdoctoral research scientist in <a href="http://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Electrical Engineering</a>. My research focuses on real-world, low-latency deployment of object detection and trajectory prediction models, and retrieval-augmented generation via large language models. To test algorithms, I lead projects on large-scale data collection and annotation, and improve upon the state-of-the-art models to adapt them to the strict performance and quality requirements of real-world use cases. Right now, my focus is specifically on applications to urban streetscapes and robotic surgeries.
+At <a href="https://cs3-erc.org/" target="_blank" rel="noopener noreferrer">the Center for Smart Streetscapes (CS3)</a> and <a href="https://www.civil.columbia.edu/" target="_blank" rel="noopener noreferrer">Civil Engineering &amp; Engineering Mechanics</a> at <a href="https://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a>, I lead machine learning efforts that move from research prototypes to fielded systems, including real-time video analytics, open-vocabulary perception, edge and vision-language model workflows, street-scale data pipelines, synthetic data generation, urban digital twins, and foundation-model workflows for medical robotics.
 
+<div class="home-work-samples my-4" aria-label="Examples of applied AI systems">
+  <a class="home-work-sample" href="{{ '/projects/dart/' | relative_url }}">
+    <img src="{{ '/assets/img/project_thumbnails/dart.webp' | relative_url }}" alt="DART qualitative detections in a crowded street scene" width="720" height="405" decoding="async">
+    <span class="home-work-sample__label">DART</span>
+    <span class="home-work-sample__detail">Open-vocabulary detection at deployment speed</span>
+  </a>
+  <a class="home-work-sample" href="{{ '/projects/urbanomnidetect/' | relative_url }}">
+    <img src="{{ '/assets/img/project_thumbnails/urbanomni.webp' | relative_url }}" alt="UrbanOmniView examples across urban camera viewpoints" width="720" height="405" loading="lazy" decoding="async">
+    <span class="home-work-sample__label">UrbanOmniDetect</span>
+    <span class="home-work-sample__detail">View-agnostic urban detection</span>
+  </a>
+  <a class="home-work-sample" href="{{ '/projects/medical-robotics-foundation-models/' | relative_url }}">
+    <img src="{{ '/assets/img/project_thumbnails/openh.webp' | relative_url }}" alt="Open-H-Embodiment dataset overview" width="720" height="405" loading="lazy" decoding="async">
+    <span class="home-work-sample__label">Medical Robotics</span>
+    <span class="home-work-sample__detail">Open datasets and world models for training</span>
+  </a>
+</div>
 
-In addition to research activities, I am an independent video game developer and movie maker. I publish games as <a href="https://wisedawn.itch.io/">Wisedawn</a>, and am part of <a href="https://www.youtube.com/@KEDIKAT">KEDIKAT</a>.
+## Work and leadership
 
+- **Fielded AI systems:** I lead multimodal perception projects for sensing models intended to scale across 900+ New York City intersections and CS3's three urban testbeds: <a href="https://www.cosmos-lab.org/" target="_blank" rel="noopener noreferrer">COSMOS PAWR</a> in New York City, <a href="https://cait.rutgers.edu/datacity/" target="_blank" rel="noopener noreferrer">DataCity</a> in New Brunswick, and <a href="https://www.mobintel.org/" target="_blank" rel="noopener noreferrer">FAU MobIntel</a> in West Palm Beach.
+- **Work at leading venues:** Publications and preprints across CVPR, ICML, ACM UIST, ACM/IEEE SEC, IEEE INFOCOM, IEEE PerCom, EDM, eLife, and medical AI venues.
+- **Open-source systems:** Public AI systems including <a href="https://github.com/mkturkcan/DART" target="_blank" rel="noopener noreferrer">DART</a> and <a href="https://github.com/mkturkcan/generative-agents" target="_blank" rel="noopener noreferrer">generative-agents</a>, with 1,200+ combined GitHub stars.
+- **Research leadership:** Grants and challenge recognition from NVIDIA, EmpireAI, and INRIX x MetroLab, plus collaboration across CS3.
+- **Teaching and mentorship:** Graduate deep-learning courses at Columbia, mentoring of Master's and high-school researchers, and service as the main engineering instructor for the <a href="{{ '/teaching/' | relative_url }}">CS3 Research Experience for Teachers</a> in 2024, 2025, and 2026.
 
-Previously, as a member of the <a href="http://www.bionet.ee.columbia.edu/">Bionet</a> group, I studied the efficient initialization and execution of very-large-scale, real connectome and synaptome driven, single-synapse-level simulations of neural circuits on GPUs for the purpose of understanding realistic neural networks. Using the tools I developed, I worked on the design of computational circuits for understanding the mushroom body and the lateral horn, two brain regions in insects linked with associative and evolutionary memories. I am also one of the main developers of an open-source interactive neuroscientific computing platform called <a href="https://github.com/FlyBrainLab" target="_blank" rel="noopener noreferrer">FlyBrainLab</a> (FBL) that enables access to, manipulation of and simulations for fruit fly brain data.
+My current systems include <a href="{{ '/projects/dart/' | relative_url }}">DART</a> for real-time open-vocabulary detection, <a href="{{ '/projects/urbanomnidetect/' | relative_url }}">UrbanOmniDetect</a> and UrbanOmniView for calibration-free monocular 3D perception, <a href="{{ '/projects/pave-urban-safety/' | relative_url }}">PAVE</a> and <a href="{{ '/projects/bikeped/' | relative_url }}">bikeped</a> for urban safety, <a href="{{ '/projects/congestion-pricing/' | relative_url }}">city-scale traffic analysis</a>, <a href="{{ '/projects/loom/' | relative_url }}">Loom</a> for analytical neural computing, and <a href="{{ '/projects/medical-robotics-foundation-models/' | relative_url }}">world models and open datasets for medical robotics</a>.
+
+Earlier language-system work includes <a href="{{ '/projects/gptune/' | relative_url }}">GPTune</a>, a GPT-2 fine-tuning toolkit from the early public LLM era, and <a href="{{ '/projects/flybrainlab/' | relative_url }}">FlyBrainLab</a>, an early prototype of today's research-oriented AI workbenches. FlyBrainLab's natural-language interface coordinated access to papers, programmable ontologies, and an OrientDB-backed connectome knowledge graph, linking retrieved evidence to large-scale queries, GPU simulation, and interactive 3D visualization. Although it predated general-purpose LLMs, the platform addressed the grounding, retrieval, tool-integration, and provenance problems now central to agentic scientific systems.
+
+My independent game and film work also feeds back into my research practice. Through <a href="https://wisedawn.itch.io/" target="_blank" rel="noopener noreferrer">Wisedawn</a> and <a href="https://www.kedikatstudios.com/" target="_blank" rel="noopener noreferrer">KEDIKAT</a>, I work with real-time engines, visual storytelling, and production constraints that inform simulation work such as <a href="{{ '/projects/boundless/' | relative_url }}">Boundless</a>. KEDIKAT's film <em>FLEA</em> received four festival accolades in 2026, including Best Storytelling Runner-Up at the <a href="https://www.metamorph-award.com/winners-2026" target="_blank" rel="noopener noreferrer">MetaMorph AI Award</a>.

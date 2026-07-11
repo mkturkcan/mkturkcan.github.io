@@ -6,7 +6,7 @@
         <div class="col-sm-2 {% if entry.preview %}preview{% else %}abbr{% endif %}">
         {%- if entry.preview -%}
           {% if entry.preview contains '://' -%}
-          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}">
+          <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" alt="Preview for {{ entry.title }}" loading="eager" decoding="async">
           {%- else -%}
             {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
             {% include figure.html
@@ -14,6 +14,7 @@
             sizes = "200px"
             class="preview z-depth-1 rounded"
             zoomable=false
+            loading="eager"
             alt=entry.preview -%}
           {%- endif -%}
         {%- elsif entry.abbr -%}
@@ -176,6 +177,12 @@
           {%- endif %}
           {%- if entry.code %}
             <a href="{{ entry.code }}" class="btn btn-sm z-depth-0" role="button">Code</a>
+          {%- endif %}
+          {%- if entry.dataset %}
+            <a href="{{ entry.dataset }}" class="btn btn-sm z-depth-0" role="button">Dataset</a>
+          {%- endif %}
+          {%- if entry.model %}
+            <a href="{{ entry.model }}" class="btn btn-sm z-depth-0" role="button">Model</a>
           {%- endif %}
           {%- if entry.poster %}
             {% if entry.poster contains '://' -%}

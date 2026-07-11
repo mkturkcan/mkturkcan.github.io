@@ -1,52 +1,181 @@
-- title: General Information
-  type: map
+- title: Summary
+  type: list
   contents:
-    - name: Full Name
-      value: Mehmet Kerem Turkcan
-    - name: Languages
-      value: English, Turkish, German (Beginner), Spanish (Beginner)
+    - Applied AI research scientist with 8+ years of experience deploying computer vision and multimodal AI systems in real-world, resource-constrained settings where latency and reliability matter.
+    - >
+      I turn modern AI models into practical systems through large-scale data collection and annotation, edge inference, VLM/VLA workflows, synthetic data generation, object detection, trajectory forecasting, and deployable research software.
+
+- title: Selected Contributions
+  type: list
+  contents:
+    - "<b>Fielded AI systems:</b> Leading multimodal perception projects for sensing models intended to scale across 900+ New York City intersections and CS3's three urban testbeds: <a href=\"https://www.cosmos-lab.org/\">COSMOS PAWR</a> in New York City, <a href=\"https://cait.rutgers.edu/datacity/\">DataCity</a> in New Brunswick, and <a href=\"https://www.mobintel.org/\">FAU MobIntel</a> in West Palm Beach."
+    - "<b>Work at leading venues:</b> Recent work in CVPR, ICML, ACM UIST, ACM/IEEE SEC, IEEE INFOCOM, IEEE PerCom, EDM, eLife, and Surgical Endoscopy."
+    - "<b>Publication and systems record:</b> 30+ public publications, preprints, software systems, and datasets spanning urban AI, medical robotics, neuroscience, and education."
+    - "<b>Open-source systems:</b> Built public AI systems including DART and generative-agents with 1,200+ combined GitHub stars."
+    - "<b>Research leadership:</b> Collaborating across CS3 teams spanning 5 institutions and 30+ principal investigators; research support and challenge recognition from NVIDIA, EmpireAI, and INRIX x MetroLab."
+    - "<b>Teaching and mentorship:</b> Taught Columbia graduate deep learning courses, mentored Master's and high-school researchers, and served as the main engineering instructor for the CS3 Research Experience for Teachers in 2024-2026."
+
+- title: Experience
+  type: time_table
+  contents:
+    - title: Associate Research Scientist
+      institution: Columbia University, Center for Smart Streetscapes and Civil Engineering & Engineering Mechanics
+      year: 2024 - Present
+      description:
+        - Lead large-scale applied ML projects for real-time urban perception, multimodal sensing, edge AI, vision-language systems, and medical robotics.
+        - Created DART, a real-time open-vocabulary detector with TensorRT deployment and 300+ GitHub stars; led UrbanOmniDetect, an oral paper at the CVPR 2026 DriveX Workshop with public code, models, and data.
+        - Published and released public work on adaptive data collection, distributed VLMs, real-time edge analytics, edge-cloud security, and medical-robotics foundation-model datasets.
+        - Designed and led the engineering curriculum for the CS3 Research Experience for Teachers in 2024, 2025, and 2026.
+        - Secured or contributed to research support and challenge recognition from NVIDIA, EmpireAI, and INRIX x MetroLab.
+    - title: Postdoctoral Research Scientist
+      institution: Columbia University, Electrical Engineering
+      year: 2022 - 2024
+      description:
+        - Built computer-vision systems and digital twins for urban intersections, including object detection, multi-object tracking, trajectory forecasting, and safety-warning workflows.
+        - Applied computer vision to robotic surgery and endoscopy training with Northwell Health collaborators, yielding journal publications and conference presentations.
+        - Mentored 11 Master's students across deep learning, computer vision, and applied AI research projects.
+        - Received the Columbia University Electrical Engineering Distinguished Teaching Award and a National Postdoc Appreciation Week Excellence Award.
+    - title: Lecturer in Deep Learning
+      institution: Columbia University
+      year: 2023
+      description:
+        - Designed and taught Neural Networks & Deep Learning and Advanced Deep Learning to 123 students, covering computer vision, transformers, diffusion models, and modern generative AI.
+    - title: Ph.D. Researcher
+      institution: Columbia University
+      year: 2017 - 2022
+      description:
+        - Built FlyBrainLab from scratch as an early research-oriented AI workbench, combining free-form scientific querying with literature and ontology retrieval, an OrientDB-backed connectome knowledge graph, large-scale executable queries, GPU-accelerated neural simulation, and interactive 3D visualization through a TypeScript/JupyterLab interface.
+        - Published connectome-scale computational neuroscience work in eLife and Frontiers in Neuroinformatics.
+
+- title: Awards and Recognition
+  type: time_table
+  contents:
+    - title: Best Storytelling Runner-Up, MetaMorph AI Award
+      institution: FLEA, Kedi Kat Studios
+      year: 2026
+    - title: Best Paper Award, ACM/IEEE Symposium on Edge Computing
+      institution: Real-Time Video Analytics for Urban Safety
+      year: 2025
+    - title: INRIX x MetroLab Challenge Finalist
+      institution: Transportation and traffic solutions for New York City
+      year: 2025
+    - title: Columbia University Electrical Engineering Distinguished Teaching Award
+      institution: Columbia University
+      year: 2024
+    - title: Smart Cities North America Awards Winner, Transportation
+      institution: IDC Government Insights
+      year: 2023
+    - title: National Postdoc Appreciation Week Excellence Award
+      institution: Columbia University
+      year: 2023
+
+- title: Selected Publications and Public Systems
+  type: list
+  contents:
+    - "<b>Calibration-Free View-Agnostic Monocular 3D Object Detection for Urban Scenes</b>. CVPR Workshops 2026."
+    - "<b>Worst-Case Attacks in Reactive Edge-Cloud Systems: Expected Latency and SLA Violation</b>. IEEE INFOCOM 2026."
+    - "<b>Digital Eyes on the Road: Using Street Cameras to Verify Traffic Integrity and Detect Sybil Attacks at City Scale</b>. USENIX VehicleSec 2026, to appear."
+    - "<b>Detect Anything in Real Time: From Single-Prompt Segmentation to Multi-Class Detection</b>. DART, arXiv 2026. Public <a href=\"https://github.com/mkturkcan/DART\">code</a> and <a href=\"https://huggingface.co/mehmetkeremturkcan/DART\">models</a>."
+    - "<b>Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics</b>. arXiv 2026."
+    - "<b>Harnessing Floating Car Data, Traffic Camera Observations, and Network Flow Analysis for Traffic Volume Estimation</b>. arXiv 2026."
+    - "<b>Real-Time Video Analytics for Urban Safety: Deployment over Edge and End Devices</b>. ACM/IEEE SEC 2025, Best Paper Award."
+    - "<b>Boundless</b>. Unreal Engine 5-based photorealistic synthetic data generation for object detection in urban streetscapes, arXiv 2024."
+    - "<b>Constellation Dataset</b>. High-altitude urban object detection benchmark with 13K images, arXiv 2024."
+    - "<b>Adaptive Data Collection for Robust Learning Across Multiple Distributions</b>. ICML 2025."
+    - "<b>Distributed VLMs: Efficient Vision-Language Processing through Cloud-Edge Collaboration</b>. IEEE PerCom Workshops 2025."
+    - "<b>StreetNav: Leveraging Street Cameras to Support Precise Outdoor Navigation for Blind Pedestrians</b>. ACM UIST 2024."
+    - "<b>FlyBrainLab: Accelerating the Discovery of the Functional Logic of the Drosophila Brain</b>. eLife 2021."
+
+- title: Technical Skills
+  type: list_groups
+  contents:
+    - category: AI and Machine Learning
+      icon: fa-solid fa-brain
+      items:
+        - name: Computer vision
+          level: Object detection, segmentation, tracking, monocular 3D detection, video analytics
+        - name: Generative and multimodal AI
+          level: VLMs, VLAs, diffusion models, world models, RAG, agents
+        - name: Data-centric AI
+          level: Large-scale collection, annotation, synthetic data, benchmarks, adaptive sampling
+        - name: Knowledge and graph systems
+          level: Ontology-backed retrieval, OrientDB/NeuroArch graph databases, large-scale graph querying
+    - category: Systems and Deployment
+      icon: fa-solid fa-microchip
+      items:
+        - name: Edge inference
+          level: TensorRT, ONNX, WebGPU, NVIDIA Jetson, cloud-edge collaboration, low-latency pipelines
+        - name: Frameworks
+          level: PyTorch, JAX, TensorFlow, Hugging Face, CUDA
+        - name: Languages
+          level: Python, C/C++, CUDA, TypeScript, JavaScript, SQL
+    - category: Product and Communication
+      icon: fa-solid fa-pen-ruler
+      items:
+        - name: Technical leadership
+          level: Cross-institution projects, mentoring, curriculum design, public demos
+        - name: Design and media
+          level: Unreal Engine, photorealistic synthetic data, visual storytelling, Figma, Photoshop, Illustrator, InDesign, Premiere
 
 - title: Education
   type: time_table
   contents:
-    - title: Ph.D.
-      institution: Columbia University, New York, USA.
+    - title: Ph.D. in Electrical Engineering
+      institution: Columbia University, New York, USA
       year: 2022
       description:
-        - Ph.D. in Electrical Engineering
-        - "Research Area: Systems Biology and Neuroengineering"
-        - "Cumulative GPA: 4.10"
-        - "Herbert French Fellowship for the 2017-2018 Academic Year"
-        - "Helmsley Fellowship for the 2019 Drosophila Neurobiology: Genes, Circuits & Behavior (laboratory/lecture course) 2019 at Cold Spring Harbor Laboratory"
-        - "Sample Courses: Sparse Representation and High-Dimensional Geometry, Foundations of Graphical Models, Autonomous Multi-Agent Systems, Neural Control Engineering"
-    - title: M.Sc.
-      institution: Columbia University, New York, USA.
+        - "Research area: Systems Biology and Neuroengineering"
+        - "GPA: 4.10/4.33"
+        - Herbert French Fellowship; Helmsley Fellowship for the Cold Spring Harbor Laboratory Drosophila Neurobiology course
+    - title: M.Sc. in Computer Science
+      institution: Columbia University, New York, USA
       year: 2016
       description:
-        - M.Sc. in Computer Science
-    - title: B.Sc.
-      institution: Istanbul Technical University, Istanbul, Turkey.
+        - Machine learning and thesis track
+    - title: B.Sc. in Electronics and Communication Engineering
+      institution: Istanbul Technical University, Istanbul, Turkey
       year: 2015
-      description:
-        - B.Sc. in Electronics and Communication Engineering
 
-- title: Recent Experience
+- title: Leadership and Teaching
   type: time_table
   contents:
-    - title: Associate Research Scientist
-      institution: Columbia University, New York, USA.
-      year: 2024 - Present
-    - title: Postdoctoral Research Scientist
-      institution: Columbia University, New York, USA.
-      year: 2022 - 2024
-    - title: Lecturer
-      institution: Columbia University, New York, USA.
-      year: Jan-Dec 2023
+    - title: Main Engineering Instructor, Research Experience for Teachers
+      institution: Center for Smart Streetscapes
+      year: 2024 - 2026
       description:
-        - "Taught ECBM E4040: Neural Networks and Deep Learning"
-        - "Taught EECS E6691: Advanced Deep Learning"
+        - Designed and led the core engineering curriculum for three annual cohorts, covering neural networks, model evaluation, computer vision, annotation, YOLO training, object tracking, generative AI, and edge deployment.
+        - Supported K-12 educators in developing reproducible, classroom-ready lesson plans that connect AI engineering to science, mathematics, civics, and career education.
+    - title: Co-Chair, CS3 Student Leadership Council
+      institution: Center for Smart Streetscapes
+      year: 2024 - 2025
+    - title: Lecturer, ECBM E4040 Neural Networks and Deep Learning
+      institution: Columbia University
+      year: 2023
+    - title: Lecturer, EECS E6691 Advanced Deep Learning
+      institution: Columbia University
+      year: 2023
 
-- title: Various Interests
+- title: Selected Presentations
+  type: time_table
+  contents:
+    - title: Center for Smart Streetscapes NSF Annual Site Visit
+      institution: DART, UrbanOmniDetect, and applied AI system demonstrations
+      year: May 2026
+    - title: "From Sensors to Systems: Real-Time Traffic Analysis for Faster Decision-Making"
+      institution: CS3 Innovation Summit, Columbia University
+      year: Feb 2026
+    - title: Port Authority Tomorrow Summit Workshop
+      institution: Port Authority of New York and New Jersey, World Trade Center
+      year: Jan 2026
+    - title: Evaluating Micromobility & Dangerous Riding Behaviors
+      institution: Eighth Annual Vision Zero Research on the Road, New York City
+      year: Nov 2025
+    - title: FlyBrainLab - An Interactive Open Computing Platform
+      institution: PyData Global
+      year: Nov 2020
+
+- title: Professional Service
   type: list
   contents:
-    - <u>Hobbies:</u> Video game development, board game development, painting, graphic design.
+    - "<b>Conference reviewing:</b> CVPR 2026, ICML 2026, ICMLA 2026, WACV 2025, and ACM MobiCom 2024."
+    - "<b>Journal reviewing:</b> IEEE/ACM Transactions on Networking, IEEE Transactions on Very Large Scale Integration Systems, Sensors (MDPI), Electronics (MDPI), and Smart Cities (MDPI)."

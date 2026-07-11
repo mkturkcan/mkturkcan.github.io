@@ -2,13 +2,9 @@ name: deploy
 
 on:
   push:
-    branches:
-      - master
-      - main
+    branches: [master, main]
   pull_request:
-    branches:
-      - master
-      - main
+    branches: [master, main]
   workflow_dispatch:
 
 permissions:
@@ -16,34 +12,40 @@ permissions:
 
 jobs:
   deploy:
-    # available images: https://github.com/actions/runner-images#available-images
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout 🛎️
-      uses: actions/checkout@v3
-    - name: Setup Ruby
-      uses: ruby/setup-ruby@v1
-      with:
-        ruby-version: '3.2.2'
-        bundler-cache: true
-    - name: Update _config.yml ⚙️
-      uses: fjogeleit/yaml-update-action@v0.13.1
-      with:
-        commitChange: false
-        valueFile: '_config.yml'
-        propertyPath: 'giscus.repo'
-        value: ${{ github.repository }}
-    - name: Install and Build 🔧
-      run: |
-        pip3 install --upgrade jupyter
-        npm install -g mermaid.cli
-        npm install -g purgecss
-        export JEKYLL_ENV=production
-        bundle exec jekyll build --lsi
-        purgecss -c purgecss.config.js
-    - name: Deploy 🚀
-      if: github.event_name != 'pull_request'
-      uses: JamesIves/github-pages-deploy-action@v4
-      with:
-        folder: _site
+      - name: Checkout
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4
 
+      - name: Generate GitHub profile card
+        uses: stats-organization/github-readme-stats-action@f9d8133845f40d659a754f78b8484983ba766448 # v2
+        with:
+          card: stats
+          options: username=mkturkcan&theme=default&show_icons=true
+          path: assets/img/github-stats/mkturkcan-stats-light.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Generate GitHub profile card (dark)
+        uses: stats-organization/github-readme-stats-action@f9d8133845f40d659a754f78b8484983ba766448 # v2
+        with:
+          card: stats
+          options: username=mkturkcan&theme=dark&show_icons=true
+          path: assets/img/github-stats/mkturkcan-stats-dark.svg
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@d45b1a4e94b71acab930e56e79c6aa188764e7f9 # v1
+        with:
+          ruby-version: '3.2.2'
+          bundler-cache: true
+
+      - name: Build site
+        run: |
+          export JEKYLL_ENV=production
+          bundle exec jekyll build --lsi
+
+      - name: Deploy
+        if: github.event_name != 'pull_request'
+        uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # v4
+        with:
+          folder: _site
