@@ -39,7 +39,7 @@ I teach machine learning as an engineering discipline. I begin with the mathemat
   <div class="curriculum-stage">
     <span>04</span>
     <h3>Language systems</h3>
-    <p>Language-model foundations, zero-shot methods, generative AI, and responsible classroom use.</p>
+    <p>Language model foundations, zero-shot methods, generative AI, and responsible classroom use.</p>
   </div>
 </div>
 
@@ -134,7 +134,7 @@ Participating teachers developed complete lesson plans that connect AI engineeri
     <span><strong>Coverage</strong> Core architectures and modern generative models</span>
     <span><strong>Assessment</strong> Assignments 40% · exam 25% · project 35%</span>
   </div>
-  <p class="course-sequence"><strong>Sequence:</strong> Machine-learning review · feedforward networks and backpropagation · optimization · convolutional networks · regularization · recurrent networks · autoencoders · GANs · VAEs · current research directions</p>
+  <p class="course-sequence"><strong>Sequence:</strong> Machine learning review · feedforward networks and backpropagation · optimization · convolutional networks · regularization · recurrent networks · autoencoders · GANs · VAEs · current research directions</p>
 </section>
 
 I also co-taught Columbia Video Network's VOAI 0003E: Neural Networks and Deep Learning for the AI Executive Certificate in Fall 2022 and Summer 2023, and previously supported Columbia courses in neural computation and computational neuroscience.
@@ -166,7 +166,7 @@ I also co-taught Columbia Video Network's VOAI 0003E: Neural Networks and Deep L
     <div>
       <span class="teaching-eyebrow">November 19, 2025 · New York City DOT</span>
       <h3>Evaluating Micromobility &amp; Dangerous Riding Behaviors</h3>
-      <p>Presentation at the Eighth Annual Vision Zero Research on the Road event on using street-camera analytics to study micromobility and risky riding behavior.</p>
+      <p>Presentation at the Eighth Annual Vision Zero Research on the Road event on using street camera analytics to study micromobility and risky riding behavior.</p>
       <p><a href="https://www.nyc.gov/assets/ddc/downloads/town-and-gown/ROTR8/ROTR2025AgendaBio.pdf">Agenda and bio</a> · <a href="https://www.nyc.gov/assets/ddc/downloads/town-and-gown/ROTR8/4_MehmetTurkcan.Micromobility.Public.pdf">slides</a> · <a href="{{ '/assets/pdf/presentations/vision-zero-micromobility-slides.pdf' | relative_url }}">local slides</a></p>
     </div>
   </article>

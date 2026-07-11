@@ -17,7 +17,7 @@ UrbanOmniDetect is a calibration-free, view-agnostic monocular 3D object detecti
 
 <img class="img-fluid rounded z-depth-1 mb-3" src="{{ '/assets/img/project_media/urbanomni.webp' | relative_url }}" alt="UrbanOmniView examples across ego, infrastructure, and aerial viewpoints" width="1200" height="675" decoding="async">
 
-The work was presented as an oral paper at the CVPR 2026 DriveX workshop and is paired with UrbanOmniView, a dataset combining real-world driving data, infrastructure-camera data, and high-fidelity synthetic data.
+The work was presented as an oral paper at the CVPR 2026 DriveX workshop and is paired with UrbanOmniView, a dataset combining real-world driving data, infrastructure camera data, and high-fidelity synthetic data.
 
 - **Role:** Lead author
 - **Recognition:** Oral presentation at the CVPR 2026 DriveX workshop

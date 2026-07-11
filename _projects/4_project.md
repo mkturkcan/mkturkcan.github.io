@@ -11,7 +11,7 @@ topic: edge ai
 related_publications: ghasemi2025realtime
 ---
 
-PAVE-style urban safety analytics combine street-camera perception, edge computing, and end-device alerts to support real-time pedestrian safety while preserving privacy.
+PAVE-style urban safety analytics combine street camera perception, edge computing, and end device alerts to support real-time pedestrian safety while preserving privacy.
 
 <img class="img-fluid rounded z-depth-1 mb-3" src="{{ '/assets/img/project_media/pave.webp' | relative_url }}" alt="PAVE edge analytics and pedestrian alert workflow" width="1200" height="675" decoding="async">
 

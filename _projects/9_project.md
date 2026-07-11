@@ -2,7 +2,7 @@
 layout: page
 title: NYC Congestion Pricing Analysis
 permalink: /projects/congestion-pricing/
-description: Vision-based analysis of New York City congestion pricing using public traffic-camera observations.
+description: Vision-based analysis of New York City congestion pricing using public traffic camera observations.
 img: assets/img/project_media/congestionpricing.webp
 thumb: assets/img/project_thumbnails/congestionpricing.webp
 importance: 9
@@ -13,11 +13,11 @@ huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/nyc-congestionpr
 related_publications: turkcan2026congestionpricing
 ---
 
-This project studies New York City's congestion-pricing rollout through automated analysis of public traffic-camera observations.
+This project studies New York City's congestion-pricing rollout through automated analysis of public traffic camera observations.
 
 <img class="img-fluid rounded z-depth-1 mb-3" src="{{ '/assets/img/project_media/congestionpricing.webp' | relative_url }}" alt="Interactive map of New York City congestion-pricing camera analysis" width="1200" height="675" decoding="async">
 
-The work uses citywide camera data to compare traffic patterns before and after the January 2025 policy change, with public visualizations, interactive maps, and a Hugging Face dataset for reproducibility and visualization of results. It extends the broader urban-perception line of work from individual intersections to city-scale policy analysis.
+The work uses citywide camera data to compare traffic patterns before and after the January 2025 policy change, with public visualizations, interactive maps, and a Hugging Face dataset for reproducibility and visualization of results. It extends the broader urban perception line of work from individual intersections to city-scale policy analysis.
 
 - **Role:** Lead author
 - **Artifacts:** Preprint on arXiv, project page, interactive map, real-time visualization, and Hugging Face dataset

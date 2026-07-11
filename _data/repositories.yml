@@ -6,7 +6,7 @@ repositories:
     paper: https://arxiv.org/abs/2603.11441
     github: https://github.com/mkturkcan/DART
     huggingface: https://huggingface.co/mehmetkeremturkcan/DART
-    description: Real-time open-vocabulary detection using shared frontier-model backbones, batched decoding, distillation, and TensorRT.
+    description: Real-time open-vocabulary detection using shared frontier model backbones, batched decoding, distillation, and TensorRT.
     tags: [PyTorch, TensorRT, Open Vocabulary]
   - name: UrbanOmniDetect
     project: /projects/urbanomnidetect/
@@ -38,5 +38,5 @@ repositories:
     project: /projects/flybrainlab/
     paper: https://doi.org/10.7554/eLife.62362
     github: https://github.com/FlyBrainLab/FlyBrainLab
-    description: Natural-language and ontology interfaces, OrientDB graph querying, GPU simulation, and interactive scientific visualization.
+    description: Natural language and ontology interfaces, OrientDB graph querying, GPU simulation, and interactive scientific visualization.
     tags: [TypeScript, Graph Database, Scientific AI]

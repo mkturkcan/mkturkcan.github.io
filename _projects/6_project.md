@@ -2,7 +2,7 @@
 layout: page
 title: FlyBrainLab
 permalink: /projects/flybrainlab/
-description: Open-source graph-database, retrieval, simulation, and visualization platform for connectome-scale neuroscience.
+description: Open-source graph database, retrieval, simulation, and visualization platform for connectome-scale neuroscience.
 img: assets/img/project_media/neuromynerva_example.webp
 thumb: assets/img/project_thumbnails/flybrainlab.webp
 importance: 12
@@ -18,7 +18,7 @@ The <a href="https://elifesciences.org/articles/62362" target="_blank" rel="noop
 
 <img class="img-fluid rounded z-depth-1 mb-3" src="{{ '/assets/img/project_media/neuromynerva_example.webp' | relative_url }}" alt="FlyBrainLab graph, simulation, and visualization interface" width="1080" height="1080" decoding="async">
 
-FlyBrainLab can be understood as an early incarnation of the research-oriented AI workbenches now emerging around LLMs. Its NeuroNLP++ interface accepted free-form scientific questions and coordinated access to published research, programmable ontologies, and structured connectome data, then connected the results to executable graph queries, GPU-backed simulations, and interactive 3D visualizations. This system shape closely resembles tools such as <a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener noreferrer">Claude Science</a>, with a natural-language interface spanning literature, domain databases, computation, and scientific artifacts. FlyBrainLab predated modern general-purpose LLMs, so its language layer instead combined ontology-backed knowledge bases, literature-linked entity retrieval, dense passage retrieval, and biomedical BERT question answering. Building it gave me direct experience with many of the same grounding, retrieval, tool-integration, and provenance problems that define current agentic research systems.
+FlyBrainLab can be understood as an early incarnation of the research-oriented AI workbenches now emerging around LLMs. Its NeuroNLP++ interface accepted free-form scientific questions and coordinated access to published research, programmable ontologies, and structured connectome data, then connected the results to executable graph queries, GPU-backed simulations, and interactive 3D visualizations. This system shape closely resembles tools such as <a href="https://www.anthropic.com/news/claude-science-ai-workbench" target="_blank" rel="noopener noreferrer">Claude Science</a>, with a natural language interface spanning literature, domain databases, computation, and scientific artifacts. FlyBrainLab predated modern general-purpose LLMs, so its language layer instead combined ontology-backed knowledge bases, literature-linked entity retrieval, dense passage retrieval, and biomedical BERT question answering. Building it gave me direct experience with many of the same grounding, retrieval, tool integration, and provenance problems that define current agentic research systems.
 
 The platform combined a TypeScript/JupyterLab front end, an OrientDB-backed NeuroArch graph database, RPC APIs, and large-scale connectome and synaptome querying with the simulation and visualization stack.
 
