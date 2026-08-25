@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>TALONSBANE — an arcade dragon shoot-em-up</title>
+<meta name="description" content="An arcade dragon shoot-em-up. Six stages, two campaigns, four dragons, and a cabinet built out of a CRT. Play free in the browser. iOS coming soon.">
+<meta property="og:title" content="TALONSBANE">
+<meta property="og:description" content="An arcade dragon shoot-em-up. Six stages, two campaigns, four dragons. iOS coming soon.">
+<meta property="og:image" content="https://mehmetkeremturkcan.com/talonsbane/shots/cabinet.jpg">
+<meta name="theme-color" content="#0d0616">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&display=swap">
+<style>
+:root{
+  --ink:#0d0616; --ink2:#150a22; --panel:#1a1024;
+  --gold:#f0b429; --gold-hi:#ffe066;
+  --violet:#a271ff; --violet-dim:#7a5bb0;
+  --red:#e2413b; --blue:#54c8ff; --green:#8ad84f;
+  --text:#e8dff5; --dim:#9d8fb8; --rule:#39264f;
+  --disp:"Chakra Petch","Helvetica Neue",Arial,sans-serif;
+  --mono:ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{
+  background:var(--ink);color:var(--text);font-family:var(--disp);
+  font-weight:500;line-height:1.5;-webkit-font-smoothing:antialiased;
+  overflow-x:hidden;
+}
+/* the whole page sits behind glass */
+body::after{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:99;
+  background:repeating-linear-gradient(180deg,rgba(0,0,0,.22) 0 1px,transparent 1px 3px);
+  mix-blend-mode:multiply;
+}
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:98;
+  background:radial-gradient(120% 80% at 50% 40%,transparent 40%,rgba(0,0,0,.55) 100%);
+}
+.wrap{max-width:1060px;margin:0 auto;padding:0 20px}
+
+/* ── top rail ─────────────────────────────────────────── */
+.rail{
+  border-bottom:1px solid var(--rule);background:rgba(13,6,22,.9);
+  position:sticky;top:0;z-index:60;backdrop-filter:blur(6px);
+}
+.rail .wrap{display:flex;align-items:center;gap:18px;height:46px}
+.mark{font-weight:700;letter-spacing:.22em;color:var(--gold);font-size:.82rem}
+.rail nav{margin-left:auto;display:flex;gap:16px}
+.rail a{
+  color:var(--dim);text-decoration:none;font-family:var(--mono);
+  font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;
+}
+.rail a:hover,.rail a:focus-visible{color:var(--gold)}
+
+/* ── hero ─────────────────────────────────────────────── */
+.hero{padding:22px 0 4px;text-align:center;position:relative}
+.hero .logo{width:min(460px,80vw);image-rendering:auto;filter:drop-shadow(0 6px 30px rgba(162,113,255,.4))}
+.tag{
+  font-family:var(--mono);font-size:.7rem;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--violet);margin-top:6px;
+}
+.badges{display:flex;gap:8px;justify-content:center;flex-wrap:wrap;margin:12px 0 16px}
+.badge{
+  font-family:var(--mono);font-size:.64rem;letter-spacing:.13em;text-transform:uppercase;
+  border:1px solid var(--rule);padding:.36rem .7rem;color:var(--dim);
+  background:var(--ink2);
+}
+.badge.on{color:var(--gold);border-color:var(--gold);box-shadow:0 0 18px rgba(240,180,41,.18)}
+.badge.soon{color:var(--violet);border-color:var(--violet-dim)}
+
+/* ── the tube ─────────────────────────────────────────── */
+.tube-wrap{perspective:1600px;padding:0 0 8px}
+.tube{
+  position:relative;margin:0 auto;max-width:900px;
+  transform:rotateX(5deg);transform-style:preserve-3d;
+  border-radius:22px/40px;overflow:hidden;
+  border:1px solid #2a1c3c;
+  box-shadow:
+    inset 0 0 80px rgba(0,0,0,.95),
+    0 0 60px rgba(162,113,255,.22),
+    0 40px 70px -28px #000;
+}
+.tube img{display:block;width:100%;height:auto}
+/* scanlines + phosphor bloom on the picture itself */
+.tube::before{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:repeating-linear-gradient(180deg,rgba(0,0,0,.34) 0 1px,transparent 1px 3px);
+}
+/* curvature glare and edge falloff */
+.tube::after{
+  content:"";position:absolute;inset:0;pointer-events:none;
+  background:
+    radial-gradient(80% 55% at 50% 0%,rgba(255,255,255,.14),transparent 60%),
+    radial-gradient(115% 85% at 50% 50%,transparent 52%,rgba(0,0,0,.75) 100%);
+}
+/* one slow band, the way a tube rolls */
+.roll{
+  position:absolute;left:0;right:0;height:22%;pointer-events:none;z-index:2;
+  background:linear-gradient(180deg,transparent,rgba(255,255,255,.045),transparent);
+  animation:roll 7.5s linear infinite;
+}
+@keyframes roll{from{top:-25%}to{top:105%}}
+@media (prefers-reduced-motion:reduce){.roll{animation:none;opacity:.3;top:30%}}
+
+/* ── sections ─────────────────────────────────────────── */
+section{padding:32px 0 4px}
+.head{display:flex;align-items:baseline;gap:12px;border-bottom:1px solid var(--rule);padding-bottom:8px;margin-bottom:20px}
+.num{font-family:var(--mono);font-size:.66rem;color:var(--gold);letter-spacing:.16em}
+h2{font-size:1.06rem;font-weight:700;letter-spacing:.2em;text-transform:uppercase}
+.head .aside{margin-left:auto;font-family:var(--mono);font-size:.62rem;color:var(--dim);letter-spacing:.12em;text-transform:uppercase}
+p{color:var(--text);max-width:66ch}
+p+p{margin-top:.7rem}
+.lede{font-size:1.02rem}
+.dim{color:var(--dim)}
+
+/* ── dragons ──────────────────────────────────────────── */
+.roster{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}
+@media (max-width:720px){.roster{grid-template-columns:repeat(2,1fr)}}
+.drg{border:1px solid var(--rule);background:linear-gradient(180deg,var(--ink2),var(--ink));padding:14px 12px;text-align:center}
+.drg img{width:92px;height:92px;image-rendering:pixelated;image-rendering:crisp-edges;
+         filter:drop-shadow(0 3px 10px rgba(0,0,0,.7))}
+.drg b{display:block;font-size:.9rem;letter-spacing:.16em;margin-top:6px}
+.drg .ttl{font-family:var(--mono);font-size:.58rem;color:var(--dim);letter-spacing:.1em;text-transform:uppercase;margin-bottom:8px}
+.drg .wep{font-family:var(--mono);font-size:.62rem;letter-spacing:.08em}
+.e{color:var(--red)}.z{color:var(--blue)}.t{color:var(--green)}.n{color:var(--violet)}
+
+/* ── two columns ──────────────────────────────────────── */
+.two{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+@media (max-width:720px){.two{grid-template-columns:1fr}}
+.card{border:1px solid var(--rule);padding:16px;background:var(--ink2)}
+.card h3{font-size:.82rem;letter-spacing:.18em;text-transform:uppercase;margin-bottom:6px}
+.card.light h3{color:var(--gold)}
+.card.dark h3{color:var(--violet)}
+.card p{font-size:.92rem}
+
+/* ── shots ────────────────────────────────────────────── */
+.shots{display:grid;grid-template-columns:1fr 1fr;gap:12px;align-items:start}
+@media (max-width:720px){.shots{grid-template-columns:1fr}}
+.shots img{width:auto;max-width:100%;max-height:540px;height:auto;display:block;
+           margin:0 auto;border:1px solid var(--rule)}
+
+/* ── platforms ────────────────────────────────────────── */
+.plat{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media (max-width:720px){.plat{grid-template-columns:1fr}}
+.pl{border:1px solid var(--rule);padding:16px;background:var(--ink2);display:flex;flex-direction:column;gap:6px}
+.pl .k{font-family:var(--mono);font-size:.6rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim)}
+.pl .v{font-size:1rem;font-weight:700;letter-spacing:.12em}
+.pl.soon{border-color:var(--violet-dim);background:linear-gradient(180deg,rgba(162,113,255,.09),var(--ink2))}
+.pl.soon .v{color:var(--violet)}
+a.btn{
+  display:inline-block;margin-top:4px;font-family:var(--mono);font-size:.66rem;
+  letter-spacing:.14em;text-transform:uppercase;color:var(--ink);background:var(--gold);
+  padding:.5rem .9rem;text-decoration:none;font-weight:700;
+}
+a.btn:hover,a.btn:focus-visible{background:var(--gold-hi)}
+.btn.ghost{background:transparent;color:var(--dim);border:1px solid var(--rule);cursor:default}
+
+/* ── support / footer ─────────────────────────────────── */
+.support a{color:var(--gold)}
+footer{margin-top:44px;border-top:1px solid var(--rule);padding:26px 0 44px;text-align:center}
+footer .ked{width:74px;height:74px;image-rendering:auto;opacity:.92}
+footer .who{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:8px}
+footer .links{margin-top:12px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+footer .links a{color:var(--dim);font-family:var(--mono);font-size:.64rem;letter-spacing:.12em;text-transform:uppercase;text-decoration:none}
+footer .links a:hover,footer .links a:focus-visible{color:var(--gold)}
+a:focus-visible{outline:2px solid var(--gold);outline-offset:3px}
+</style>
+</head>
+<body>
+
+<div class="rail"><div class="wrap">
+  <span class="mark">TALONSBANE</span>
+  <nav>
+    <a href="#game">Game</a><a href="#dragons">Dragons</a>
+    <a href="#play">Play</a><a href="#support">Support</a>
+  </nav>
+</div></div>
+
+<div class="wrap">
+
+  <div class="hero">
+    <img class="logo" src="art/logo.png" alt="TALONSBANE">
+    <div class="tag">Arcade dragon shoot-em-up</div>
+    <div class="badges">
+      <span class="badge on">Browser</span>
+      <span class="badge on">Windows &amp; macOS</span>
+      <span class="badge soon">iOS — coming soon</span>
+    </div>
+  </div>
+
+  <div class="tube-wrap">
+    <div class="tube">
+      <img src="shots/cabinet.jpg" alt="Talonsbane running inside its arcade cabinet, a dragon fighting a warship over a river">
+      <div class="roll"></div>
+    </div>
+  </div>
+
+  <section id="game">
+    <div class="head"><span class="num">01</span><h2>The Game</h2><span class="aside">Six stages · Two campaigns</span></div>
+    <p class="lede">A dragon, a screen full of bullets, and an arcade cabinet built out of a CRT — curvature, shadow mask, and the reflection of the picture on the moulding.</p>
+    <p class="dim">Six hand-built stages, a boss at the end of each, and two campaigns that fly the same war from opposite sides. It runs entirely offline. It collects nothing.</p>
+  </section>
+
+  <section id="dragons">
+    <div class="head"><span class="num">02</span><h2>Four Dragons</h2><span class="aside">Pick your wing</span></div>
+    <div class="roster">
+      <div class="drg"><img src="art/ember.png" alt="Ember, a red dragon"><b class="e">EMBER</b><div class="ttl">The Emberwing</div><div class="wep e">SPREAD</div></div>
+      <div class="drg"><img src="art/zephyr.png" alt="Zephyr, a blue dragon"><b class="z">ZEPHYR</b><div class="ttl">The Stormlance</div><div class="wep z">LANCE</div></div>
+      <div class="drg"><img src="art/terra.png" alt="Terra, a green dragon"><b class="t">TERRA</b><div class="ttl">The Mountainborn</div><div class="wep t">FLAK</div></div>
+      <div class="drg"><img src="art/nox.png" alt="Nox, a purple dragon"><b class="n">NOX</b><div class="ttl">The Nightfang</div><div class="wep n">SEEKER</div></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="num">03</span><h2>Two Campaigns</h2><span class="aside">The same war, both ends</span></div>
+    <div class="two">
+      <div class="card light"><h3>Light</h3><p>Fly as the free dragons. Burn the iron wings down, stage by stage, to whatever is waiting at the end of the last one.</p></div>
+      <div class="card dark"><h3>Dark</h3><p>Fly as the brood. Take the sky back from the living — and find out what the other side looks like from underneath.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <div class="head"><span class="num">04</span><h2>On Screen</h2><span class="aside">Phone, tablet, desktop</span></div>
+    <div class="shots">
+      <img src="shots/phone-boss.jpg" alt="A boss fight on a phone, with on-screen stick and buttons">
+      <img src="shots/phone-stage.jpg" alt="A mid-stage fight on a phone">
+    </div>
+  </section>
+
+  <section id="play">
+    <div class="head"><span class="num">05</span><h2>Play</h2></div>
+    <div class="plat">
+      <div class="pl">
+        <span class="k">Browser · Windows · macOS</span>
+        <span class="v">Free — browser &amp; desktop</span>
+        <span class="dim" style="font-size:.86rem">Runs in the browser with nothing to install, or download it for the desktop.</span>
+        <!-- TODO: replace with the game's own itch.io page once it exists.
+             Deliberately not a link yet: the only itch URL in the project is
+             the ARTIST's asset store, and sending players there would be
+             worse than sending them nowhere. -->
+        <span class="btn ghost">itch.io page coming soon</span>
+      </div>
+      <div class="pl soon">
+        <span class="k">iPhone &amp; iPad</span>
+        <span class="v">iOS — coming soon</span>
+        <span class="dim" style="font-size:.86rem">On-screen controls built for a thumb, or a paired controller. In testing now.</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="support" class="support">
+    <div class="head"><span class="num">06</span><h2>Support</h2><span class="aside">Bugs, questions, anything</span></div>
+    <p>Write to <a href="mailto:mehmetkeremturkcan@gmail.com">mehmetkeremturkcan@gmail.com</a> and you will get a reply from a person.</p>
+    <p class="dim">If you are reporting something broken, the stage and dragon you were playing — and a screenshot — is all it usually takes.</p>
+  </section>
+
+  <footer>
+    <img class="ked" src="art/kedikat.png" alt="Kedikat Studios">
+    <div class="who">Kedikat Studios</div>
+    <div class="links">
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="mailto:mehmetkeremturkcan@gmail.com">Contact</a>
+      <a href="https://mehmetkeremturkcan.com">mehmetkeremturkcan.com</a>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
