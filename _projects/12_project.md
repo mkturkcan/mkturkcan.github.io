@@ -42,15 +42,6 @@ links:
   - label: Project page
     url: https://mkturkcan.github.io/constellation-web/
     icon: website
-stats:
-  - value: "13,314"
-    label: annotated frames
-  - value: "28"
-    label: time intervals, 2019 to 2023
-  - value: "95.4"
-    label: mAP@0.5, best model
-  - value: "27.5 ms"
-    label: per frame on a Jetson Orin Nano
 artifacts: Open-access journal paper, public dataset in YOLO format, training and evaluation code, seven pretrained models, cross-dataset evaluations, and hardware latency benchmarks
 keywords:
   - High-altitude vision

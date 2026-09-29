@@ -36,11 +36,6 @@ links:
   - label: Benchmark code
     url: https://github.com/mkturkcan/constellation-benchmarks
     icon: github
-stats:
-  - value: "+7.8"
-    label: mAP over a CARLA-trained detector on real footage
-  - value: "2"
-    label: public datasets, infrastructure and aerial
 artifacts: Synthetic datasets for infrastructure and aerial viewpoints, benchmark code, and a reproducible generation methodology
 keywords:
   - Unreal Engine 5

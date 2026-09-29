@@ -39,15 +39,6 @@ links:
   - label: DriveX workshop
     url: https://drivex-workshop.github.io/cvpr2026/
     icon: website
-stats:
-  - value: "30.71"
-    label: KITTI AP3D, Moderate, without calibration
-  - value: "35.19"
-    label: KITTI AP BEV, Moderate
-  - value: "< 11 ms"
-    label: per image on an A100 with TensorRT
-  - value: "80"
-    label: object classes in UrbanOmniDetect-2
 artifacts: CVPR workshop paper, open-source code, the UrbanOmniView dataset, pretrained models across YOLOv8, YOLOv9, YOLO11, and YOLO12, five UrbanOmniDetect-2 checkpoints, and a real-time bird's-eye-view pipeline
 keywords:
   - Monocular 3D detection
@@ -63,9 +54,15 @@ acknowledgement: >-
 
 UrbanOmniDetect targets a common deployment bottleneck in V2X and infrastructure sensing: camera intrinsics may be unavailable, imprecise, or drifting. Instead of lifting 2D detections through a calibrated camera model, a single network predicts the eight projected corners of each object's 3D box directly from a raw RGB image, with no intrinsics, depth estimation, or ground-plane priors.
 
-Calibration-dependent methods lose more than 80% of their accuracy with a 5% focal-length error, while UrbanOmniDetect is invariant to it by construction. On monocular KITTI, it outperforms calibration-dependent baselines on the Moderate and Hard splits and runs in under 11 ms on an A100 with TensorRT at 640 × 640.
+The work was presented as an oral paper at the CVPR 2026 DriveX workshop and is paired with UrbanOmniView, a dataset that combines real-world driving data from KITTI, infrastructure camera data from DAIR-V2X, and high-fidelity synthetic data rendered in Unreal Engine 5, which is released as part of the project.
 
-| Method | AP3D Easy | AP3D Mod. | AP3D Hard | APBEV Easy | APBEV Mod. | APBEV Hard |
+## Results
+
+- **Invariant to calibration error.** Calibration-dependent methods lose more than 80% of their accuracy with a 5% focal-length error. UrbanOmniDetect takes no camera intrinsics as input and is invariant to such errors by construction.
+- **Strongest on the harder KITTI splits.** Without calibration, it reaches 30.71 AP<sub>3D</sub> and 35.19 AP<sub>BEV</sub> on the Moderate split at IoU ≥ 0.7, ahead of the calibration-dependent baselines below on Moderate and Hard.
+- **Real-time inference.** A single forward pass takes under 11 ms per image on an A100 with TensorRT at 640 × 640.
+
+| Method | AP<sub>3D</sub> Easy | AP<sub>3D</sub> Mod. | AP<sub>3D</sub> Hard | AP<sub>BEV</sub> Easy | AP<sub>BEV</sub> Mod. | AP<sub>BEV</sub> Hard |
 |:--|--:|--:|--:|--:|--:|--:|
 | MonoDGP | 30.76 | 22.34 | 19.02 | 39.40 | 28.20 | 24.42 |
 | MonoCon | 26.33 | 19.01 | 15.98 | 34.65 | 25.39 | 21.93 |
@@ -74,8 +71,6 @@ Calibration-dependent methods lose more than 80% of their accuracy with a 5% foc
 | **UrbanOmniDetect** | 29.61 | **30.71** | **27.76** | 33.86 | **35.19** | **31.38** |
 
 <p class="table-caption">Monocular 3D detection on KITTI at IoU ≥ 0.7. The baselines use camera calibration. UrbanOmniDetect does not.</p>
-
-The work was presented as an oral paper at the CVPR 2026 DriveX workshop and is paired with UrbanOmniView, a dataset that combines real-world driving data from KITTI, infrastructure camera data from DAIR-V2X, and high-fidelity synthetic data rendered in Unreal Engine 5, which is released as part of the project.
 
 <section class="project-release" aria-labelledby="urbanomnidetect-2">
   <span class="project-release__eyebrow">Latest release&emsp;September 2026</span>

@@ -42,13 +42,6 @@ links:
   - label: Project page
     url: https://mkturkcan.github.io/congestionpricing/
     icon: website
-stats:
-  - value: "910"
-    label: public traffic cameras analyzed
-  - value: "−15.8%"
-    label: peak observed cars per frame inside the Congestion Relief Zone
-  - value: "−10.9%"
-    label: peak observed cars per frame outside the zone
 artifacts: arXiv preprint, public Hugging Face dataset, open-source analysis code, an interactive before-and-after map, and a real-time camera map
 keywords:
   - Congestion pricing
@@ -76,7 +69,9 @@ Each camera contributes instantaneous vehicle counts from object detection. The 
 
 ## Results
 
-Peak observed car count per frame fell 15.8% at cameras inside the CRZ and 10.9% at cameras outside it. The <a href="https://mkturkcan.github.io/congestionpricing/interactive/index.html" target="_blank" rel="noopener noreferrer">interactive map</a> breaks these changes down by camera, as a percentage or an absolute count, for the whole week, weekdays only, or weekends only.
+- **Traffic fell inside the zone.** Peak observed car count per frame dropped 15.8% at cameras within the CRZ.
+- **Traffic also fell outside the zone.** Cameras outside the CRZ recorded a smaller 10.9% drop in peak observed car count per frame.
+- **Changes are resolved camera by camera.** The <a href="https://mkturkcan.github.io/congestionpricing/interactive/index.html" target="_blank" rel="noopener noreferrer">interactive map</a> reports each camera's change as a percentage or an absolute count, for the whole week, weekdays only, or weekends only.
 
 ## Live view
 

@@ -65,17 +65,6 @@ layout: default
   </figure>
   {%- endif %}
 
-  {%- if page.stats %}
-  <ul class="project-stats" aria-label="Key figures">
-    {%- for stat in page.stats %}
-    <li>
-      <span class="project-stats__value">{{ stat.value }}</span>
-      <span class="project-stats__label">{{ stat.label }}</span>
-    </li>
-    {%- endfor %}
-  </ul>
-  {%- endif %}
-
   <article class="project-body">
     {{ content }}
   </article>
