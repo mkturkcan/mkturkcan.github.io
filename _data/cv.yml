@@ -124,6 +124,7 @@
   type: list
   contents:
     - "<b>Calibration-Free View-Agnostic Monocular 3D Object Detection for Urban Scenes</b>. CVPR Workshops 2026."
+    - "<b>AI-Powered CPS-Enabled Vulnerable-User-Aware Urban Transportation Digital Twin: Methods and Applications</b>. IEEE Transactions on Intelligent Transportation Systems 27(5), 2026."
     - "<b>Worst-Case Attacks in Reactive Edge-Cloud Systems: Expected Latency and SLA Violation</b>. IEEE INFOCOM 2026."
     - "<b>Digital Eyes on the Road: Using Street Cameras to Verify Traffic Integrity and Detect Sybil Attacks at City Scale</b>. USENIX VehicleSec 2026, to appear."
     - "<b>Detect Anything in Real Time: From Single-Prompt Segmentation to Multi-Class Detection</b>. DART, arXiv 2026. Public <a href=\"https://github.com/mkturkcan/DART\">code</a> and <a href=\"https://huggingface.co/mehmetkeremturkcan/DART\">models</a>."
