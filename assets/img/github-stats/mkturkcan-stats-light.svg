@@ -9,7 +9,7 @@
         aria-labelledby="descId"
       >
         <title id="titleId">Mehmet Kerem Turkcan&#39;s GitHub Stats, Rank: B</title>
-        <desc id="descId">Total Stars Earned: 1395, Total Commits  (last year) : 162, Total PRs: 3, Total Issues: 4, Contributed to (last year): 6</desc>
+        <desc id="descId">Total Stars Earned: 1985, Total Commits  (last year) : 198, Total PRs: 3, Total Issues: 4, Contributed to (last year): 6</desc>
         <style>
           .header {
             font: 600 18px 'Segoe UI', Ubuntu, Sans-Serif;
@@ -73,11 +73,12 @@
         stroke-dashoffset: 251.32741228718345;
       }
       to {
-        stroke-dashoffset: 131.5676828888555;
+        stroke-dashoffset: 127.69747473970718;
       }
     }
   
   
+          
 
           
       /* Animations */
@@ -102,9 +103,15 @@
         </style>
 
         
+        <defs>
+          
+          
+        </defs>
+        
 
         <rect
           data-testid="card-bg"
+          class="card-bg"
           x="0.5"
           y="0.5"
           rx="4.5"
@@ -162,7 +169,7 @@
         x="224.01"
         y="12.5"
         data-testid="stars"
-      >1.4k</text>
+      >2k</text>
     </g>
   </g><g transform="translate(0, 25)">
     <g class="stagger" style="animation-delay: 600ms" transform="translate(25, 0)">
@@ -177,7 +184,7 @@
         x="224.01"
         y="12.5"
         data-testid="commits"
-      >162</text>
+      >198</text>
     </g>
   </g><g transform="translate(0, 50)">
     <g class="stagger" style="animation-delay: 750ms" transform="translate(25, 0)">
