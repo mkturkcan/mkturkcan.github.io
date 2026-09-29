@@ -51,7 +51,7 @@
   type: time_table
   contents:
     - title: NSF Engineering Research Center for Smart Streetscapes (CS3)
-      institution: NSF EEC-2133516 · $26M center award
+      institution: NSF EEC-2133516&emsp;$26M center award
       year: 2022 - Present
       description:
         - Coordinate applied AI research, annual reporting, and cross-team demonstrations across a five-institution center; present DART, UrbanOmniDetect, and related systems at annual NSF site visits.
@@ -59,7 +59,7 @@
         - linkname: Award record
           link: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2133516
     - title: "NSF CPS: Hybrid Twins for Urban Transportation"
-      institution: NSF CNS-2038984 · $1.3M Columbia award
+      institution: NSF CNS-2038984&emsp;$1.3M Columbia award
       year: 2021 - Present
       description:
         - Led engineering delivery, prepared annual technical reports, and presented project reviews to NSF for traffic sensing, prediction, and digital twin systems spanning individual intersections and citywide operations.
@@ -67,7 +67,7 @@
         - linkname: Award record
           link: https://www.nsf.gov/awardsearch/show-award/?AWD_ID=2038984
     - title: DARPA Robust Learning in Brain Circuits of Synthetic Miniature Insects
-      institution: DARPA HR0011-19-9-0035 · $620K Columbia award
+      institution: DARPA HR0011-19-9-0035&emsp;$620K Columbia award
       year: 2019 - 2020
       description:
         - Contributed to proposal development, authored project reports, and conducted grant-supported doctoral research on robust learning and executable brain circuit models.
@@ -75,7 +75,7 @@
         - linkname: Funding record
           link: https://elifesciences.org/articles/62362
     - title: AFOSR Foundations of Neuroinformation Processing
-      institution: AFOSR FA9550-16-1-0410 · $1.11M Columbia award
+      institution: AFOSR FA9550-16-1-0410&emsp;$1.11M Columbia award
       year: 2017 - 2021
       description:
         - Developed computational systems and models for phase- and spike-based neural information processing, including work underlying the FlyBrainLab platform.
@@ -83,7 +83,7 @@
         - linkname: Award record
           link: https://www.usaspending.gov/award/ASST_NON_FA95501610410_097
     - title: "NSF Collaborative Research: The Digital Fly Brain"
-      institution: NSF DBI-1544383 · $795K Columbia award
+      institution: NSF DBI-1544383&emsp;$795K Columbia award
       year: 2017 - 2019
       description:
         - Engineered connectome data, graph query, simulation, and visualization capabilities for the open-source Fruit Fly Brain Observatory and FlyBrainLab systems.

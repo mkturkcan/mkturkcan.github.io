@@ -27,7 +27,7 @@ layout: default
       <i class="fa-solid fa-calendar fa-sm"></i> {{ year }}
       {%- endif %}
       {%- if tags != "" %}
-      &nbsp; &middot; &nbsp;
+      &emsp;
         {% for tag in page.tags -%}
           {% if url_beginning == '/blog/' -%}
           <a href="{{ tag | slugify | prepend: '/blog/tag/' | prepend: site.baseurl}}"> <i class="fa-solid fa-hashtag fa-sm"></i> {{ tag }}</a> &nbsp;
@@ -39,7 +39,7 @@ layout: default
       {% endif %}
 
       {%- if categories != "" %}
-      &nbsp; &middot; &nbsp;
+      &emsp;
         {% for category in page.categories -%}
           {% if url_beginning == '/blog/' -%}
           <a href="{{ category | slugify | prepend: '/blog/category/' | prepend: site.baseurl}}"> <i class="fa-solid fa-tag fa-sm"></i> {{ category }}</a> &nbsp;

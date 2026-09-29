@@ -86,7 +86,7 @@ Participating teachers developed complete lesson plans that connect AI engineeri
       <li><a href="{{ '/assets/pdf/ret/2025/05-nyc-ebike-crash-data.pdf' | relative_url }}">NYC e-bike crash data</a></li>
       <li><a href="{{ '/assets/pdf/ret/2025/06-job-skills-and-ai.pdf' | relative_url }}">Job skills and AI</a></li>
     </ul>
-    <p><a href="https://cs3-erc.org/ret-2025-lesson-plans/">Official collection</a> · <a href="{{ '/assets/pdf/archive/cs3-ret-2025-lesson-plans.pdf' | relative_url }}">local archive</a></p>
+    <p><a href="https://cs3-erc.org/ret-2025-lesson-plans/">Official collection</a>&emsp;<a href="{{ '/assets/pdf/archive/cs3-ret-2025-lesson-plans.pdf' | relative_url }}">local archive</a></p>
   </section>
   <section>
     <h3>2024 lesson plans</h3>
@@ -97,7 +97,7 @@ Participating teachers developed complete lesson plans that connect AI engineeri
       <li><a href="{{ '/assets/pdf/ret/2024/04-ai-bias-analysis.pdf' | relative_url }}">AI bias analysis</a></li>
       <li><a href="{{ '/assets/pdf/ret/2024/05-bike-nyc-data.pdf' | relative_url }}">Bike NYC data analysis</a></li>
     </ul>
-    <p><a href="https://cs3-erc.org/ret-2024-lesson-plans/">Official collection</a> · <a href="{{ '/assets/pdf/archive/cs3-ret-2024-lesson-plans.pdf' | relative_url }}">local archive</a></p>
+    <p><a href="https://cs3-erc.org/ret-2024-lesson-plans/">Official collection</a>&emsp;<a href="{{ '/assets/pdf/archive/cs3-ret-2024-lesson-plans.pdf' | relative_url }}">local archive</a></p>
   </section>
 </div>
 
@@ -106,7 +106,7 @@ Participating teachers developed complete lesson plans that connect AI engineeri
 <section class="course-record">
   <div class="course-record__heading">
     <div>
-      <span class="teaching-eyebrow">EECS E6691 · Spring 2023</span>
+      <span class="teaching-eyebrow">EECS E6691&emsp;Spring 2023</span>
       <h3>Advanced Deep Learning</h3>
     </div>
     <a class="course-download" href="{{ '/assets/pdf/E6691_Syllabus.pdf' | relative_url }}"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Syllabus</a>
@@ -115,15 +115,15 @@ Participating teachers developed complete lesson plans that connect AI engineeri
   <div class="course-facts">
     <span><strong>Format</strong> Weekly lectures and coding assignments</span>
     <span><strong>Capstone</strong> Conference-style project, reproducible code, and poster</span>
-    <span><strong>Assessment</strong> Assignments 30% · exam 30% · project 40%</span>
+    <span><strong>Assessment</strong> Assignments 30%&emsp;exam 30%&emsp;project 40%</span>
   </div>
-  <p class="course-sequence"><strong>Sequence:</strong> Metrics and segmentation · R-CNN, FPN, Mask R-CNN, PointRend · SSD and YOLO · graph embeddings · SORT, ByteTrack, BoT-SORT, DeepSORT · ViT, DETR, Swin, Segmenter · CLIP · diffusion and ControlNet · OWL-ViT · Segment Anything · Generative Agents</p>
+  <p class="course-sequence"><strong>Sequence:</strong> Metrics and segmentation&emsp;R-CNN, FPN, Mask R-CNN, PointRend&emsp;SSD and YOLO&emsp;graph embeddings&emsp;SORT, ByteTrack, BoT-SORT, DeepSORT&emsp;ViT, DETR, Swin, Segmenter&emsp;CLIP&emsp;diffusion and ControlNet&emsp;OWL-ViT&emsp;Segment Anything&emsp;Generative Agents</p>
 </section>
 
 <section class="course-record">
   <div class="course-record__heading">
     <div>
-      <span class="teaching-eyebrow">ECBM E4040 · Fall 2023</span>
+      <span class="teaching-eyebrow">ECBM E4040&emsp;Fall 2023</span>
       <h3>Neural Networks &amp; Deep Learning</h3>
     </div>
     <a class="course-download" href="{{ '/assets/pdf/E4040_Syllabus.pdf' | relative_url }}"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Syllabus</a>
@@ -132,9 +132,9 @@ Participating teachers developed complete lesson plans that connect AI engineeri
   <div class="course-facts">
     <span><strong>Format</strong> Lectures, assignments, exam, and team project</span>
     <span><strong>Coverage</strong> Core architectures and modern generative models</span>
-    <span><strong>Assessment</strong> Assignments 40% · exam 25% · project 35%</span>
+    <span><strong>Assessment</strong> Assignments 40%&emsp;exam 25%&emsp;project 35%</span>
   </div>
-  <p class="course-sequence"><strong>Sequence:</strong> Machine learning review · feedforward networks and backpropagation · optimization · convolutional networks · regularization · recurrent networks · autoencoders · GANs · VAEs · current research directions</p>
+  <p class="course-sequence"><strong>Sequence:</strong> Machine learning review&emsp;feedforward networks and backpropagation&emsp;optimization&emsp;convolutional networks&emsp;regularization&emsp;recurrent networks&emsp;autoencoders&emsp;GANs&emsp;VAEs&emsp;current research directions</p>
 </section>
 
 I also co-taught Columbia Video Network's VOAI 0003E: Neural Networks and Deep Learning for the AI Executive Certificate in Fall 2022 and Summer 2023, and previously supported Columbia courses in neural computation and computational neuroscience.
@@ -145,17 +145,17 @@ I also co-taught Columbia Video Network's VOAI 0003E: Neural Networks and Deep L
   <article class="speaking-item">
     <img src="{{ '/assets/img/presentations/cs3-innovation-summit-2026.jpg' | relative_url }}" alt="Mehmet Kerem Turkcan speaking on the real-time traffic analysis panel at the 2026 CS3 Innovation Summit" width="1950" height="1097" loading="eager" decoding="async">
     <div>
-      <span class="teaching-eyebrow">February 5, 2026 · Columbia University</span>
+      <span class="teaching-eyebrow">February 5, 2026&emsp;Columbia University</span>
       <h3>From Sensors to Systems: Real-Time Traffic Analysis for Faster Decision-Making</h3>
       <p>Panelist at the CS3 Innovation Summit, discussing how camera, mobility, and model outputs become operational urban intelligence.</p>
-      <p><a href="https://cs3-erc.org/event/innovation-summit-2026/">Event</a> · <a href="https://www.engineering.columbia.edu/about/news/how-ai-improving-daily-life-cities">Columbia Engineering coverage</a> · <a href="{{ '/assets/pdf/archive/cs3-innovation-summit-2026.pdf' | relative_url }}">local event archive</a></p>
+      <p><a href="https://cs3-erc.org/event/innovation-summit-2026/">Event</a>&emsp;<a href="https://www.engineering.columbia.edu/about/news/how-ai-improving-daily-life-cities">Columbia Engineering coverage</a>&emsp;<a href="{{ '/assets/pdf/archive/cs3-innovation-summit-2026.pdf' | relative_url }}">local event archive</a></p>
     </div>
   </article>
 
   <article class="speaking-item">
     <img src="{{ '/assets/img/portauth.png' | relative_url }}" alt="Mehmet Kerem Turkcan presenting at the Port Authority Tomorrow Summit" width="940" height="600" loading="lazy" decoding="async">
     <div>
-      <span class="teaching-eyebrow">January 7, 2026 · World Trade Center</span>
+      <span class="teaching-eyebrow">January 7, 2026&emsp;World Trade Center</span>
       <h3>Port Authority Tomorrow Summit workshop</h3>
       <p>I hosted a technical workshop at the Port Authority of New York and New Jersey headquarters as part of its annual Tomorrow Summit, which recognizes technology pilots demonstrated during the previous year.</p>
     </div>
@@ -164,10 +164,10 @@ I also co-taught Columbia Video Network's VOAI 0003E: Neural Networks and Deep L
   <article class="speaking-item speaking-item--slide">
     <img src="{{ '/assets/img/presentations/vision-zero-2025.jpg' | relative_url }}" alt="Title slide for Evaluating Micromobility and Dangerous Riding Behaviors" width="2400" height="1350" loading="lazy" decoding="async">
     <div>
-      <span class="teaching-eyebrow">November 19, 2025 · New York City DOT</span>
+      <span class="teaching-eyebrow">November 19, 2025&emsp;New York City DOT</span>
       <h3>Evaluating Micromobility &amp; Dangerous Riding Behaviors</h3>
       <p>Presentation at the Eighth Annual Vision Zero Research on the Road event on using street camera analytics to study micromobility and risky riding behavior.</p>
-      <p><a href="https://www.nyc.gov/assets/ddc/downloads/town-and-gown/ROTR8/ROTR2025AgendaBio.pdf">Agenda and bio</a> · <a href="https://www.nyc.gov/assets/ddc/downloads/town-and-gown/ROTR8/4_MehmetTurkcan.Micromobility.Public.pdf">slides</a> · <a href="{{ '/assets/pdf/presentations/vision-zero-micromobility-slides.pdf' | relative_url }}">local slides</a></p>
+      <p><a href="https://www.nyc.gov/assets/ddc/downloads/town-and-gown/ROTR8/ROTR2025AgendaBio.pdf">Agenda and bio</a>&emsp;<a href="https://www.nyc.gov/assets/ddc/downloads/town-and-gown/ROTR8/4_MehmetTurkcan.Micromobility.Public.pdf">slides</a>&emsp;<a href="{{ '/assets/pdf/presentations/vision-zero-micromobility-slides.pdf' | relative_url }}">local slides</a></p>
     </div>
   </article>
 </div>
