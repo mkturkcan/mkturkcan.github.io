@@ -1,9 +1,14 @@
 ---
-layout: page
+layout: project
 title: NYC Congestion Pricing Analysis
 permalink: /projects/congestion-pricing/
 description: Vision-based analysis of New York City congestion pricing using public traffic camera observations.
-img: assets/img/project_media/congestionpricing.webp
+lede: A citywide computer vision study of how congestion pricing changed street-level traffic in New York City, measured from 910 public traffic cameras before and after tolling began in January 2025.
+img: assets/img/project_media/congestionpricing-map.webp
+img_alt: Interactive map of New York City showing the change in peak observed car count at each traffic camera
+img_width: 1200
+img_height: 750
+img_caption: The interactive map. Each circle is a traffic camera. Green marks a year-over-year reduction in peak observed car count, red an increase, and circle size the magnitude of the change.
 thumb: assets/img/project_thumbnails/congestionpricing.webp
 importance: 9
 category: urban ai
@@ -11,16 +16,79 @@ topic: civic analytics
 github: https://github.com/mkturkcan/congestionpricing
 huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/nyc-congestionpricing-cv
 related_publications: turkcan2026congestionpricing
+facts:
+  - label: Role
+    value: Lead author
+  - label: Paper
+    value: arXiv preprint, 2026
+  - label: Status
+    value: Ongoing, with regular data updates
+links:
+  - label: Interactive map
+    url: https://mkturkcan.github.io/congestionpricing/interactive/index.html
+    icon: map
+  - label: Real-time map
+    url: https://mkturkcan.github.io/congestionpricing/interactive/stream.html
+    icon: live
+  - label: arXiv
+    url: https://arxiv.org/abs/2602.03015
+    icon: arxiv
+  - label: Dataset
+    url: https://huggingface.co/datasets/mehmetkeremturkcan/nyc-congestionpricing-cv
+    icon: huggingface
+  - label: Code
+    url: https://github.com/mkturkcan/congestionpricing
+    icon: github
+  - label: Project page
+    url: https://mkturkcan.github.io/congestionpricing/
+    icon: website
+stats:
+  - value: "910"
+    label: public traffic cameras analyzed
+  - value: "−15.8%"
+    label: peak observed cars per frame inside the Congestion Relief Zone
+  - value: "−10.9%"
+    label: peak observed cars per frame outside the zone
+artifacts: arXiv preprint, public Hugging Face dataset, open-source analysis code, an interactive before-and-after map, and a real-time camera map
+keywords:
+  - Congestion pricing
+  - Traffic cameras
+  - City-scale computer vision
+  - Traffic density
+  - Public policy analysis
+  - Urban mobility datasets
+acknowledgement: >-
+  This project was initially supported by compute from the <a href="https://advancedwireless.org/" target="_blank" rel="noopener noreferrer">PAWR</a> <a href="https://www.cosmos-lab.org/" target="_blank" rel="noopener noreferrer">COSMOS testbed</a> at <a href="https://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a>.
+  This work began while I was a postdoc in the <a href="https://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Department of Electrical Engineering</a> (<a href="https://www.aidl.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">AIDL Lab</a>) at Columbia University.
+  Currently the project continues using resources of the <a href="https://cs3-erc.org/" target="_blank" rel="noopener noreferrer">NSF ENG Center for Smart Streetscapes (CS3)</a>.
 ---
 
-This project studies New York City's congestion-pricing rollout through automated analysis of public traffic camera observations.
+In January 2025, New York City began charging vehicles to enter Manhattan's Congestion Relief Zone (CRZ), the first program of its kind in the United States. This project measures the policy's effect directly from the street. A computer vision pipeline counts vehicles in footage from the city's public traffic cameras, and traffic in the same November 14 to January 4 window is compared before and after the policy, with anomalous periods such as holidays excluded from the baselines.
 
-<img class="img-fluid rounded z-depth-1 mb-3" src="{{ '/assets/img/project_media/congestionpricing.webp' | relative_url }}" alt="Interactive map of New York City congestion-pricing camera analysis" width="1200" height="675" decoding="async">
+## Method
 
-The work uses citywide camera data to compare traffic patterns before and after the January 2025 policy change, with public visualizations, interactive maps, and a Hugging Face dataset for reproducibility and visualization of results. It extends the broader urban perception line of work from individual intersections to city-scale policy analysis.
+<figure class="project-figure">
+  <img src="{{ '/assets/img/project_media/congestionpricing-pipeline.webp' | relative_url }}" alt="Pipeline diagram: camera detections produce instantaneous vehicle counts, which are averaged by hour of week and compared before and after the policy on a map" width="1227" height="929" loading="lazy" decoding="async">
+  <figcaption>Instantaneous vehicle counts from each camera are averaged by hour of the week, and the before-and-after difference is mapped camera by camera.</figcaption>
+</figure>
 
-- **Role:** Lead author
-- **Artifacts:** Preprint on arXiv, project page, interactive map, real-time visualization, and Hugging Face dataset
-- **Keywords:** Congestion pricing, traffic cameras, city-scale computer vision, traffic density, public policy analysis, urban mobility datasets
+Each camera contributes instantaneous vehicle counts from object detection. The counts are aggregated into hourly averages across a typical week, so rush-hour peaks, weekday and weekend patterns, and the before-and-after difference can be compared at every camera and mapped across the city.
 
-Links: <a href="https://github.com/mkturkcan/congestionpricing" target="_blank" rel="noopener noreferrer">GitHub</a>, <a href="https://huggingface.co/datasets/mehmetkeremturkcan/nyc-congestionpricing-cv" target="_blank" rel="noopener noreferrer">Hugging Face dataset</a>, <a href="https://arxiv.org/abs/2602.03015" target="_blank" rel="noopener noreferrer">arXiv</a>, <a href="https://mkturkcan.github.io/congestionpricing/" target="_blank" rel="noopener noreferrer">project page</a>, <a href="https://mkturkcan.github.io/congestionpricing/interactive/index.html" target="_blank" rel="noopener noreferrer">interactive map</a>, <a href="https://mkturkcan.github.io/congestionpricing/interactive/stream.html" target="_blank" rel="noopener noreferrer">real-time map</a>.
+## Results
+
+Peak observed car count per frame fell 15.8% at cameras inside the CRZ and 10.9% at cameras outside it. The <a href="https://mkturkcan.github.io/congestionpricing/interactive/index.html" target="_blank" rel="noopener noreferrer">interactive map</a> breaks these changes down by camera, as a percentage or an absolute count, for the whole week, weekdays only, or weekends only.
+
+## Live view
+
+The analysis is ongoing, with regular updates to track how traffic evolves under the policy over the long term. A companion real-time map shows the camera network as the pipeline processes it.
+
+<figure class="project-figure">
+  <a href="https://mkturkcan.github.io/congestionpricing/interactive/stream.html" target="_blank" rel="noopener noreferrer">
+    <img src="{{ '/assets/img/project_media/congestionpricing-live.webp' | relative_url }}" alt="Real-time map of New York City showing the current vehicle count at each traffic camera" width="1200" height="750" loading="lazy" decoding="async">
+  </a>
+  <figcaption>The real-time map shows current vehicle counts at each camera, with separate views for cars, bikes, buses, and trucks.</figcaption>
+</figure>
+
+## Limitations
+
+Camera-based vehicle counts are a proxy for traffic, not a direct measure of travel times or congestion. The current pipeline includes stationary vehicles, which can raise measured density on streets with heavy parking, and it measures aggregate flow without separating individual lanes or travel directions.

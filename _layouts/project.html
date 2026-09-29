@@ -1,0 +1,128 @@
+---
+layout: default
+---
+<!-- project.html -->
+{%- assign project_topic = page.topic | default: page.category -%}
+<div class="post project-page">
+
+  <header class="project-header">
+    <p class="project-eyebrow">
+      <a href="{{ '/projects/' | relative_url }}">Projects</a>
+      {%- if project_topic %}
+      <span class="project-eyebrow__sep" aria-hidden="true">/</span>
+      <span>{{ project_topic }}</span>
+      {%- endif %}
+    </p>
+    <h1 class="post-title project-title">{{ page.title }}</h1>
+    <p class="project-lede">{{ page.lede | default: page.description }}</p>
+
+    {%- if page.facts %}
+    <dl class="project-facts">
+      {%- for fact in page.facts %}
+      <div class="project-facts__item">
+        <dt>{{ fact.label }}</dt>
+        <dd>{{ fact.value }}</dd>
+      </div>
+      {%- endfor %}
+    </dl>
+    {%- endif %}
+
+    {%- if page.links %}
+    <nav class="project-actions" aria-label="{{ page.title }} resources">
+      {%- for link in page.links %}
+      {%- assign link_scheme = link.url | slice: 0, 4 %}
+      <a class="project-action{% if forloop.first %} project-action--primary{% endif %}" href="{{ link.url }}"{% if link_scheme == 'http' %} target="_blank" rel="noopener noreferrer"{% endif %}>
+        {%- case link.icon -%}
+          {%- when 'github' -%}<i class="fa-brands fa-github" aria-hidden="true"></i>
+          {%- when 'arxiv' -%}<i class="ai ai-arxiv" aria-hidden="true"></i>
+          {%- when 'doi' -%}<i class="ai ai-doi" aria-hidden="true"></i>
+          {%- when 'huggingface' -%}<img src="{{ '/assets/img/icons/huggingface.svg' | relative_url }}" alt="" width="17" height="16" aria-hidden="true">
+          {%- when 'paper' -%}<i class="fa-solid fa-file-lines" aria-hidden="true"></i>
+          {%- when 'pdf' -%}<i class="fa-solid fa-file-pdf" aria-hidden="true"></i>
+          {%- when 'dataset' -%}<i class="fa-solid fa-database" aria-hidden="true"></i>
+          {%- when 'models' -%}<i class="fa-solid fa-cube" aria-hidden="true"></i>
+          {%- when 'map' -%}<i class="fa-solid fa-map-location-dot" aria-hidden="true"></i>
+          {%- when 'live' -%}<i class="fa-solid fa-tower-broadcast" aria-hidden="true"></i>
+          {%- when 'demo' -%}<i class="fa-solid fa-play" aria-hidden="true"></i>
+          {%- when 'docs' -%}<i class="fa-solid fa-book" aria-hidden="true"></i>
+          {%- when 'award' -%}<i class="fa-solid fa-award" aria-hidden="true"></i>
+          {%- when 'website' -%}<i class="fa-solid fa-globe" aria-hidden="true"></i>
+          {%- else -%}<i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>
+        {%- endcase -%}
+        <span>{{ link.label }}</span>
+      </a>
+      {%- endfor %}
+    </nav>
+    {%- endif %}
+  </header>
+
+  {%- if page.img %}
+  <figure class="project-hero">
+    <img src="{{ page.img | relative_url }}" alt="{{ page.img_alt | default: page.title }}"{% if page.img_width %} width="{{ page.img_width }}" height="{{ page.img_height }}"{% endif %} decoding="async" fetchpriority="high">
+    {%- if page.img_caption %}
+    <figcaption>{{ page.img_caption }}</figcaption>
+    {%- endif %}
+  </figure>
+  {%- endif %}
+
+  {%- if page.stats %}
+  <ul class="project-stats" aria-label="Key figures">
+    {%- for stat in page.stats %}
+    <li>
+      <span class="project-stats__value">{{ stat.value }}</span>
+      <span class="project-stats__label">{{ stat.label }}</span>
+    </li>
+    {%- endfor %}
+  </ul>
+  {%- endif %}
+
+  <article class="project-body">
+    {{ content }}
+  </article>
+
+  {%- if page.artifacts or page.keywords %}
+  <section class="project-details" aria-labelledby="project-details-title">
+    <h2 id="project-details-title">Project details</h2>
+    <dl>
+      {%- if page.artifacts %}
+      <div class="project-details__row">
+        <dt>Artifacts</dt>
+        <dd>{{ page.artifacts }}</dd>
+      </div>
+      {%- endif %}
+      {%- if page.keywords %}
+      <div class="project-details__row">
+        <dt>Keywords</dt>
+        <dd>
+          <ul class="project-keywords">
+            {%- for keyword in page.keywords %}
+            <li>{{ keyword }}</li>
+            {%- endfor %}
+          </ul>
+        </dd>
+      </div>
+      {%- endif %}
+    </dl>
+  </section>
+  {%- endif %}
+
+  {%- if page.related_publications != null and page.related_publications.size > 0 -%}
+  {% assign publications = page.related_publications | replace: ", ", "," | split: "," | join: "|" %}
+  <section class="project-references">
+    <h2>References</h2>
+    <div class="publications">
+      {% bibliography -f {{ site.scholar.bibliography }} -q @*[key^={{ publications }}]* %}
+    </div>
+  </section>
+  {%- endif %}
+
+  {%- if page.acknowledgement %}
+  <div class="project-acknowledgement">
+    {{ page.acknowledgement | markdownify }}
+  </div>
+  {%- endif %}
+
+  {%- if site.giscus and page.giscus_comments -%}
+    {% include giscus.html %}
+  {%- endif -%}
+</div>
