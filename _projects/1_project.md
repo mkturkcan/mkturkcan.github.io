@@ -4,9 +4,10 @@ title: DART
 permalink: /projects/dart/
 description: Real-time open-vocabulary object detection from frontier vision models.
 img: assets/img/project_media/dart.webp
-img_alt: DART qualitative detections in a crowded street scene
-img_width: 640
-img_height: 453
+img_alt: Diagram comparing SAM3 per-class inference with DART's shared backbone and batched decoding, beside DART detections on COCO images
+img_width: 1600
+img_height: 900
+img_caption: "SAM3 repeats its ViT-H backbone for every class. DART runs it once, decodes all prompts in one batch, and deploys both stages as TensorRT FP16 engines. Right: DART detections on COCO val2017."
 thumb: assets/img/project_thumbnails/dart.webp
 importance: 1
 category: featured

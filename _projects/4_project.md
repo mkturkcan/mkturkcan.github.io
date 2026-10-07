@@ -4,9 +4,10 @@ title: PAVE and Urban Safety Edge Analytics
 permalink: /projects/pave-urban-safety/
 description: Real-time video analytics for pedestrian safety over edge and end devices.
 img: assets/img/project_media/pave.webp
-img_alt: PAVE edge analytics and pedestrian alert workflow
-img_width: 1200
-img_height: 675
+img_alt: "PAVE architecture: intersection cameras stream video to an edge server that predicts vehicle paths and danger zones, which reach pedestrians' phones through an MQTT broker"
+img_width: 1600
+img_height: 900
+img_caption: PAVE processes live intersection video on an edge server and publishes danger zones over MQTT. Phones compare their own position against the zones locally, so no personal data leaves the device.
 thumb: assets/img/project_thumbnails/pave.webp
 importance: 4
 category: urban ai

@@ -992,6 +992,23 @@ footer.sticky-bottom {
   }
 }
 
+// On wide screens, figures extend past the 800px text column so labels stay legible.
+@media (min-width: 1100px) {
+  .project-hero,
+  .project-figure {
+    --figure-bleed: min(1120px, calc(100vw - 96px));
+    width: var(--figure-bleed);
+    max-width: none;
+    margin-left: calc((100% - var(--figure-bleed)) / 2);
+
+    figcaption {
+      max-width: 770px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+  }
+}
+
 .project-body {
   p,
   li {

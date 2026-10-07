@@ -5,10 +5,10 @@ permalink: /projects/urbanomnidetect/
 description: Monocular 3D object detection with the UrbanOmniDetect system and UrbanOmniView dataset.
 lede: Calibration-free, view-agnostic monocular 3D object detection. One model recovers 3D boxes from ego-vehicle, infrastructure, and aerial cameras without camera intrinsics.
 img: assets/img/project_media/urbanomni.webp
-img_alt: UrbanOmniView examples across ego, infrastructure, and aerial viewpoints
-img_width: 1200
-img_height: 675
-img_caption: UrbanOmniView spans ego-vehicle, infrastructure, and aerial viewpoints, combining real-world data with high-fidelity synthetic data.
+img_alt: UrbanOmniDetect results on ego-vehicle, infrastructure, and elevated synthetic views, above the five stages of the calibration-free pipeline
+img_width: 1600
+img_height: 900
+img_caption: Samples from UrbanOmniView, which spans ego-vehicle (KITTI), infrastructure (DAIR-V2X), and synthetic viewpoints, and the stages of the calibration-free pipeline.
 thumb: assets/img/project_thumbnails/urbanomni.webp
 importance: 2
 category: featured

@@ -3,10 +3,11 @@ layout: project
 title: FlyBrainLab
 permalink: /projects/flybrainlab/
 description: Open-source graph database, retrieval, simulation, and visualization platform for connectome-scale neuroscience.
-img: assets/img/project_media/neuromynerva_example.webp
-img_alt: FlyBrainLab graph, simulation, and visualization interface
-img_width: 1080
-img_height: 1080
+img: assets/img/project_media/flybrainlab.webp
+img_alt: FlyBrainLab interface with 3D brain morphology, circuit diagrams, and a notebook, beside its front end, graph database, and execution engine
+img_width: 1600
+img_height: 900
+img_caption: "The FlyBrainLab workspace: free-text queries, 3D morphology, executable circuit diagrams, and code in one interface, backed by the NeuroArch graph database and the Neurokernel execution engine."
 thumb: assets/img/project_thumbnails/flybrainlab.webp
 importance: 12
 category: open platforms

@@ -4,9 +4,10 @@ title: bikeped
 permalink: /projects/bikeped/
 description: Real-time bicycle and pedestrian safety system and evaluation testbed for urban intersections.
 img: assets/img/project_media/bikeped.webp
-img_alt: bikeped fisheye detection output with bird's-eye-view radar
-img_width: 1200
-img_height: 675
+img_alt: bikeped fisheye camera view with tracked road users and speeds, and a bird's-eye-view radar of their positions
+img_width: 1600
+img_height: 900
+img_caption: "System output: the fisheye camera view with tracked road users and speeds, and a bird's-eye-view radar with range rings at 5 m intervals."
 thumb: assets/img/project_thumbnails/bikeped.webp
 importance: 3
 category: urban ai

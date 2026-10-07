@@ -4,9 +4,10 @@ title: Loom
 permalink: /projects/loom/
 description: Analytical neural computer architecture for executing compiled programs inside looped transformers.
 img: assets/img/project_media/loom.webp
-img_alt: Loom browser demos and compiled-program examples
-img_width: 1200
-img_height: 675
+img_alt: "Loom architecture: a C program compiled to a 21-opcode instruction set, held in a single state tensor and executed by eight analytically derived transformer layers"
+img_width: 1600
+img_height: 900
+img_caption: C programs compile to a 21-opcode instruction set. The machine state is one fixed-size tensor, and every forward pass through eight analytically derived layers executes one instruction.
 thumb: assets/img/project_thumbnails/loom.webp
 importance: 10
 category: language systems

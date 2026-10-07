@@ -4,9 +4,10 @@ title: Medical Robotics Foundation Models
 permalink: /projects/medical-robotics-foundation-models/
 description: Surgical world models, Open-H-Embodiment, and computer vision for robotic training workflows.
 img: assets/img/project_media/openh.webp
-img_alt: Open-H-Embodiment dataset overview
-img_width: 1200
-img_height: 675
+img_alt: "Open-H-Embodiment overview: participating institutions, healthcare robot platforms, sample frames, and multimodal data feeding two foundation models"
+img_width: 1600
+img_height: 900
+img_caption: Open-H-Embodiment brings together 50 institutions and 20 healthcare robot platforms, with synchronized language, video, and kinematics. Figure from the Open-H-Embodiment paper.
 thumb: assets/img/project_thumbnails/openh.webp
 importance: 5
 category: medical ai

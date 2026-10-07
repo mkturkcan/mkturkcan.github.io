@@ -4,9 +4,10 @@ title: GPTune
 permalink: /projects/gptune/
 description: Early GPT-2 fine-tuning tooling with practical presets for custom text generation.
 img: assets/img/project_media/gptune.webp
-img_alt: GPTune GitHub repository
-img_width: 1200
-img_height: 675
+img_alt: GPTune workflow from a plain-text corpus through GPT-2 fine-tuning and sampling to pretrained models, with example commands
+img_width: 1600
+img_height: 900
+img_caption: "The GPTune workflow: point it at a text corpus, fine-tune GPT-2 on a single GPU, and sample from the result."
 thumb: assets/img/project_thumbnails/gptune.webp
 importance: 11
 category: language systems
