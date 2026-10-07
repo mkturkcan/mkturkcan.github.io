@@ -71,9 +71,15 @@ document.addEventListener("DOMContentLoaded", function () {
   });
 
   if (window.jQuery && window.Toc && document.getElementById("toc-sidebar")) {
+    // bootstrap-toc also auto-initializes every nav[data-toggle="toc"] in a jQuery ready
+    // callback, which runs after this listener and would build the list a second time.
+    // Queue this init behind it and build only if the nav is still empty.
     const navSelector = "#toc-sidebar";
-    window.Toc.init(window.jQuery(navSelector));
-    window.jQuery("body").scrollspy({ target: navSelector });
+    window.jQuery(function () {
+      const $nav = window.jQuery(navSelector);
+      if (!$nav.children("ul").length) window.Toc.init($nav);
+      window.jQuery("body").scrollspy({ target: navSelector });
+    });
   }
 
   document.querySelectorAll(".jupyter-notebook-iframe-container iframe").forEach(function (frame) {

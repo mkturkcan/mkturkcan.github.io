@@ -10,6 +10,7 @@ img_width: 1600
 img_height: 900
 img_caption: The released UrbanOmniDetect model (YOLO11x-P2) on New York street photos from the TLoNY dataset, with no camera intrinsics and one model for every viewpoint. The bird's-eye view on the right is recovered from the predicted ground corners alone.
 thumb: assets/img/project_thumbnails/urbanomni.webp
+og_image: assets/img/og/urbanomnidetect.jpg
 importance: 2
 category: featured
 topic: urban perception

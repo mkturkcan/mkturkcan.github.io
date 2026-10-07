@@ -37,6 +37,74 @@ a.btncv:hover {
  * CV TIME_TABLE styles
  *****************************/
 
+.cv-row {
+  display: grid;
+  grid-template-columns: 7.25rem minmax(0, 1fr);
+  gap: 1.25rem;
+  padding: 0.9rem 0;
+  border-top: 1px solid var(--global-divider-color);
+
+  &:first-child {
+    padding-top: 0.2rem;
+    border-top: 0;
+  }
+}
+
+.cv-row-date {
+  padding-top: 0.12rem;
+  color: var(--global-text-color-light);
+  font-size: 0.88rem;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+}
+
+.cv-row-title {
+  margin: 0;
+  color: var(--global-text-color);
+  font-size: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.cv-row-meta {
+  margin: 0.15rem 0 0;
+  color: var(--global-text-color-light);
+  font-size: 0.9rem;
+  line-height: 1.45;
+}
+
+.cv-row-text {
+  margin: 0.4rem 0 0;
+  font-size: 0.92rem;
+}
+
+.cv-row-items {
+  margin: 0.45rem 0 0;
+  padding-left: 1.1rem;
+  font-size: 0.92rem;
+
+  li {
+    margin: 0.22rem 0;
+    line-height: 1.55;
+  }
+}
+
+.cv-row-links {
+  margin: 0.45rem 0 0;
+  font-size: 0.86rem;
+
+  a + a {
+    margin-left: 1rem;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .cv-row {
+    grid-template-columns: 1fr;
+    gap: 0.15rem;
+  }
+}
+
 p.location {
   font-size: 0.7rem;
   white-space: nowrap;

@@ -9,6 +9,7 @@ img_width: 1600
 img_height: 900
 img_caption: C programs compile to a 21-opcode instruction set. The machine state is one fixed-size tensor, and every forward pass through eight analytically derived layers executes one instruction.
 thumb: assets/img/project_thumbnails/loom.webp
+og_image: assets/img/og/loom.jpg
 importance: 10
 category: language systems
 topic: neural systems

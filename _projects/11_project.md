@@ -10,6 +10,7 @@ img_width: 1600
 img_height: 900
 img_caption: Boundless scenes under fog, snow, rain, and night conditions, with automatically exported 3D bounding boxes.
 thumb: assets/img/project_thumbnails/boundless.webp
+og_image: assets/img/og/boundless.jpg
 importance: 7
 category: urban ai
 topic: synthetic data

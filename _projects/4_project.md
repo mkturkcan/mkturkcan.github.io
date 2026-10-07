@@ -9,6 +9,7 @@ img_width: 1600
 img_height: 900
 img_caption: "A moment from the COSMOS testbed camera at Amsterdam Avenue and West 120th Street, with danger zones recomputed for this figure: each moving vehicle's footprint swept along its predicted path for the next 2 seconds, and a pedestrian inside one. Phones compare their own position against the zones locally, so no personal data leaves the device. Bottom: per-frame latency of the edge pipeline on an NVIDIA A100, from Table 3 of the paper."
 thumb: assets/img/project_thumbnails/pave.webp
+og_image: assets/img/og/pave-urban-safety.jpg
 importance: 4
 category: urban ai
 topic: edge ai

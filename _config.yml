@@ -9,9 +9,7 @@ last_name: Turkcan
 email: mkt2126@columbia.edu
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
   Applied AI research scientist building deployable computer vision and multimodal AI systems for real-world, resource-constrained urban and medical environments.
-footer_text: >
-  Powered by <a href="https://jekyllrb.com/" target="_blank">Jekyll</a> with <a href="https://github.com/alshedivat/al-folio">al-folio</a> theme.
-  Hosted by <a href="https://pages.github.com/" target="_blank">GitHub Pages</a>.
+footer_text:
 keywords: applied AI, computer vision, multimodal AI, edge AI, vision-language models, robotics, smart cities, medical AI, real-time systems
 job_title: Associate Research Scientist
 affiliation_name: Columbia University
@@ -30,7 +28,7 @@ knows_about:
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon-64.png # local portrait favicon in /assets/img/
 
-url: https://mkturkcan.github.io # the base hostname & protocol for your site
+url: https://mehmetkeremturkcan.com # the base hostname & protocol for your site
 baseurl: # the subpath of your site, e.g. /blog/. Leave blank for root
 last_updated: false # set to true if you want to display last updated in the footer
 impressum_path:  # set to path to include impressum link in the footer, use the same path as permalink in a page, helps to conform with EU GDPR
@@ -74,7 +72,7 @@ max_width: 800px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: https://mkturkcan.github.io/assets/img/social-preview.jpg
+og_image: /assets/img/social-preview.jpg
 
 # -----------------------------------------------------------------------------
 # Social integration

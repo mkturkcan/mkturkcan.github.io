@@ -9,6 +9,7 @@ img_width: 1600
 img_height: 900
 img_caption: "The GPTune workflow: point it at a text corpus, fine-tune GPT-2 on a single GPU, and sample from the result."
 thumb: assets/img/project_thumbnails/gptune.webp
+og_image: assets/img/og/gptune.jpg
 importance: 11
 category: language systems
 topic: language models

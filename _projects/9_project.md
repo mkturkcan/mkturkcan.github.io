@@ -10,6 +10,7 @@ img_width: 1200
 img_height: 750
 img_caption: The interactive map. Each circle is a traffic camera. Green marks a year-over-year reduction in peak observed car count, red an increase, and circle size the magnitude of the change.
 thumb: assets/img/project_thumbnails/congestionpricing.webp
+og_image: assets/img/og/congestion-pricing.jpg
 importance: 9
 category: urban ai
 topic: civic analytics

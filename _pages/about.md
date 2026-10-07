@@ -4,7 +4,6 @@ title: About
 permalink: /
 subtitle: Associate Research Scientist in <a href="https://www.civil.columbia.edu/" target="_blank" rel="noopener noreferrer">Civil Engineering &amp; Engineering Mechanics</a> at <a href="https://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a>
 description: Applied AI research scientist building deployable computer vision, multimodal, and data systems for demanding real-world environments.
-og_image: https://mkturkcan.github.io/assets/img/social-preview.jpg
 
 profile:
   align: right
@@ -13,10 +12,6 @@ profile:
   image_width: 480
   image_height: 720
   image_circular: false
-  more_info: >
-    <p>Columbia University</p>
-    <p>New York, NY</p>
-    <p><a href="mailto:mkt2126@columbia.edu">mkt2126@columbia.edu</a></p>
 
 news: true
 latest_posts: false

@@ -58,12 +58,6 @@ I publish research software, models, and datasets with the implementation, evalu
   {% endfor %}
 </div>
 
-## GitHub activity
-
-The profile snapshot below is generated during deployment with the GitHub Readme Stats Action, so the page does not depend on the retired public stats endpoint at runtime.
-
-{% include repository/repo_user.html username=site.data.repositories.profile %}
-
 <div class="repository-profile-links">
   <a href="https://github.com/mkturkcan" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i> All GitHub repositories</a>
   <a href="https://huggingface.co/mehmetkeremturkcan" target="_blank" rel="noopener noreferrer"><img src="{{ '/assets/img/icons/huggingface.svg' | relative_url }}" alt="" width="18" height="17" aria-hidden="true"> Hugging Face models and datasets</a>

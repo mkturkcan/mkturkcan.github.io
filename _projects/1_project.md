@@ -9,6 +9,7 @@ img_width: 1600
 img_height: 900
 img_caption: DART on New York street photos from the TLoNY dataset, with all nine prompts decoded in one batch. Fine-grained prompts separate taxis and fire trucks from generic cars and trucks, by day and at night. Masks are shown for illustration; the real-time path predicts boxes only.
 thumb: assets/img/project_thumbnails/dart.webp
+og_image: assets/img/og/dart.jpg
 importance: 1
 category: featured
 topic: frontier vision

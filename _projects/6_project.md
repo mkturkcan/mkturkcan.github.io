@@ -9,6 +9,7 @@ img_width: 1600
 img_height: 900
 img_caption: "The FlyBrainLab workspace: free-text queries, 3D morphology, executable circuit diagrams, and code in one interface, backed by the NeuroArch graph database and the Neurokernel execution engine."
 thumb: assets/img/project_thumbnails/flybrainlab.webp
+og_image: assets/img/og/flybrainlab.jpg
 importance: 12
 category: open platforms
 topic: research platform

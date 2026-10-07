@@ -9,6 +9,7 @@ img_width: 1600
 img_height: 900
 img_caption: Calibrated traffic volume on every road segment of the Manhattan study network through the day, beside the 8 AM probe-vehicle counts that feed the model. Re-rendered from the estimates in Fig. 9 of the paper.
 thumb: assets/img/project_thumbnails/trafficvolume.webp
+og_image: assets/img/og/traffic-volume-estimation.jpg
 importance: 6
 category: urban ai
 topic: urban analytics

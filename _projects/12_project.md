@@ -10,6 +10,7 @@ img_width: 1600
 img_height: 900
 img_caption: A Constellation test frame with its ground-truth labels and a magnified crosswalk, where pedestrians cover only a few pixels. Right, the same camera at dawn, in daytime, and at night, and across changes to the street surface between 2019 and 2023.
 thumb: assets/img/project_thumbnails/constellation.webp
+og_image: assets/img/og/constellation.jpg
 importance: 8
 category: urban ai
 topic: visual datasets

@@ -1,7 +1,7 @@
 <div class="list-groups">
   {% for content in entry.contents %}
   <section class="list-group col-md-6">
-    <h3 class="list-group-category">
+    <h3 class="list-group-category" data-toc-skip>
       {% if content.icon %}<i class="{{ content.icon }}" aria-hidden="true"></i>{% endif %}
       {{ content.category }}
     </h3>
