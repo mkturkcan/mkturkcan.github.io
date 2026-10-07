@@ -4,10 +4,10 @@ title: Traffic Volume Estimation
 permalink: /projects/traffic-volume-estimation/
 description: Traffic volume estimation framework combining floating car data, traffic cameras, and network flow analysis.
 img: assets/img/project_media/trafficvolume.webp
-img_alt: Map of the Manhattan study network with traffic camera locations, beside detections from two of the cameras
+img_alt: Maps of the Manhattan study network with every road segment colored by estimated traffic volume at 8 AM, 3 PM, 6 PM, and 10 PM, beside the probe-vehicle counts used as input
 img_width: 1600
 img_height: 900
-img_caption: The Manhattan study network with its nine traffic camera sites, and vehicle detections at locations A and G.
+img_caption: Calibrated traffic volume on every road segment of the Manhattan study network through the day, beside the 8 AM probe-vehicle counts that feed the model. Re-rendered from the estimates in Fig. 9 of the paper.
 thumb: assets/img/project_thumbnails/trafficvolume.webp
 importance: 6
 category: urban ai

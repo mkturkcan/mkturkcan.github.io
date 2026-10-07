@@ -5,10 +5,10 @@ permalink: /projects/constellation/
 description: High-altitude urban object detection dataset, benchmarks, and deployment evaluation.
 lede: A 13,000-image benchmark for detecting pedestrians and vehicles from a camera mounted high above a Manhattan intersection, with detector, domain transfer, drift, and edge deployment evaluations.
 img: assets/img/project_media/constellation.webp
-img_alt: High-altitude Constellation view of a Manhattan intersection, beside a close-up of annotated pedestrians
+img_alt: Annotated high-altitude frame of a Manhattan intersection with vehicle and pedestrian boxes, a magnified crosswalk, and six views of the same intersection at dawn, in daytime, at night, and across changes to the pavement
 img_width: 1600
 img_height: 900
-img_caption: "Left: a frame from the Constellation camera. Right: annotated pedestrians in a close-up crop. At this height, pedestrians cover only a few pixels, and faces and license plates cannot be resolved."
+img_caption: A Constellation test frame with its ground-truth labels and a magnified crosswalk, where pedestrians cover only a few pixels. Right, the same camera at dawn, in daytime, and at night, and across changes to the street surface between 2019 and 2023.
 thumb: assets/img/project_thumbnails/constellation.webp
 importance: 8
 category: urban ai
@@ -60,11 +60,6 @@ acknowledgement: >-
 Constellation was recorded by a single camera mounted high above a busy intersection in Manhattan. Its 13,314 annotated frames span 28 time intervals between 2019 and 2023, covering dawn, daylight, rain, fog, and night, as well as physical changes to the street itself: faded markings, an unpaved surface, and repaving. The training and test sets are separated in time, so no interval appears in both.
 
 The camera is deliberately placed high enough that faces and license plates cannot be resolved. The same privacy-preserving vantage point makes pedestrians very small, which puts the benchmark squarely in the small-object regime where contemporary detectors are weakest.
-
-<figure class="project-figure">
-  <img src="{{ '/assets/img/project_media/constellation-conditions.webp' | relative_url }}" alt="Eight views of the same intersection: dawn, daytime, rain, night, old pavement from 2019, faded pavement, unpaved, and repaved" width="1295" height="680" loading="lazy" decoding="async">
-  <figcaption>The same camera under different conditions. Top row: weather and time of day. Bottom row: changes to the street surface between 2019 and 2023.</figcaption>
-</figure>
 
 ## Findings
 

@@ -5,10 +5,10 @@ permalink: /projects/urbanomnidetect/
 description: Monocular 3D object detection with the UrbanOmniDetect system and UrbanOmniView dataset.
 lede: Calibration-free, view-agnostic monocular 3D object detection. One model recovers 3D boxes from ego-vehicle, infrastructure, and aerial cameras without camera intrinsics.
 img: assets/img/project_media/urbanomni.webp
-img_alt: UrbanOmniDetect results on ego-vehicle, infrastructure, and elevated synthetic views, above the five stages of the calibration-free pipeline
+img_alt: 3D cuboids predicted on cars, pedestrians, and bikes in New York street photos from an elevated view, a street-level view, and a telephoto view, beside a bird's-eye view of the elevated scene
 img_width: 1600
 img_height: 900
-img_caption: Samples from UrbanOmniView, which spans ego-vehicle (KITTI), infrastructure (DAIR-V2X), and synthetic viewpoints, and the stages of the calibration-free pipeline.
+img_caption: The released UrbanOmniDetect model (YOLO11x-P2) on New York street photos from the TLoNY dataset, with no camera intrinsics and one model for every viewpoint. The bird's-eye view on the right is recovered from the predicted ground corners alone.
 thumb: assets/img/project_thumbnails/urbanomni.webp
 importance: 2
 category: featured
