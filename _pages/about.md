@@ -12,6 +12,10 @@ profile:
   image_width: 480
   image_height: 720
   image_circular: false
+  more_info: >
+    <p>Columbia University</p>
+    <p>New York, NY</p>
+    <p><a href="mailto:mkt2126@columbia.edu">mkt2126@columbia.edu</a></p>
 
 news: true
 latest_posts: false
