@@ -180,6 +180,7 @@
   number={10},
   pages={429},
   year={2026},
+  month={October},
   publisher={Springer},
   arxiv={2404.16944},
   eprint={2404.16944},
@@ -444,12 +445,14 @@
   html={https://link.springer.com/chapter/10.1007/978-981-96-6576-1_16}
 }
 
-@misc{kosikova2026trafficvolume,
-  abbr={ArXiv},
+@article{kosikova2026trafficvolume,
+  abbr={Discov Civ Eng},
   title={Harnessing Floating Car Data, Traffic Camera Observations, and Network Flow Analysis for Traffic Volume Estimation},
   author={Kosikova, Antonina and Turkcan, Mehmet Kerem and Darrat, Ahmed and Smyth, Andrew},
+  journal={Discover Civil Engineering},
+  note={Accepted for publication},
   year={2026},
-  month={May},
+  month={October},
   arxiv={2605.09891},
   eprint={2605.09891},
   archivePrefix={arXiv},
@@ -478,6 +481,21 @@
   code={https://github.com/mkturkcan/Loom},
   html={https://mkturkcan.github.io/Loom/demos/},
   model={https://huggingface.co/mehmetkeremturkcan/Loom}
+}
+
+@inproceedings{ho2026zeroshot,
+  abbr={ICMLA},
+  title={Zero-Shot Image Tagging at Traffic Intersections via {SAM}-Guided Vision-Language Models},
+  author={Ho, William and Turkcan, Mehmet Kerem and Ghaderi, Javad and Zussman, Gil and Kostic, Zoran},
+  booktitle={Proceedings of the 25th International Conference on Machine Learning and Applications (ICMLA)},
+  pages={243--250},
+  year={2026},
+  month={October},
+  publisher={IEEE},
+  abstract={Urban traffic intersections are highly dynamic and unforeseen disruptive situations may occur at any time, calling for methods to proactively identify them. We study zero-shot methods for image tagging to recognize unusual situations in traffic scenes. For this purpose, we acquire a dataset comprising 1,000 images captured at 4K resolution from a stationary camera in a metropolis, labeled with classes rarely observed in traffic. We find that existing zero-shot classifiers and object detectors demonstrate limited performance in this application, while a simple trained baseline performs better but can degrade on rare classes where labeled data is limited. To address this, we apply instance segmentation masks to sample regions in the scene, for which we perform fine-grained classification using autoregressive vision-language models. With a balanced accuracy of 0.737, our SAM-guided pipeline surpasses both established zero-shot methods and the trained baseline without any in-domain training, with the largest gains on rare, safety-critical classes. We further explore vocabulary-free classification using autoregressive models without pre-defined classes, which surpasses most established zero-shot methods while enabling detection of entirely unforeseen object classes.},
+  selected={false},
+  preview={zeroshottagging.webp},
+  html={https://www.icmla-conference.org/icmla26/maintrackregularpapers.html}
 }
 
 @misc{turkcan2026bikeped,

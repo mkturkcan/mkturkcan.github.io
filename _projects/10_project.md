@@ -15,8 +15,8 @@ related_publications: kosikova2026trafficvolume
 facts:
   - label: Role
     value: Co-author
-  - label: Paper
-    value: arXiv preprint, 2026
+  - label: Published
+    value: Discover Civil Engineering, 2026 (accepted)
 links:
   - label: arXiv
     url: https://arxiv.org/abs/2605.09891
@@ -33,4 +33,4 @@ keywords:
 
 This project estimates network-wide traffic volumes by combining floating car data, municipal traffic camera observations, and traffic flow modeling.
 
-The public preprint frames the problem as a hybrid urban sensing system: Cellular transmission model features, graph neural networks, topology-informed propagation, and ensemble square-root filtering are combined to estimate and forecast traffic volumes across a Manhattan road network.
+The paper, accepted for publication in Discover Civil Engineering, frames the problem as a hybrid urban sensing system: Cellular transmission model features, graph neural networks, topology-informed propagation, and ensemble square-root filtering are combined to estimate and forecast traffic volumes across a Manhattan road network.
