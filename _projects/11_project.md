@@ -4,7 +4,7 @@ title: Boundless
 permalink: /projects/boundless/
 description: Unreal Engine 5 synthetic data system for photorealistic urban object detection.
 lede: A photorealistic synthetic data pipeline built on Unreal Engine 5 that replaces manual data collection and annotation for object detection in dense urban streetscapes.
-img: assets/img/project_media/boundless.webp
+img: assets/img/project_media/boundless.svg
 img_alt: Boundless street scenes in fog, snow, rain, and at night, with 3D bounding boxes on vehicles and pedestrians
 img_width: 1600
 img_height: 900

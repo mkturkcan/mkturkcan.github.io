@@ -3,7 +3,7 @@ layout: project
 title: DART
 permalink: /projects/dart/
 description: Real-time open-vocabulary object detection from frontier vision models.
-img: assets/img/project_media/dart.webp
+img: assets/img/project_media/dart.svg
 img_alt: "DART detections with masks on three New York street photos: taxis, cars, pedestrians, traffic lights, and street signs on Fifth Avenue, an FDNY fire truck, and pedestrians, a bus, and a taxi in Times Square at night"
 img_width: 1600
 img_height: 900
@@ -50,7 +50,7 @@ DART turns a promptable frontier vision model into a real-time multi-class open-
 SAM3 runs its ViT-H backbone once for every class it is asked to find. DART runs the backbone once per image, caches a text embedding for each prompt, and decodes all prompts together in a single batched pass through the encoder-decoder. Both stages are deployed as TensorRT FP16 engines. On video, the backbone encodes the next frame while the current one is decoded.
 
 <figure class="project-figure">
-  <img src="{{ '/assets/img/project_media/dart-architecture.webp' | relative_url }}" alt="DART architecture: the ViT-H backbone encodes the image once, cached text embeddings for each class prompt are decoded in one batched encoder-decoder pass, class-wise NMS merges the per-class outputs, and on video the two TensorRT engines run on separate CUDA streams" width="1600" height="900" loading="lazy" decoding="async">
+  <img src="{{ '/assets/img/project_media/dart-architecture.svg' | relative_url }}" alt="DART architecture: the ViT-H backbone encodes the image once, cached text embeddings for each class prompt are decoded in one batched encoder-decoder pass, class-wise NMS merges the per-class outputs, and on video the two TensorRT engines run on separate CUDA streams" width="1600" height="900" loading="lazy" decoding="async">
   <figcaption>The DART pipeline. Feature maps, text embeddings, and per-class outputs are DART's own intermediates for the Fifth Avenue photo above. Timings are for one RTX 4080 at 1008 px.</figcaption>
 </figure>
 

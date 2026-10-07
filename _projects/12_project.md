@@ -4,7 +4,7 @@ title: Constellation
 permalink: /projects/constellation/
 description: High-altitude urban object detection dataset, benchmarks, and deployment evaluation.
 lede: A 13,000-image benchmark for detecting pedestrians and vehicles from a camera mounted high above a Manhattan intersection, with detector, domain transfer, drift, and edge deployment evaluations.
-img: assets/img/project_media/constellation.webp
+img: assets/img/project_media/constellation.svg
 img_alt: Annotated high-altitude frame of a Manhattan intersection with vehicle and pedestrian boxes, a magnified crosswalk, and six views of the same intersection at dawn, in daytime, at night, and across changes to the pavement
 img_width: 1600
 img_height: 900

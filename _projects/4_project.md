@@ -3,7 +3,7 @@ layout: project
 title: PAVE and Urban Safety Edge Analytics
 permalink: /projects/pave-urban-safety/
 description: Real-time video analytics for pedestrian safety over edge and end devices.
-img: assets/img/project_media/pave.webp
+img: assets/img/project_media/pave.svg
 img_alt: "A street camera view of Amsterdam Avenue and West 120th Street with tracked vehicles and pedestrians, a turning minivan's predicted danger zone reaching a pedestrian on the crosswalk, the same moment on a bird's-eye map, and per-frame latency of the edge pipeline"
 img_width: 1600
 img_height: 900

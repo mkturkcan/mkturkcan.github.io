@@ -62,8 +62,8 @@ In January 2025, New York City began charging vehicles to enter Manhattan's Cong
 ## Method
 
 <figure class="project-figure">
-  <img src="{{ '/assets/img/project_media/congestionpricing-pipeline.webp' | relative_url }}" alt="Four-stage method: the camera network, vehicle detection in each frame, hour-of-week traffic profiles, and a before-and-after scatter of peak observed cars per camera" width="1600" height="720" loading="lazy" decoding="async">
-  <figcaption>From cameras to a before-and-after comparison. The map and scatter plot show the 670 cameras in the comparison; the detection frame and weekly profile are schematic.</figcaption>
+  <img src="{{ '/assets/img/project_media/congestionpricing-pipeline.svg' | relative_url }}" alt="Four-stage method: a map of the 670 cameras in the comparison and the Congestion Relief Zone, a 352 by 240 NYC DOT camera frame, the per-camera aggregation steps, and a before-and-after scatter of peak observed cars per frame at every camera" width="1600" height="480" loading="lazy" decoding="async">
+  <figcaption>From cameras to a before-and-after comparison. YOLO-LR counts vehicles in every frame; each camera's counts are smoothed, averaged by hour of day for weekdays and weekends before and after pricing, and reduced to the peak hourly mean, with holidays excluded. The map and scatter plot show the 670 cameras in the comparison.</figcaption>
 </figure>
 
 Each camera contributes instantaneous vehicle counts from object detection. The counts are aggregated into hourly averages across a typical week, so rush-hour peaks, weekday and weekend patterns, and the before-and-after difference can be compared at every camera and mapped across the city.
@@ -75,7 +75,7 @@ Each camera contributes instantaneous vehicle counts from object detection. The 
 - **Changes are resolved camera by camera.** The <a href="https://mkturkcan.github.io/congestionpricing/interactive/index.html" target="_blank" rel="noopener noreferrer">interactive map</a> reports each camera's change as a percentage or an absolute count, for the whole week, weekdays only, or weekends only.
 
 <figure class="project-figure">
-  <img src="{{ '/assets/img/project_media/congestionpricing-results.webp' | relative_url }}" alt="Strip plot of the per-camera change in peak observed cars, inside and outside the Congestion Relief Zone, and the median change for all week, weekdays, and weekends" width="1600" height="700" loading="lazy" decoding="async">
+  <img src="{{ '/assets/img/project_media/congestionpricing-results.svg' | relative_url }}" alt="Strip plot of the per-camera change in peak observed cars, inside and outside the Congestion Relief Zone, and the median change for all week, weekdays, and weekends" width="1600" height="576" loading="lazy" decoding="async">
   <figcaption>Left: change in peak observed cars per frame at each camera, with medians and interquartile ranges. Right: median change inside and outside the zone by day type.</figcaption>
 </figure>
 

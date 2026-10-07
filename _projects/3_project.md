@@ -4,7 +4,7 @@ title: UrbanOmniDetect
 permalink: /projects/urbanomnidetect/
 description: Monocular 3D object detection with the UrbanOmniDetect system and UrbanOmniView dataset.
 lede: Calibration-free, view-agnostic monocular 3D object detection. One model recovers 3D boxes from ego-vehicle, infrastructure, and aerial cameras without camera intrinsics.
-img: assets/img/project_media/urbanomni.webp
+img: assets/img/project_media/urbanomni.svg
 img_alt: 3D cuboids predicted on cars, pedestrians, and bikes in New York street photos from an elevated view, a street-level view, and a telephoto view, beside a bird's-eye view of the elevated scene
 img_width: 1600
 img_height: 900

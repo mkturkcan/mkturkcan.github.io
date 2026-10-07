@@ -3,7 +3,7 @@ layout: project
 title: bikeped
 permalink: /projects/bikeped/
 description: Real-time bicycle and pedestrian safety system and evaluation testbed for urban intersections.
-img: assets/img/project_media/bikeped.webp
+img: assets/img/project_media/bikeped.svg
 img_alt: A 200-degree fisheye view under a viaduct with a cyclist approaching a pedestrian, the alert link between them, the same moment on the ground plane, and the cyclist-to-pedestrian distance over time with the alert interval shaded
 img_width: 1600
 img_height: 900

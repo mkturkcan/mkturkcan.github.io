@@ -3,11 +3,11 @@ layout: project
 title: Loom
 permalink: /projects/loom/
 description: Analytical neural computer architecture for executing compiled programs inside looped transformers.
-img: assets/img/project_media/loom.webp
-img_alt: "Loom architecture: a C program compiled to a 21-opcode instruction set, held in a single state tensor and executed by eight analytically derived transformer layers"
+img: assets/img/project_media/loom.svg
+img_alt: "A bubble sort in C compiled to 49 Loom instructions; the real 155 by 1024 state tensor with the program counter and the current instruction highlighted; the eight fixed-weight layers that execute one instruction per forward pass; the instruction executed at each of the 486 forward passes; and the three model sizes"
 img_width: 1600
 img_height: 900
-img_caption: C programs compile to a 21-opcode instruction set. The machine state is one fixed-size tensor, and every forward pass through eight analytically derived layers executes one instruction.
+img_caption: A real run of the bubble sort demo on the 155 × 1024 model. The C program compiles to 49 instructions from the 21-opcode ISA, held in the state tensor, shown here after 16 forward passes with the program counter at SUB 37, 36. Each pass through the eight fixed-weight layers executes one instruction, and the sort finishes after 486 passes.
 thumb: assets/img/project_thumbnails/loom.webp
 og_image: assets/img/og/loom.jpg
 importance: 10

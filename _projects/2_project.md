@@ -3,11 +3,11 @@ layout: project
 title: GPTune
 permalink: /projects/gptune/
 description: Early GPT-2 fine-tuning tooling with practical presets for custom text generation.
-img: assets/img/project_media/gptune.webp
-img_alt: GPTune workflow from a plain-text corpus through GPT-2 fine-tuning and sampling to pretrained models, with example commands
+img: assets/img/project_media/gptune.svg
+img_alt: "GPTune's 16 GB preset for GPT-2 774M: text files are joined, byte-pair encoded, and sampled as 1,024-token windows; the embeddings and blocks h0 to h24 stay frozen while the last 128 weight tensors, from inside block h25 to h35, are trained with Adam; a detail of block h25 shows where the cut falls; and the released 774M and 117M checkpoints are listed"
 img_width: 1600
 img_height: 900
-img_caption: "The GPTune workflow: point it at a text corpus, fine-tune GPT-2 on a single GPU, and sample from the result."
+img_caption: What GPTune's 16 GB preset trains on GPT-2 774M. The preset updates only the last 128 of the model's 432 block tensors, 211.5M of 774.0M parameters, so the cut falls inside block h25. Parameter counts are computed from the model's hyperparameters and the variable order in the repository.
 thumb: assets/img/project_thumbnails/gptune.webp
 og_image: assets/img/og/gptune.jpg
 importance: 11

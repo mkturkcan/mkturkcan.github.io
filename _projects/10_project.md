@@ -3,7 +3,7 @@ layout: project
 title: Traffic Volume Estimation
 permalink: /projects/traffic-volume-estimation/
 description: Traffic volume estimation framework combining floating car data, traffic cameras, and network flow analysis.
-img: assets/img/project_media/trafficvolume.webp
+img: assets/img/project_media/trafficvolume.svg
 img_alt: Maps of the Manhattan study network with every road segment colored by estimated traffic volume at 8 AM, 3 PM, 6 PM, and 10 PM, beside the probe-vehicle counts used as input
 img_width: 1600
 img_height: 900

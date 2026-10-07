@@ -3,7 +3,7 @@ layout: project
 title: Medical Robotics Foundation Models
 permalink: /projects/medical-robotics-foundation-models/
 description: Surgical world models, Open-H-Embodiment, and computer vision for robotic training workflows.
-img: assets/img/project_media/medical-robotics.webp
+img: assets/img/project_media/medical-robotics.svg
 img_alt: Surgical SAM 3.1 masks of instruments and anatomy on four laparoscopic frames, five frames from the suturing world model, and twelve robot platforms from Open-H-Embodiment
 img_width: 1600
 img_height: 900

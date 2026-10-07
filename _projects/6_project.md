@@ -3,11 +3,11 @@ layout: project
 title: FlyBrainLab
 permalink: /projects/flybrainlab/
 description: Open-source graph database, retrieval, simulation, and visualization platform for connectome-scale neuroscience.
-img: assets/img/project_media/flybrainlab.webp
-img_alt: FlyBrainLab interface with 3D brain morphology, circuit diagrams, and a notebook, beside its front end, graph database, and execution engine
+img: assets/img/project_media/flybrainlab.svg
+img_alt: "The NeuroMynerva workspace in JupyterLab with NeuroNLP, NeuroGFX, and notebook windows; the FlyBrainLab Client linked through the FFBO Processor to the NeuroArch, NeuroNLP, and Neurokernel servers; and four fly brain circuits built with English queries, each beside its connectivity matrix"
 img_width: 1600
 img_height: 900
-img_caption: "The FlyBrainLab workspace: free-text queries, 3D morphology, executable circuit diagrams, and code in one interface, backed by the NeuroArch graph database and the Neurokernel execution engine."
+img_caption: "FlyBrainLab's NeuroMynerva workspace reaches the FFBO servers through the FlyBrainLab Client and the FFBO Processor, a Crossbar.io router. Bottom: four circuits built with English queries, with their connectivity matrices, from Figure 3 of the eLife paper."
 thumb: assets/img/project_thumbnails/flybrainlab.webp
 og_image: assets/img/og/flybrainlab.jpg
 importance: 12
