@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://mkturkcan.github.io/sitemap.xml
+Sitemap: https://mehmetkeremturkcan.com/sitemap.xml
