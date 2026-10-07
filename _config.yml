@@ -253,6 +253,9 @@ sass:
 
 jekyll-minifier:
   exclude: ['robots.txt']
+  # Sass already emits compressed CSS. Re-minifying it with cssminify2 rewrites
+  # var(--name) inside calc() into invalid CSS, which breaks the figure layout.
+  compress_css: false
 
 # -----------------------------------------------------------------------------
 # Jekyll Scholar

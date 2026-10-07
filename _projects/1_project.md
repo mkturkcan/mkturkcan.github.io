@@ -4,10 +4,10 @@ title: DART
 permalink: /projects/dart/
 description: Real-time open-vocabulary object detection from frontier vision models.
 img: assets/img/project_media/dart.webp
-img_alt: "DART detections with masks on three New York street photos: taxis, cars, pedestrians, traffic lights, and street signs on Fifth Avenue, an FDNY fire truck, and NYPD police cars"
+img_alt: "DART detections with masks on three New York street photos: taxis, cars, pedestrians, traffic lights, and street signs on Fifth Avenue, an FDNY fire truck, and pedestrians, a bus, and a taxi in Times Square at night"
 img_width: 1600
 img_height: 900
-img_caption: DART on New York street photos from the TLoNY dataset, with all ten prompts decoded in one batch. Fine-grained prompts separate taxis, fire trucks, and police cars from generic cars and trucks. Masks are shown for illustration; the real-time path predicts boxes only.
+img_caption: DART on New York street photos from the TLoNY dataset, with all nine prompts decoded in one batch. Fine-grained prompts separate taxis and fire trucks from generic cars and trucks, by day and at night. Masks are shown for illustration; the real-time path predicts boxes only.
 thumb: assets/img/project_thumbnails/dart.webp
 importance: 1
 category: featured
