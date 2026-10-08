@@ -401,10 +401,28 @@ blockquote {
   }
 }
 
-@media (max-width: 575.98px) {
+// Below 768px the portrait column is too narrow for one row, so the links form an even 4 x 2 grid of
+// 36px tap targets; the negative side margins line the icons up with the photo's edges. The email icon is
+// hidden there because the address block directly above already links the address.
+@media (max-width: 767.98px) {
   .profile-social {
-    justify-content: flex-start;
-    gap: 0.55rem 0.7rem;
+    display: grid;
+    grid-template-columns: repeat(4, 2.25rem);
+    justify-content: space-between;
+    gap: 0.25rem 0;
+    margin: 0.5rem -0.5rem 0;
+    font-size: 1.2rem;
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2.25rem;
+    }
+
+    a[href^="mailto:"] {
+      display: none;
+    }
   }
 }
 

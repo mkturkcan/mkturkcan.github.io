@@ -31,6 +31,9 @@
             {%- if site.scopus_id -%}
             <a href="https://www.scopus.com/authid/detail.uri?authorId={{site.scopus_id}}" title="Scopus"><i class="ai ai-scopus"></i></a>
             {% endif %}
+            {%- if site.dblp_url -%}
+            <a href="{{ site.dblp_url }}" title="DBLP"><i class="ai ai-dblp"></i></a>
+            {% endif %}
             {%- if site.github_username -%}
             <a href="https://github.com/{{ site.github_username }}" title="GitHub"><i class="fa-brands fa-github"></i></a>
             {% endif %}
@@ -69,9 +72,6 @@
             {% endif %}
             {%- if site.gitlab_username -%}
             <a href="https://gitlab.com/{{ site.gitlab_username }}" title="GitLab"><i class="fa-brands fa-gitlab"></i></a>
-            {% endif %}
-            {%- if site.dblp_url -%}
-            <a href="{{ site.dblp_url }}" title="DBLP"><i class="ai ai-dblp"></i></a>
             {% endif %}
             {%- if site.stackoverflow_id -%}
             <a href="https://stackoverflow.com/users/{{ site.stackoverflow_id }}" title="Stackoverflow"><i class="fa-brands fa-stack-overflow"></i></a>
