@@ -2261,6 +2261,16 @@ textarea:focus-visible {
   }
 }
 
+/* Impact page: small labels above the student lists */
+.impact-group {
+  margin: 1.5rem 0 0.6rem;
+  color: var(--global-theme-color);
+  font-size: 0.78rem;
+  font-weight: 700;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
 /* Teaching and speaking */
 .teaching-eyebrow {
   display: block;
