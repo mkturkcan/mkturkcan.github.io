@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Loom
+seo_title: "Loom: An Analytical Neural Computer in a Looped Transformer"
 permalink: /projects/loom/
 description: Analytical neural computer architecture for executing compiled programs inside looped transformers.
 img: assets/img/project_media/loom.svg

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Constellation
+seo_title: "Constellation: High-Altitude Urban Object Detection Dataset"
 permalink: /projects/constellation/
 description: High-altitude urban object detection dataset, benchmarks, and deployment evaluation.
 lede: A 13,000-image benchmark for detecting pedestrians and vehicles from a camera mounted high above a Manhattan intersection, with detector, domain transfer, drift, and edge deployment evaluations.

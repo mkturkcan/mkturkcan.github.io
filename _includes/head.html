@@ -4,13 +4,8 @@
     <!-- Layout -->
     <link rel="stylesheet" href="{{ '/assets/css/bootstrap.min.css' | relative_url | bust_file_cache }}">
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="{{ '/assets/css/academicons.min.css' | relative_url | bust_file_cache }}">
-
-    <!-- Typography -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:100,300,400,500,700&amp;display=swap">
+    <!-- Typography: Roboto is self-hosted (see _sass/_fonts.scss); the Latin subset is used on every page -->
+    <link rel="preload" href="{{ '/assets/fonts/roboto/roboto-latin.woff2' | relative_url }}" as="font" type="font/woff2" crossorigin>
 
     <!-- Code Syntax Highlighting -->
     <link rel="stylesheet" href="{{ '/assets/css/jekyll-pygments-themes-github.css' | relative_url | bust_file_cache }}" media="" id="highlight_theme_light" />
@@ -32,6 +27,10 @@
     <link rel="shortcut icon" href="{{ site.icon | prepend: '/assets/img/' | relative_url | bust_file_cache}}"/>
     {% endif %}
     <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_css_cache }}">
+    {%- if page.collection == 'projects' and page.img %}
+    {%- unless page.img contains '.svg' %}{% assign hero_srcset = page.img | prepend: '/' | image_srcset: '800,1200,1600' %}{% endunless %}
+    <link rel="preload" as="image" href="{{ page.img | relative_url }}"{% if hero_srcset contains ',' %} imagesrcset="{{ hero_srcset }}" imagesizes="(min-width: 1200px) 1120px, calc(100vw - 30px)"{% endif %} fetchpriority="high">
+    {%- endif %}
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | absolute_url }}">
 
     <!-- Apply the saved theme before paint, then load the full controls without blocking rendering. -->

@@ -33,6 +33,15 @@ jobs:
           export JEKYLL_ENV=production
           bundle exec jekyll build --lsi
 
+      - name: Shrink icon fonts to the glyphs in use
+        run: |
+          python3 -m venv /tmp/fontenv
+          /tmp/fontenv/bin/pip install --quiet fonttools brotli
+          /tmp/fontenv/bin/python scripts/subset_icon_fonts.py _site
+
+      - name: Remove unused CSS
+        run: npx --yes purgecss@8.0.0 -c purgecss.config.js
+
       - name: Deploy
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@d92aa235d04922e8f08b40ce78cc5442fcfbfa2f # v4

@@ -143,7 +143,7 @@ I also co-taught Columbia Video Network's VOAI 0003E: Neural Networks and Deep L
 
 <div class="speaking-list">
   <article class="speaking-item">
-    <img src="{{ '/assets/img/presentations/cs3-innovation-summit-2026.jpg' | relative_url }}" alt="Mehmet Kerem Turkcan speaking on the real-time traffic analysis panel at the 2026 CS3 Innovation Summit" width="1950" height="1097" loading="eager" decoding="async">
+    <img src="{{ '/assets/img/presentations/cs3-innovation-summit-2026.webp' | relative_url }}" srcset="{{ '/assets/img/presentations/cs3-innovation-summit-2026.webp' | image_srcset: '540,810,1080' }}" sizes="(max-width: 799.98px) calc(100vw - 30px), 261px" alt="Mehmet Kerem Turkcan speaking on the real-time traffic analysis panel at the 2026 CS3 Innovation Summit" width="1950" height="1097" loading="lazy" decoding="async">
     <div>
       <span class="teaching-eyebrow">February 5, 2026&emsp;Columbia University</span>
       <h3>From Sensors to Systems: Real-Time Traffic Analysis for Faster Decision-Making</h3>
@@ -153,7 +153,7 @@ I also co-taught Columbia Video Network's VOAI 0003E: Neural Networks and Deep L
   </article>
 
   <article class="speaking-item">
-    <img src="{{ '/assets/img/portauth.png' | relative_url }}" alt="Mehmet Kerem Turkcan presenting at the Port Authority Tomorrow Summit" width="940" height="600" loading="lazy" decoding="async">
+    <img src="{{ '/assets/img/portauth.webp' | relative_url }}" srcset="{{ '/assets/img/portauth.webp' | image_srcset: '540,810' }}" sizes="(max-width: 799.98px) calc(100vw - 30px), 261px" alt="Mehmet Kerem Turkcan presenting at the Port Authority Tomorrow Summit" width="940" height="600" loading="lazy" decoding="async">
     <div>
       <span class="teaching-eyebrow">January 7, 2026&emsp;World Trade Center</span>
       <h3>Port Authority Tomorrow Summit workshop</h3>
@@ -162,7 +162,7 @@ I also co-taught Columbia Video Network's VOAI 0003E: Neural Networks and Deep L
   </article>
 
   <article class="speaking-item speaking-item--slide">
-    <img src="{{ '/assets/img/presentations/vision-zero-2025.jpg' | relative_url }}" alt="Title slide for Evaluating Micromobility and Dangerous Riding Behaviors" width="2400" height="1350" loading="lazy" decoding="async">
+    <img src="{{ '/assets/img/presentations/vision-zero-2025.webp' | relative_url }}" srcset="{{ '/assets/img/presentations/vision-zero-2025.webp' | image_srcset: '540,810,1080' }}" sizes="(max-width: 799.98px) calc(100vw - 30px), 261px" alt="Title slide for Evaluating Micromobility and Dangerous Riding Behaviors" width="2400" height="1350" loading="lazy" decoding="async">
     <div>
       <span class="teaching-eyebrow">November 19, 2025&emsp;New York City DOT</span>
       <h3>Evaluating Micromobility &amp; Dangerous Riding Behaviors</h3>

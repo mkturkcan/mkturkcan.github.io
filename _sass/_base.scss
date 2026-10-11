@@ -364,7 +364,10 @@ blockquote {
 }
 
 #light-toggle {
-  padding: 0;
+  // 4 px of extra width on the right (cancelled by the negative margin) makes a 26 x 28 px hit area without moving
+  // the icon or the nav links
+  padding: 0 4px 0 0;
+  margin-right: -4px;
   border: 0;
   background-color: inherit;
   color: var(--global-text-color);
@@ -1447,6 +1450,7 @@ footer.sticky-bottom {
 
       .preview {
         width: 100%;
+        height: auto;
         min-width: 80px;
         max-width: 200px;
       }

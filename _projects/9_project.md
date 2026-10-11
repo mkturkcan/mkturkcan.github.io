@@ -85,7 +85,7 @@ The analysis is ongoing, with regular updates to track how traffic evolves under
 
 <figure class="project-figure">
   <a href="https://mkturkcan.github.io/congestionpricing/interactive/stream.html" target="_blank" rel="noopener noreferrer">
-    <img src="{{ '/assets/img/project_media/congestionpricing-live.webp' | relative_url }}" alt="Real-time map of New York City showing the current vehicle count at each traffic camera" width="1200" height="750" loading="lazy" decoding="async">
+    <img src="{{ '/assets/img/project_media/congestionpricing-live.webp' | relative_url }}" srcset="{{ '/assets/img/project_media/congestionpricing-live.webp' | image_srcset: '800,1200,1600' }}" sizes="(min-width: 1200px) 1120px, calc(100vw - 30px)" alt="Real-time map of New York City showing the current vehicle count at each traffic camera" width="1200" height="750" loading="lazy" decoding="async">
   </a>
   <figcaption>The real-time map shows current vehicle counts at each camera, with separate views for cars, bikes, buses, and trucks.</figcaption>
 </figure>

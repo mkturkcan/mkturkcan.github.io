@@ -1,6 +1,7 @@
 ---
 layout: project
 title: GPTune
+seo_title: "GPTune: GPT-2 Fine-Tuning Toolkit"
 permalink: /projects/gptune/
 description: Early GPT-2 fine-tuning tooling with practical presets for custom text generation.
 img: assets/img/project_media/gptune.svg

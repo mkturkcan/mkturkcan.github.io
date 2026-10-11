@@ -23,9 +23,14 @@
       <img class="preview z-depth-1 rounded" src="{{ entry.preview }}" alt="Preview for {{ entry.title | escape }}" loading="lazy" decoding="async">
       {%- else -%}
         {%- assign entry_path = entry.preview | prepend: '/assets/img/publication_preview/' -%}
+        {%- assign preview_size = entry_path | image_size -%}
+        {%- assign preview_srcset = entry_path | image_srcset: '240,360' -%}
         {% include figure.html
           path=entry_path
-          sizes="200px"
+          srcset=preview_srcset
+          sizes="(max-width: 575.98px) 170px, (max-width: 799.98px) 80px, 103px"
+          width=preview_size.first
+          height=preview_size.last
           class="preview z-depth-1 rounded"
           zoomable=false
           loading="lazy"
@@ -121,9 +126,9 @@
     {%- if entry.note %}<div class="periodical">{{ entry.note | strip }}</div>{% endif -%}
 
     <div class="links">
-      {%- if entry.abstract %}<button type="button" class="abstract btn btn-sm z-depth-0" title="Abstract" aria-label="Show abstract">Abs</button>{% endif -%}
+      {%- if entry.abstract %}<button type="button" class="abstract btn btn-sm z-depth-0" title="Show abstract">Abs</button>{% endif -%}
       {%- if entry.arxiv %}<a href="https://arxiv.org/abs/{{ entry.arxiv }}" class="btn btn-sm z-depth-0">arXiv</a>{% endif -%}
-      {%- if page.publication_citations %}<button type="button" class="bibtex btn btn-sm z-depth-0" title="BibTeX" aria-label="Show BibTeX citation">Bib</button>{% endif -%}
+      {%- if page.publication_citations %}<button type="button" class="bibtex btn btn-sm z-depth-0" title="Show BibTeX citation">Bib</button>{% endif -%}
       {%- if entry.doi %}<a href="https://doi.org/{{ entry.doi }}" class="btn btn-sm z-depth-0">DOI</a>{% endif -%}
       {%- if entry.html %}<a href="{{ entry.html }}" class="btn btn-sm z-depth-0">HTML</a>{% endif -%}
       {%- if entry.pdf -%}

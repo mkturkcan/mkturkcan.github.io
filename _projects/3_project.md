@@ -1,6 +1,7 @@
 ---
 layout: project
 title: UrbanOmniDetect
+seo_title: "UrbanOmniDetect: Calibration-Free Monocular 3D Object Detection"
 permalink: /projects/urbanomnidetect/
 description: Monocular 3D object detection with the UrbanOmniDetect system and UrbanOmniView dataset.
 lede: Calibration-free, view-agnostic monocular 3D object detection. One model recovers 3D boxes from ego-vehicle, infrastructure, and aerial cameras without camera intrinsics.

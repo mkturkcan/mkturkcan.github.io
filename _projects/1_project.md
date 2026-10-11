@@ -1,6 +1,7 @@
 ---
 layout: project
 title: DART
+seo_title: "DART: Real-Time Open-Vocabulary Object Detection"
 permalink: /projects/dart/
 description: Real-time open-vocabulary object detection from frontier vision models.
 img: assets/img/project_media/dart.svg

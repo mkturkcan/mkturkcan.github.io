@@ -31,17 +31,17 @@ In <a href="{{ '/projects/medical-robotics-foundation-models/' | relative_url }}
 
 <div class="home-work-samples my-4" aria-label="Examples of applied AI systems">
   <a class="home-work-sample" href="{{ '/projects/dart/' | relative_url }}">
-    <img src="{{ '/assets/img/project_thumbnails/dart.webp' | relative_url }}" srcset="{{ '/assets/img/project_thumbnails/dart-360.webp' | relative_url }} 360w, {{ '/assets/img/project_thumbnails/dart.webp' | relative_url }} 720w" sizes="(max-width: 575px) 96px, 240px" alt="DART detections of pedestrians, a bus, and a taxi in Times Square at night" width="720" height="405" decoding="async">
+    <img src="{{ '/assets/img/project_thumbnails/dart.webp' | relative_url }}" srcset="{{ '/assets/img/project_thumbnails/dart-240.webp' | relative_url }} 240w, {{ '/assets/img/project_thumbnails/dart-360.webp' | relative_url }} 360w, {{ '/assets/img/project_thumbnails/dart.webp' | relative_url }} 720w" sizes="(max-width: 575.98px) 96px, (max-width: 799.98px) 162px, 229px" alt="DART detections of pedestrians, a bus, and a taxi in Times Square at night" width="720" height="405" decoding="async">
     <span class="home-work-sample__label">DART</span>
     <span class="home-work-sample__detail">Open-vocabulary detection at deployment speed</span>
   </a>
   <a class="home-work-sample" href="{{ '/projects/urbanomnidetect/' | relative_url }}">
-    <img src="{{ '/assets/img/project_thumbnails/urbanomni.webp' | relative_url }}" srcset="{{ '/assets/img/project_thumbnails/urbanomni-360.webp' | relative_url }} 360w, {{ '/assets/img/project_thumbnails/urbanomni.webp' | relative_url }} 720w" sizes="(max-width: 575px) 96px, 240px" alt="UrbanOmniDetect 3D cuboids on cars, a bus, and pedestrians seen from above a New York avenue" width="720" height="405" loading="lazy" decoding="async">
+    <img src="{{ '/assets/img/project_thumbnails/urbanomni.webp' | relative_url }}" srcset="{{ '/assets/img/project_thumbnails/urbanomni-240.webp' | relative_url }} 240w, {{ '/assets/img/project_thumbnails/urbanomni-360.webp' | relative_url }} 360w, {{ '/assets/img/project_thumbnails/urbanomni.webp' | relative_url }} 720w" sizes="(max-width: 575.98px) 96px, (max-width: 799.98px) 162px, 229px" alt="UrbanOmniDetect 3D cuboids on cars, a bus, and pedestrians seen from above a New York avenue" width="720" height="405" loading="lazy" decoding="async">
     <span class="home-work-sample__label">UrbanOmniDetect</span>
     <span class="home-work-sample__detail">View-agnostic urban detection</span>
   </a>
   <a class="home-work-sample" href="{{ '/projects/medical-robotics-foundation-models/' | relative_url }}">
-    <img src="{{ '/assets/img/project_thumbnails/openh.webp' | relative_url }}" srcset="{{ '/assets/img/project_thumbnails/openh-360.webp' | relative_url }} 360w, {{ '/assets/img/project_thumbnails/openh.webp' | relative_url }} 720w" sizes="(max-width: 575px) 96px, 240px" alt="Surgical SAM 3.1 masks of two graspers and a hook in a laparoscopic frame" width="720" height="405" loading="lazy" decoding="async">
+    <img src="{{ '/assets/img/project_thumbnails/openh.webp' | relative_url }}" srcset="{{ '/assets/img/project_thumbnails/openh-240.webp' | relative_url }} 240w, {{ '/assets/img/project_thumbnails/openh-360.webp' | relative_url }} 360w, {{ '/assets/img/project_thumbnails/openh.webp' | relative_url }} 720w" sizes="(max-width: 575.98px) 96px, (max-width: 799.98px) 162px, 229px" alt="Surgical SAM 3.1 masks of two graspers and a hook in a laparoscopic frame" width="720" height="405" loading="lazy" decoding="async">
     <span class="home-work-sample__label">Medical Robotics</span>
     <span class="home-work-sample__detail">World models and open datasets for medical robots</span>
   </a>

@@ -1,6 +1,7 @@
 ---
 layout: project
 title: FlyBrainLab
+seo_title: "FlyBrainLab: Exploring and Simulating Fruit Fly Brain Circuits"
 permalink: /projects/flybrainlab/
 description: Open-source graph database, retrieval, simulation, and visualization platform for connectome-scale neuroscience.
 img: assets/img/project_media/flybrainlab.svg

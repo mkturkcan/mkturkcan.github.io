@@ -8,12 +8,14 @@ $max-content-width: {{ site.max_width }};
 $fa-font-display: swap;
 
 @import
+  "fonts",
   "variables",
   "themes",
   "layout",
   "base",
   "distill",
   "cv",
+  "academicons",
   "font-awesome/fontawesome",
   "font-awesome/brands",
   "font-awesome/solid",

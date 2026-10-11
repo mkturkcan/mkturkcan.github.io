@@ -58,7 +58,8 @@ layout: default
 
   {%- if page.img %}
   <figure class="project-hero">
-    <img src="{{ page.img | relative_url }}" alt="{{ page.img_alt | default: page.title }}"{% if page.img_width %} width="{{ page.img_width }}" height="{{ page.img_height }}"{% endif %} decoding="async" fetchpriority="high">
+    {%- unless page.img contains '.svg' %}{% assign hero_srcset = page.img | prepend: '/' | image_srcset: '800,1200,1600' %}{% endunless %}
+    <img src="{{ page.img | relative_url }}"{% if hero_srcset contains ',' %} srcset="{{ hero_srcset }}" sizes="(min-width: 1200px) 1120px, calc(100vw - 30px)"{% endif %} alt="{{ page.img_alt | default: page.title }}"{% if page.img_width %} width="{{ page.img_width }}" height="{{ page.img_height }}"{% endif %} decoding="async" fetchpriority="high">
     {%- if page.img_caption %}
     <figcaption>{{ page.img_caption }}</figcaption>
     {%- endif %}

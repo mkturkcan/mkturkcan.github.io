@@ -1,6 +1,7 @@
 ---
 layout: project
 title: bikeped
+seo_title: "bikeped: Real-Time Bicycle and Pedestrian Safety System"
 permalink: /projects/bikeped/
 description: Real-time bicycle and pedestrian safety system and evaluation testbed for urban intersections.
 img: assets/img/project_media/bikeped.svg
