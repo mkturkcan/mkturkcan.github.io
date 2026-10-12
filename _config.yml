@@ -222,6 +222,25 @@ kramdown:
 # Includes & excludes
 include: ['_pages']
 exclude:
+  # repository and build files that should not be served from the site
+  - README.md
+  - CONTRIBUTING.md
+  - CUSTOMIZE.md
+  - FAQ.md
+  - INSTALL.md
+  - LICENSE
+  - CLAUDE.local.md
+  - Dockerfile
+  - docker-compose.yml
+  - purgecss.config.js
+  - scripts
+  - reports
+  # unused demo files from the al-folio template
+  - assets/audio
+  - assets/video
+  - assets/jupyter
+  - assets/json
+  - assets/plotly
   - bin
   - Gemfile
   - Gemfile.lock
