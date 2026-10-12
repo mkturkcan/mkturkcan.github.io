@@ -18,8 +18,11 @@ facts:
   - label: Role
     value: Co-author
   - label: Published
-    value: Discover Civil Engineering, 2026 (accepted)
+    value: Discover Civil Engineering, 2026
 links:
+  - label: Paper
+    url: https://link.springer.com/article/10.1007/s44290-026-00657-x
+    icon: paper
   - label: arXiv
     url: https://arxiv.org/abs/2605.09891
     icon: arxiv
@@ -35,4 +38,4 @@ keywords:
 
 This project estimates network-wide traffic volumes by combining floating car data, municipal traffic camera observations, and traffic flow modeling.
 
-The paper, accepted for publication in Discover Civil Engineering, frames the problem as a hybrid urban sensing system: Cellular transmission model features, graph neural networks, topology-informed propagation, and ensemble square-root filtering are combined to estimate and forecast traffic volumes across a Manhattan road network.
+The paper, published in Discover Civil Engineering, frames the problem as a hybrid urban sensing system: Cellular transmission model features, graph neural networks, topology-informed propagation, and ensemble square-root filtering are combined to estimate and forecast traffic volumes across a Manhattan road network.
