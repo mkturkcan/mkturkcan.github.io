@@ -3,7 +3,7 @@ layout: page
 permalink: /impact/
 title: Impact
 seo_title: "Impact: Recognition, Coverage, Adoption, and Students"
-description: Recognition, coverage and public talks, open-source adoption, citations, teaching, and where students who worked with me went next.
+description: Recognition, coverage and public talks, open-source adoption, citations, teaching, and where my mentees went next.
 nav: true
 nav_order: 3.5
 ---
@@ -252,18 +252,20 @@ Counts and positions are as of October 2026, and every item links to its origina
   </div>
 </div>
 
-## Students who worked with me
+## Mentees
 
-At Columbia I have mentored eleven Master's students and several high school researchers. Students who worked with me on papers and systems went on to the following positions.
+I mentored the following students in their research: Master's students as the postdoctoral researcher in Columbia's AIDL Lab, and undergraduate and high school researchers on FlyBrainLab during my Ph.D. in the Bionet Group.
 
-### Now in PhD programs
+### Now in graduate school
 {: .impact-group}
 
-- **Gyung Hyun (Jay) Je**, Columbia MS in Computer Science, worked on the Constellation dataset (IJCV 2026). PhD student at the University of Toronto.
-- **Haoyu Dong**, Columbia MS, worked on robust LLM post-training (2026). PhD student at UC Santa Cruz.
-- **William Ho**, Columbia MS and Fulbright Scholar, worked on zero-shot image tagging at traffic intersections (ICMLA 2026). PhD student in Columbia Electrical Engineering, with a Byron Fellowship.
-- **Chengbo Zang**, Columbia MS in Electrical Engineering, worked on Constellation, Boundless, and adaptive data collection (ICML 2025, first author). PhD student in Columbia Electrical Engineering.
-- **Yuyang (Ian) Li**, Columbia MS in Electrical Engineering, worked on distributed vision-language models (IEEE PerCom Workshops 2025, first author) and Boundless. PhD student in Columbia Electrical Engineering.
+- **Jonathan Marty** joined the Bionet Group as a high school intern in 2018, packaging the Fruit Fly Brain Observatory and modeling the fly's early visual system, and continued on FlyBrainLab as a Columbia undergraduate. Ph.D. student in applied and computational mathematics at Princeton.
+- **Gyung Hyun (Jay) Je**, Columbia MS in Computer Science, worked on the Constellation dataset (IJCV 2026). Ph.D. student at the University of Toronto.
+- **Haoyu Dong**, Columbia MS, worked on robust LLM post-training (2026). Ph.D. student at UC Santa Cruz.
+- **William Ho**, Columbia MS and Fulbright Scholar, worked on zero-shot image tagging at traffic intersections (ICMLA 2026). Ph.D. student in Columbia Electrical Engineering, with a Byron Fellowship.
+- **Chengbo Zang**, Columbia MS in Electrical Engineering, worked on Constellation, Boundless, and adaptive data collection (ICML 2025, first author). Ph.D. student in Columbia Electrical Engineering.
+- **Yuyang (Ian) Li**, Columbia MS in Electrical Engineering, worked on distributed vision-language models (IEEE PerCom Workshops 2025, first author) and Boundless. Ph.D. student in Columbia Electrical Engineering.
+- **Feiyang (Kathy) Yu**, Columbia undergraduate in Computer Science, worked on computational models and simulation engines for the fly brain in the Bionet Group. Went on to graduate study in computer science at Stanford.
 
 ### Now in industry
 {: .impact-group}
@@ -272,8 +274,3 @@ At Columbia I have mentored eleven Master's students and several high school res
 - **Sanjeev Narasimhan**, Columbia MS in Computer Science, worked on Constellation and surgical video analysis. Applied scientist at Johnson & Johnson.
 - **Feroz Ahmad**, Columbia graduate student, worked on surgical phase recognition (Bioengineering 2023). Machine learning engineer at Meta.
 - **Devika Gumaste**, Columbia MS in Electrical Engineering and EE MS Award of Excellence recipient, worked on UrbanOmniDetect and distributed vision-language models. Works on multimodal AI at Known.
-
-### Now in college
-{: .impact-group}
-
-- **Vikram Anantha**, a high school researcher, worked on a digital twin for pedestrian safety warnings (IEEE IV 2024). Computer science student at the University of Michigan.
