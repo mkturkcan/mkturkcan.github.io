@@ -2261,6 +2261,28 @@ textarea:focus-visible {
   }
 }
 
+/* Impact page: event photo at the top of the coverage section, shown as a 3:2 crop that keeps the poster and faces */
+.impact-photo {
+  margin: 0.5rem 0 1.25rem;
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 3 / 2;
+    object-fit: cover;
+    object-position: 50% 25%;
+    border-radius: 6px;
+  }
+
+  figcaption {
+    margin-top: 0.5rem;
+    color: var(--global-text-color-light);
+    font-size: 0.86rem;
+    line-height: 1.45;
+  }
+}
+
 /* Impact page: small labels above the student lists */
 .impact-group {
   margin: 1.5rem 0 0.6rem;

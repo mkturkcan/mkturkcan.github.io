@@ -143,6 +143,16 @@ I also co-taught Columbia Video Network's VOAI 0003E: Neural Networks and Deep L
 
 <div class="speaking-list">
   <article class="speaking-item">
+    <img src="{{ '/assets/img/presentations/pawr-pi-meeting-2026.jpg' | relative_url }}" srcset="{{ '/assets/img/presentations/pawr-pi-meeting-2026.jpg' | image_srcset: '540,810,1080' }}" sizes="(max-width: 799.98px) calc(100vw - 30px), 261px" alt="Mehmet Kerem Turkcan presenting a poster on congestion pricing in New York City to two attendees at the 2026 PAWR PI Meeting" width="2000" height="2000" loading="lazy" decoding="async" style="object-position: 50% 25%">
+    <div>
+      <span class="teaching-eyebrow">September 28, 2026&emsp;Washington, DC</span>
+      <h3>A Vision-Based Analysis of Congestion Pricing in New York City</h3>
+      <p>Poster at the 2026 PAWR PI Meeting on how traffic changed at 910 public cameras after New York City began congestion pricing. Photo: PAWR Project Office.</p>
+      <p><a href="https://advancedwireless.org/outreach/highlights-and-materials-from-the-pawr-pi-meeting-2026/">Meeting highlights</a>&emsp;<a href="https://advancedwireless.org/wp-content/uploads/2026/10/Mehmet-Turkcan_Poster_COSMOS.pdf">Abstract</a>&emsp;<a href="{{ '/projects/congestion-pricing/' | relative_url }}">Project</a></p>
+    </div>
+  </article>
+
+  <article class="speaking-item">
     <img src="{{ '/assets/img/presentations/cs3-innovation-summit-2026.webp' | relative_url }}" srcset="{{ '/assets/img/presentations/cs3-innovation-summit-2026.webp' | image_srcset: '540,810,1080' }}" sizes="(max-width: 799.98px) calc(100vw - 30px), 261px" alt="Mehmet Kerem Turkcan speaking on the real-time traffic analysis panel at the 2026 CS3 Innovation Summit" width="1950" height="1097" loading="lazy" decoding="async">
     <div>
       <span class="teaching-eyebrow">February 5, 2026&emsp;Columbia University</span>

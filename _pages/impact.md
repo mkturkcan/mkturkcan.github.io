@@ -71,14 +71,19 @@ Counts and positions are as of October 2026, and every item links to its origina
 
 ## Coverage and public talks
 
+<figure class="impact-photo">
+  <img src="{{ '/assets/img/presentations/pawr-pi-meeting-2026.jpg' | relative_url }}" srcset="{{ '/assets/img/presentations/pawr-pi-meeting-2026.jpg' | image_srcset: '540,810,1080' }}" sizes="(max-width: 799.98px) calc(100vw - 30px), 770px" alt="Mehmet Kerem Turkcan presenting a poster on congestion pricing in New York City to two attendees at the 2026 PAWR PI Meeting" width="2000" height="2000" loading="lazy" decoding="async">
+  <figcaption>Presenting the congestion pricing analysis at the PAWR PI Meeting in Washington, DC, September 2026. Photo: PAWR Project Office.</figcaption>
+</figure>
+
 <div class="cv-rows">
   <div class="cv-row">
-    <div class="cv-row-date">Oct 2026</div>
+    <div class="cv-row-date">Sep 2026</div>
     <div class="cv-row-body">
-      <h3 class="cv-row-title">PAWR PI Meeting 2026</h3>
-      <p class="cv-row-meta">Platforms for Advanced Wireless Research Project Office</p>
-      <p class="cv-row-text">The meeting highlights feature my abstract on measuring the effect of congestion pricing from more than 900 public traffic cameras.</p>
-      <p class="cv-row-links"><a href="https://advancedwireless.org/outreach/highlights-and-materials-from-the-pawr-pi-meeting-2026/" target="_blank" rel="noopener noreferrer">Highlights</a></p>
+      <h3 class="cv-row-title">A Vision-Based Analysis of Congestion Pricing in New York City</h3>
+      <p class="cv-row-meta">Poster, PAWR PI Meeting 2026, Washington, DC</p>
+      <p class="cv-row-text">Featured with the photo above in the meeting highlights from the Platforms for Advanced Wireless Research Project Office.</p>
+      <p class="cv-row-links"><a href="https://advancedwireless.org/outreach/highlights-and-materials-from-the-pawr-pi-meeting-2026/" target="_blank" rel="noopener noreferrer">Highlights</a><a href="https://advancedwireless.org/wp-content/uploads/2026/10/Mehmet-Turkcan_Poster_COSMOS.pdf" target="_blank" rel="noopener noreferrer">Abstract</a></p>
     </div>
   </div>
   <div class="cv-row">
