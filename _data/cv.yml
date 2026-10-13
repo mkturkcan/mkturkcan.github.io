@@ -131,6 +131,7 @@
     - "<b>Detect Anything in Real Time: From Single-Prompt Segmentation to Multi-Class Detection</b>. DART, arXiv 2026. Public <a href=\"https://github.com/mkturkcan/DART\">code</a> and <a href=\"https://huggingface.co/mehmetkeremturkcan/DART\">models</a>."
     - "<b>Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics</b>. arXiv 2026."
     - "<b>Harnessing Floating Car Data, Traffic Camera Observations, and Network Flow Analysis for Traffic Volume Estimation</b>. Discover Civil Engineering 3, 257, 2026."
+    - "<b>Newell-Car-Following-Model-Informed Gaussian Process Regression Model for Ultra-Short-Term Arterial Vehicle Trajectory Prediction</b>. Transportation Research Record 2026, to appear."
     - "<b>Real-Time Video Analytics for Urban Safety: Deployment over Edge and End Devices</b>. ACM/IEEE SEC 2025, Best Paper Award."
     - "<b>Boundless</b>. Unreal Engine 5-based photorealistic synthetic data generation for object detection in urban streetscapes, arXiv 2024."
     - "<b>Adaptive Data Collection for Robust Learning Across Multiple Distributions</b>. ICML 2025."
