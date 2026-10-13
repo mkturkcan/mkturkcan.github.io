@@ -2283,6 +2283,40 @@ textarea:focus-visible {
   }
 }
 
+/* Impact page: three more talks under the lead photo, at a common 16:9 crop */
+.impact-strip {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.9rem;
+  margin: 0 0 1.5rem;
+
+  figure {
+    margin: 0;
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 6px;
+  }
+
+  figcaption {
+    margin-top: 0.4rem;
+    color: var(--global-text-color-light);
+    font-size: 0.8rem;
+    line-height: 1.4;
+  }
+}
+
+@media (max-width: 575.98px) {
+  .impact-strip {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Impact page: small labels above the student lists */
 .impact-group {
   margin: 1.5rem 0 0.6rem;

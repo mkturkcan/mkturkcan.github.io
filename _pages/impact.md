@@ -76,6 +76,21 @@ Counts and positions are as of October 2026, and every item links to its origina
   <figcaption>Presenting the congestion pricing analysis at the PAWR PI Meeting in Washington, DC, September 2026. Photo: PAWR Project Office.</figcaption>
 </figure>
 
+<div class="impact-strip">
+  <figure>
+    <img src="{{ '/assets/img/presentations/cs3-innovation-summit-2026.webp' | relative_url }}" srcset="{{ '/assets/img/presentations/cs3-innovation-summit-2026.webp' | image_srcset: '540,810,1080' }}" sizes="(max-width: 575.98px) calc(100vw - 30px), 250px" alt="Mehmet Kerem Turkcan speaking on the real-time traffic analysis panel at the 2026 CS3 Innovation Summit" width="1950" height="1097" loading="lazy" decoding="async">
+    <figcaption>Panelist, CS3 Innovation Summit, Columbia University, February 2026</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/img/portauth.webp' | relative_url }}" srcset="{{ '/assets/img/portauth.webp' | image_srcset: '540,810' }}" sizes="(max-width: 575.98px) calc(100vw - 30px), 250px" alt="Mehmet Kerem Turkcan presenting at the Port Authority Tomorrow Summit" width="940" height="600" loading="lazy" decoding="async">
+    <figcaption>Port Authority Tomorrow Summit workshop, World Trade Center, January 2026</figcaption>
+  </figure>
+  <figure>
+    <img src="{{ '/assets/img/presentations/vision-zero-2025.webp' | relative_url }}" srcset="{{ '/assets/img/presentations/vision-zero-2025.webp' | image_srcset: '540,810,1080' }}" sizes="(max-width: 575.98px) calc(100vw - 30px), 250px" alt="Title slide for Evaluating Micromobility and Dangerous Riding Behaviors" width="2400" height="1350" loading="lazy" decoding="async">
+    <figcaption>Vision Zero Research on the Road, New York City, November 2025</figcaption>
+  </figure>
+</div>
+
 <div class="cv-rows">
   <div class="cv-row">
     <div class="cv-row-date">Sep 2026</div>
