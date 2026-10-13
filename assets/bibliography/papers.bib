@@ -301,11 +301,12 @@
   month={May},
   pages={1--10},
   keywords={Clouds; Equations; Modeling; Timing; Printing; Arrays; Probability; Stars; Servers; Delays; Edge-Cloud Computing; Worst-Case Attacks; Convexity Analysis; Network Security},
-  abstract={This work analyzes worst-case attacks in reactive edge-cloud systems, deriving expected latency and SLA-violation behavior for adversarial load patterns.},
+  abstract={Edge-cloud systems are increasingly deployed to meet the demands of real-time applications by processing latency-sensitive tasks at the edge site, near the end-devices. When load exceeds capacity, offloading of requests to the cloud allows the system to balance the spike. As their popularity increases, edge servers become an attractive target for attackers whose goal is to degrade system performance. This paper investigates worst-case (i.e., damage-maximizing) attacks on reactive edge-cloud systems, focusing on two key performance metrics: expected end-to-end latency and the probability of violating service-level agreements (SLAs). We use a general modeling framework based on two layers of computation and analyze how adversarial removal of edge servers affects delay under reactive offloading mitigation. We adopt common queueing models and prove that the system’s performance remain convex in the attack size, even when accounting for reactive offloading by the edge. This enables a characterization of worst-case policies as concentrated attacks, targeting only a few critical sites to maximize damage, yielding greater performance degradation than spreading efforts across the network. Simulation results validate the analysis and demonstrate that the identified worst-case attack strategies can increase damage by up to 40% using the same attack resources.},
   preview={worstcase.webp},
   selected={false},
   doi={10.1109/INFOCOM59046.2026.11571607},
-  html={https://doi.org/10.1109/INFOCOM59046.2026.11571607}
+  html={https://doi.org/10.1109/INFOCOM59046.2026.11571607},
+  pdf={https://wimnet.ee.columbia.edu/wp-content/uploads/2026/02/m81036-tavori-final.pdf}
 }
 
 @misc{openh2026,
@@ -548,7 +549,7 @@
   year={2026},
   month={August},
   note={To appear},
-  abstract={This paper uses street-camera observations to verify traffic integrity and detect Sybil attacks at city scale.},
+  abstract={Crowdsourced navigation platforms infer congestion from GPS-derived telemetry, enabling real-time traffic estimation and control at city scale. However, because these systems rely on device-reported location traces, they are vulnerable to Sybil attacks, where an adversary injects fabricated “vehicles” and synthetic slowdowns using emulators, scripted clients, or device farms. Such attacks have been publicly demonstrated to create “ghost” cars and phantom congestion that distort the displayed traffic layer and influence routing decisions. We propose using street cameras as a real-time validation layer for GPS-based traffic inference. Street cameras add an independent signal grounded in physical observation (“eyes on the road”), rather than device-reported telemetry alone. They also sit on a different attack surface than mobile devices: manipulating camera evidence targets physical infrastructure rather than the mobile client, and is often more expensive to scale than client-side Sybil injection. By cross-checking camera-observed vehicle activity against GPS-based mobile traces, camera feeds provide a conservative verification layer, and can be used to raise integrity alerts. In this paper, we implement an end-to-end GPS-camera pipeline that (i) matches cameras to nearby road links, (ii) aligns and stabilizes the streams, (iii) scores mismatch using a residual-based detector to produce alerts, and (iv) extends coverage to blind spots using nearby intersections. We evaluate the system using New York City DOT street cameras (200+ active in Manhattan) together with GPS-based traffic levels collected via the TomTom API. The pipeline achieves 91.5% detection under a moderate injected attack (δ = +0.05) and reaches ≈99% detection for stronger attacks. We further address blind spots: using only neighbors, we retain a high-load consensus signal in 96.68% of Manhattan tested locations.},
   preview={digitaleyes.webp},
   selected={false},
   pdf={https://wimnet.ee.columbia.edu/wp-content/uploads/2026/06/vehiclesec26-DigitalEyes_on_theRoad.pdf},
