@@ -548,12 +548,11 @@
   booktitle={Proceedings of the USENIX Symposium on Vehicle Security and Privacy},
   year={2026},
   month={August},
-  note={To appear},
   abstract={Crowdsourced navigation platforms infer congestion from GPS-derived telemetry, enabling real-time traffic estimation and control at city scale. However, because these systems rely on device-reported location traces, they are vulnerable to Sybil attacks, where an adversary injects fabricated “vehicles” and synthetic slowdowns using emulators, scripted clients, or device farms. Such attacks have been publicly demonstrated to create “ghost” cars and phantom congestion that distort the displayed traffic layer and influence routing decisions. We propose using street cameras as a real-time validation layer for GPS-based traffic inference. Street cameras add an independent signal grounded in physical observation (“eyes on the road”), rather than device-reported telemetry alone. They also sit on a different attack surface than mobile devices: manipulating camera evidence targets physical infrastructure rather than the mobile client, and is often more expensive to scale than client-side Sybil injection. By cross-checking camera-observed vehicle activity against GPS-based mobile traces, camera feeds provide a conservative verification layer, and can be used to raise integrity alerts. In this paper, we implement an end-to-end GPS-camera pipeline that (i) matches cameras to nearby road links, (ii) aligns and stabilizes the streams, (iii) scores mismatch using a residual-based detector to produce alerts, and (iv) extends coverage to blind spots using nearby intersections. We evaluate the system using New York City DOT street cameras (200+ active in Manhattan) together with GPS-based traffic levels collected via the TomTom API. The pipeline achieves 91.5% detection under a moderate injected attack (δ = +0.05) and reaches ≈99% detection for stronger attacks. We further address blind spots: using only neighbors, we retain a high-load consensus signal in 96.68% of Manhattan tested locations.},
   preview={digitaleyes.webp},
   selected={false},
   pdf={https://wimnet.ee.columbia.edu/wp-content/uploads/2026/06/vehiclesec26-DigitalEyes_on_theRoad.pdf},
-  html={https://www.usenix.org/conference/vehiclesec26}
+  html={https://www.usenix.org/conference/vehiclesec26/presentation/tavori}
 }
 
 @misc{turkcan2026talkmesh,

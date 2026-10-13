@@ -9,7 +9,7 @@
   type: list
   contents:
     - "<b>Fielded AI systems:</b> Leading multimodal perception projects for sensing models intended to scale across 900+ New York City intersections and CS3's three urban testbeds: <a href=\"https://www.cosmos-lab.org/\">COSMOS PAWR</a> in New York City, <a href=\"https://cait.rutgers.edu/datacity/\">DataCity</a> in New Brunswick, and <a href=\"https://www.mobintel.org/\">FAU MobIntel</a> in West Palm Beach."
-    - "<b>Work at leading venues:</b> Recent work in CVPR, ICML, ACM UIST, ACM/IEEE SEC, IEEE INFOCOM, IEEE PerCom, EDM, eLife, and Surgical Endoscopy."
+    - "<b>Work at leading venues:</b> Recent work in CVPR, ICML, ACM UIST, ACM/IEEE SEC, IEEE INFOCOM, IEEE PerCom, EDM, IJCV, eLife, and Surgical Endoscopy."
     - "<b>Publication and systems record:</b> 30+ public publications, preprints, software systems, and datasets spanning urban AI, medical robotics, neuroscience, and education."
     - "<b>Open-source systems:</b> Built public AI systems including DART and generative-agents with 1,200+ combined GitHub stars."
     - "<b>Sponsored research:</b> Proposal development, technical reporting, sponsor reviews, and engineering delivery across approximately $30M in institutional research supported by NSF, DARPA, AFOSR, and Con Edison, with additional project support from NVIDIA and EmpireAI."
@@ -123,16 +123,16 @@
 - title: Selected Publications and Public Systems
   type: list
   contents:
+    - "<b>Constellation Dataset: Benchmarking High-Altitude Object Detection for an Urban Intersection</b>. International Journal of Computer Vision 134(10), 2026."
     - "<b>Calibration-Free View-Agnostic Monocular 3D Object Detection for Urban Scenes</b>. CVPR Workshops 2026."
     - "<b>AI-Powered CPS-Enabled Vulnerable-User-Aware Urban Transportation Digital Twin: Methods and Applications</b>. IEEE Transactions on Intelligent Transportation Systems 27(5), 2026."
     - "<b>Worst-Case Attacks in Reactive Edge-Cloud Systems: Expected Latency and SLA Violation</b>. IEEE INFOCOM 2026."
-    - "<b>Digital Eyes on the Road: Using Street Cameras to Verify Traffic Integrity and Detect Sybil Attacks at City Scale</b>. USENIX VehicleSec 2026, to appear."
+    - "<b>Digital Eyes on the Road: Using Street Cameras to Verify Traffic Integrity and Detect Sybil Attacks at City Scale</b>. USENIX VehicleSec 2026."
     - "<b>Detect Anything in Real Time: From Single-Prompt Segmentation to Multi-Class Detection</b>. DART, arXiv 2026. Public <a href=\"https://github.com/mkturkcan/DART\">code</a> and <a href=\"https://huggingface.co/mehmetkeremturkcan/DART\">models</a>."
     - "<b>Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics</b>. arXiv 2026."
     - "<b>Harnessing Floating Car Data, Traffic Camera Observations, and Network Flow Analysis for Traffic Volume Estimation</b>. Discover Civil Engineering 3, 257, 2026."
     - "<b>Real-Time Video Analytics for Urban Safety: Deployment over Edge and End Devices</b>. ACM/IEEE SEC 2025, Best Paper Award."
     - "<b>Boundless</b>. Unreal Engine 5-based photorealistic synthetic data generation for object detection in urban streetscapes, arXiv 2024."
-    - "<b>Constellation Dataset</b>. High-altitude urban object detection benchmark with 13K images, arXiv 2024."
     - "<b>Adaptive Data Collection for Robust Learning Across Multiple Distributions</b>. ICML 2025."
     - "<b>Distributed VLMs: Efficient Vision-Language Processing through Cloud-Edge Collaboration</b>. IEEE PerCom Workshops 2025."
     - "<b>StreetNav: Leveraging Street Cameras to Support Precise Outdoor Navigation for Blind Pedestrians</b>. ACM UIST 2024."
