@@ -147,27 +147,38 @@
         - name: Computer vision
           level: Object detection, segmentation, tracking, monocular 3D detection, video analytics
         - name: Generative and multimodal AI
-          level: VLMs, VLAs, diffusion models, world models, RAG, agents
+          level: VLMs, VLAs, diffusion models, world models, RAG, agents, LLM fine-tuning and post-training (DPO, RL)
         - name: Data-centric AI
-          level: Large-scale collection, annotation, synthetic data, benchmarks, adaptive sampling
+          level: Large-scale collection, annotation (CVAT), synthetic data, benchmarks, adaptive sampling
         - name: Knowledge and graph systems
           level: Ontology-backed retrieval, OrientDB/NeuroArch graph databases, large-scale graph querying
+    - category: Simulation and Robotics
+      icon: fa-solid fa-robot
+      items:
+        - name: Robot learning
+          level: NVIDIA Isaac Lab and Isaac Sim, Newton (MuJoCo-Warp), PPO, teacher-student distillation, Unitree G1 humanoid navigation from lidar and depth sensing
+        - name: Simulation
+          level: Unreal Engine 5 (UE5), CARLA, OpenUSD, Blender, city-scale digital twins, traffic and pedestrian simulation
+        - name: Synthetic data and testing
+          level: Photorealistic synthetic data with pixel-exact ground truth, scenario-based and hardware-in-the-loop testing
     - category: Systems and Deployment
       icon: fa-solid fa-microchip
       items:
         - name: Edge inference
-          level: TensorRT, ONNX, WebGPU, NVIDIA Jetson, edge and cloud collaboration, low-latency pipelines
+          level: TensorRT, ONNX, LiteRT, NCNN, WebGPU, NVIDIA Jetson, Qualcomm, Raspberry Pi, on-device LLMs, edge and cloud collaboration, low-latency pipelines
         - name: Frameworks
-          level: PyTorch, JAX, TensorFlow, Hugging Face, CUDA
+          level: PyTorch, JAX, TensorFlow, Hugging Face, Ultralytics, OpenCV, CUDA
         - name: Languages
-          level: Python, C/C++, CUDA, TypeScript, JavaScript, SQL
+          level: Python, C/C++, CUDA, TypeScript, JavaScript, Node.js, SQL
+        - name: Data and visualization
+          level: OpenStreetMap, NYC Open Data, Three.js/WebGL, scientific visualization
     - category: Product and Communication
       icon: fa-solid fa-pen-ruler
       items:
         - name: Technical leadership
           level: Cross-institution projects, mentoring, curriculum design, public demos
         - name: Design and media
-          level: Unreal Engine, photorealistic synthetic data, visual storytelling, Figma, Photoshop, Illustrator, InDesign, Premiere
+          level: Visual storytelling, Figma, Photoshop, Illustrator, InDesign, Premiere
 
 - title: Education
   type: time_table
