@@ -16,7 +16,7 @@ category: urban ai
 topic: civic analytics
 github: https://github.com/mkturkcan/congestionpricing
 huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/nyc-congestionpricing-cv
-related_publications: turkcan2026congestionpricing
+related_publications: turkcan2026congestionpricing, tavori2026digitaleyes, tavori2026worstcase
 facts:
   - label: Role
     value: Lead author
@@ -51,6 +51,8 @@ keywords:
   - Traffic density
   - Public policy analysis
   - Urban mobility datasets
+  - Traffic data integrity
+  - Edge-cloud security
 acknowledgement: >-
   This project was initially supported by compute from the <a href="https://advancedwireless.org/" target="_blank" rel="noopener noreferrer">PAWR</a> <a href="https://www.cosmos-lab.org/" target="_blank" rel="noopener noreferrer">COSMOS testbed</a> at <a href="https://www.columbia.edu/" target="_blank" rel="noopener noreferrer">Columbia University</a>.
   This work began while I was a postdoc in the <a href="https://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Department of Electrical Engineering</a> (<a href="https://www.aidl.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">AIDL Lab</a>) at Columbia University.
@@ -89,6 +91,13 @@ The analysis is ongoing, with regular updates to track how traffic evolves under
   </a>
   <figcaption>The real-time map shows current vehicle counts at each camera, with separate views for cars, bikes, buses, and trucks.</figcaption>
 </figure>
+
+## Traffic integrity and edge-cloud security
+
+The camera pipeline behind this study is also the sensing layer for our work on the integrity and security of city-scale traffic systems.
+
+- **Verifying crowdsourced traffic data.** Navigation platforms infer congestion from phone GPS traces, which an attacker can fake with emulated "ghost" vehicles. <a href="https://wimnet.ee.columbia.edu/wp-content/uploads/2026/06/vehiclesec26-DigitalEyes_on_theRoad.pdf" target="_blank" rel="noopener noreferrer"><em>Digital Eyes on the Road</em></a> (USENIX VehicleSec 2026) cross-checks GPS-based traffic levels against this pipeline's per-camera vehicle counts, produced every 15 seconds from NYC DOT cameras. In Manhattan it detects 91.5% of moderate injected attacks and about 99% of stronger ones, and where a location has no camera of its own, neighboring cameras alone retain a consensus congestion signal at 96.68% of the locations tested.
+- **Worst-case attacks on edge-cloud systems.** <a href="https://doi.org/10.1109/INFOCOM59046.2026.11571607" target="_blank" rel="noopener noreferrer"><em>Worst-Case Attacks in Reactive Edge-Cloud Systems</em></a> (IEEE INFOCOM 2026) analyzes how an adversary can shape the load on reactive edge-cloud systems, the kind of infrastructure that runs real-time video analytics like this pipeline, and derives the expected latency and SLA violations a worst-case attack can cause.
 
 ## Limitations
 
