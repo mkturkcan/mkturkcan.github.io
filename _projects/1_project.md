@@ -21,7 +21,7 @@ facts:
   - label: Role
     value: Creator and maintainer
   - label: Adoption
-    value: 300+ GitHub stars and 43 forks as of July 2026
+    value: 790+ GitHub stars and 93 forks as of October 2026
   - label: Paper
     value: arXiv preprint, 2026
 links:

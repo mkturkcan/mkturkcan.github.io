@@ -11,9 +11,9 @@
     - "<b>Fielded AI systems:</b> Leading multimodal perception projects for sensing models intended to scale across 900+ New York City intersections and CS3's three urban testbeds: <a href=\"https://www.cosmos-lab.org/\">COSMOS PAWR</a> in New York City, <a href=\"https://cait.rutgers.edu/datacity/\">DataCity</a> in New Brunswick, and <a href=\"https://www.mobintel.org/\">FAU MobIntel</a> in West Palm Beach."
     - "<b>Work at leading venues:</b> Recent work in CVPR, ICML, ACM UIST, ACM/IEEE SEC, IEEE INFOCOM, IEEE PerCom, EDM, IJCV, eLife, and Surgical Endoscopy."
     - "<b>Publication and systems record:</b> 30+ public publications, preprints, software systems, and datasets spanning urban AI, medical robotics, neuroscience, and education."
-    - "<b>Open-source systems:</b> Built public AI systems including DART and generative-agents with 1,200+ combined GitHub stars."
+    - "<b>Open-source systems:</b> Built public AI systems including DART and generative-agents with 1,700+ combined GitHub stars."
     - "<b>Sponsored research:</b> Proposal development, technical reporting, sponsor reviews, and engineering delivery across approximately $30M in institutional research supported by NSF, DARPA, AFOSR, and Con Edison, with additional project support from NVIDIA and EmpireAI."
-    - "<b>Teaching and mentorship:</b> Taught Columbia graduate deep learning courses, mentored Master's and high school researchers, and served as the main engineering instructor for the CS3 Research Experience for Teachers in 2024-2026."
+    - "<b>Teaching and mentorship:</b> Taught Columbia graduate deep learning courses, mentored Master's, undergraduate, and high school researchers, six of whom went on to Ph.D. programs, and served as the main engineering instructor for the CS3 Research Experience for Teachers in 2024-2026."
 
 - title: Experience
   type: time_table
@@ -22,9 +22,9 @@
       institution: Columbia University, Center for Smart Streetscapes and Civil Engineering & Engineering Mechanics
       year: 2024 - Present
       description:
-        - Lead large-scale applied ML projects for real-time urban perception, multimodal sensing, edge AI, vision-language systems, and medical robotics.
-        - Created DART, a real-time open-vocabulary detector with TensorRT deployment and 300+ GitHub stars; led UrbanOmniDetect, an oral paper at the CVPR 2026 DriveX Workshop with public code, models, and data.
-        - Published and released public work on adaptive data collection, distributed VLMs, real-time edge analytics, security for edge and cloud systems, and medical robotics foundation model datasets.
+        - Lead large-scale applied ML projects for real-time urban perception, multimodal sensing, edge AI, vision-language systems, and medical robotics, including surgical world models.
+        - Created DART, a real-time open-vocabulary detector with TensorRT deployment and 790+ GitHub stars; led UrbanOmniDetect, an oral paper at the CVPR 2026 DriveX Workshop with public code, models, and data.
+        - Mentored the student first authors of papers at ICML 2025, IEEE INFOCOM 2026, and USENIX VehicleSec 2026, and released public work on distributed VLMs, real-time edge analytics, and medical robotics foundation model datasets.
         - Designed and led the engineering curriculum for the CS3 Research Experience for Teachers in 2024, 2025, and 2026.
         - Contributed technical plans and engineering work supporting research awards from NVIDIA and EmpireAI and challenge recognition from INRIX x MetroLab.
     - title: Postdoctoral Research Scientist

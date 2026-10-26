@@ -202,7 +202,7 @@ Counts and positions are as of October 2026, and every item links to its origina
       <h3 class="cv-row-title"><a href="{{ '/projects/dart/' | relative_url }}">DART</a></h3>
       <p class="cv-row-meta">Real-time open-vocabulary object detection</p>
       <ul class="cv-row-items">
-        <li>781 GitHub stars and 93 forks in its first seven months; the launch announcement drew more than 2,500 reactions on LinkedIn.</li>
+        <li>796 GitHub stars and 93 forks in its first seven months; the launch announcement drew more than 2,500 reactions on LinkedIn.</li>
         <li>Proposed for integration into Intel's <a href="https://github.com/open-edge-platform/geti-instant-learn/issues/887" target="_blank" rel="noopener noreferrer">Open Edge Platform</a>, with OpenVINO models, and into the <a href="https://github.com/OCTRON-tracking/OCTRON-GUI/issues/42" target="_blank" rel="noopener noreferrer">OCTRON</a> animal-tracking tool.</li>
         <li>Benchmarked against DeepLabCut at the <a href="https://github.com/C-Achard/lls-hackathon-2026" target="_blank" rel="noopener noreferrer">Lemanic Life Sciences Hackathon 2026</a>, extended by <a href="https://github.com/AitorIriondo/DAIRT" target="_blank" rel="noopener noreferrer">DAIRT</a> to detect interactions between objects, and listed in Awesome Segment Anything.</li>
       </ul>
@@ -224,7 +224,7 @@ Counts and positions are as of October 2026, and every item links to its origina
       <h3 class="cv-row-title"><a href="https://github.com/mkturkcan/generative-agents" target="_blank" rel="noopener noreferrer">generative-agents</a></h3>
       <p class="cv-row-meta">An open-source implementation of generative agents</p>
       <ul class="cv-row-items">
-        <li>994 GitHub stars and 163 forks.</li>
+        <li>997 GitHub stars and 163 forks.</li>
         <li>The base of the <a href="https://github.com/LC1332/Chinese-generative-agents" target="_blank" rel="noopener noreferrer">Chinese generative agents</a> project in the Luotuo LLM community, and featured in the Korean <a href="https://github.com/jungwoo-ha/WeeklyArxivTalk/issues/81#issuecomment-1519014953" target="_blank" rel="noopener noreferrer">Weekly AI ArXiv</a> notes.</li>
       </ul>
     </div>
