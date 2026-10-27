@@ -1,51 +1,86 @@
 ---
-generated_at: '2026-07-11T13:58:20Z'
+generated_at: '2026-10-27T01:01:27Z'
 repositories:
   DART:
     github:
-      stars: 300
-      forks: 43
+      stars: 796
+      forks: 93
       language: Python
-      updated_at: '2026-03-26T14:25:49Z'
+      updated_at: '2026-10-06T03:38:35Z'
     huggingface:
       type: model
-      downloads: 27
-      likes: 15
+      downloads: 95
+      likes: 26
       updated_at: '2026-03-30T14:05:06.000Z'
+  Valdrada:
+    github:
+      stars: 221
+      forks: 29
+      language: JavaScript
+      license: MIT
+      updated_at: '2026-10-26T08:07:17Z'
+    huggingface:
+      type: dataset
+      downloads: 10386
+      likes: 10
+      updated_at: '2026-10-26T08:13:17.000Z'
   UrbanOmniDetect:
     github:
-      stars: 2
-      forks: 0
+      stars: 134
+      forks: 15
       language: Python
-      updated_at: '2026-06-08T01:09:11Z'
+      updated_at: '2026-09-29T14:55:31Z'
     huggingface:
       type: model
-      downloads: 773
-      likes: 1
-      updated_at: '2026-06-03T22:10:21.000Z'
+      downloads: 1395
+      likes: 8
+      updated_at: '2026-09-29T14:38:29.000Z'
   Loom:
     github:
-      stars: 5
-      forks: 0
+      stars: 6
+      forks: 1
       language: Python
       license: Apache-2.0
       updated_at: '2026-04-13T01:59:11Z'
     huggingface:
       type: model
-      downloads: 0
+      downloads: 20
       likes: 0
-      updated_at: '2026-04-13T12:05:48.000Z'
+      updated_at: '2026-09-29T21:23:45.000Z'
   bikeped:
     github:
-      stars: 0
+      stars: 1
       forks: 0
       language: Python
       updated_at: '2026-05-06T17:51:22Z'
     huggingface:
       type: dataset
-      downloads: 88
+      downloads: 114
       likes: 0
       updated_at: '2026-05-06T17:13:33.000Z'
+  UrbanAnonymizer:
+    github:
+      stars: 7
+      forks: 2
+      language: Python
+      updated_at: '2026-09-23T20:09:17Z'
+    huggingface:
+      type: model
+      downloads: 93
+      likes: 5
+      updated_at: '2026-09-29T21:23:46.000Z'
+  Boundless:
+    github:
+      stars: 0
+      forks: 0
+      language: Python
+      license: MIT
+      updated_at: '2026-10-06T18:11:46Z'
+    huggingface:
+      type: dataset
+      downloads: 88
+      likes: 0
+      updated_at: '2026-10-06T11:35:28.000Z'
   GPTune:
     github:
       stars: 20
@@ -54,8 +89,8 @@ repositories:
       updated_at: '2019-09-05T13:22:27Z'
   FlyBrainLab:
     github:
-      stars: 49
-      forks: 6
+      stars: 120
+      forks: 17
       language: Shell
       license: BSD-3-Clause
       updated_at: '2025-09-29T00:20:15Z'

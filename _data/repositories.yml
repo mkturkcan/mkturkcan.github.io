@@ -8,6 +8,11 @@ repositories:
     huggingface: https://huggingface.co/mehmetkeremturkcan/DART
     description: Real-time open-vocabulary detection using shared frontier model backbones, batched decoding, distillation, and TensorRT.
     tags: [PyTorch, TensorRT, Open Vocabulary]
+  - name: Valdrada
+    github: https://github.com/mkturkcan/valdrada
+    huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/valdrada
+    description: Real-time digital twin of New York City compiled from public records, with traffic simulation, pixel-exact ground truth, and a CARLA-style Python API.
+    tags: [WebGL2, Digital Twin, Simulation]
   - name: UrbanOmniDetect
     project: /projects/urbanomnidetect/
     paper: https://openaccess.thecvf.com/CVPR2026_workshops/DriveX
@@ -29,6 +34,18 @@ repositories:
     huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/bikeped
     description: Real-time fisheye perception, safety alerts, simulator scenarios, and conformance testing for urban intersections.
     tags: [Edge AI, Fisheye, CARLA]
+  - name: UrbanAnonymizer
+    github: https://github.com/mkturkcan/urbananonymizer
+    huggingface: https://huggingface.co/mehmetkeremturkcan/UrbanAnonymizer
+    description: Face and license plate anonymization for street-level images and video, with offline tracking that keeps masks in place when detections drop out.
+    tags: [Privacy, Detection, Video]
+  - name: Boundless
+    project: /projects/boundless/
+    paper: https://arxiv.org/abs/2409.03022
+    github: https://github.com/mkturkcan/boundless
+    huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/boundless-i2x
+    description: Unreal Engine 5 simulator and datasets for photorealistic urban object detection, with automatic 2D and 3D bounding boxes.
+    tags: [Unreal Engine 5, Synthetic Data, 3D Detection]
   - name: GPTune
     project: /projects/gptune/
     github: https://github.com/mkturkcan/GPTune

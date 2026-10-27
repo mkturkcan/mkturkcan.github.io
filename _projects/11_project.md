@@ -15,7 +15,7 @@ og_image: assets/img/og/boundless.jpg
 importance: 7
 category: urban ai
 topic: synthetic data
-github: https://github.com/mkturkcan/constellation-benchmarks
+github: https://github.com/mkturkcan/boundless
 huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/boundless-i2x
 related_publications: turkcan2024boundlessgeneratingphotorealisticsynthetic
 facts:
@@ -35,6 +35,9 @@ links:
   - label: Aerial dataset
     url: https://huggingface.co/datasets/mehmetkeremturkcan/boundless-drone
     icon: huggingface
+  - label: Code
+    url: https://github.com/mkturkcan/boundless
+    icon: github
   - label: Benchmark code
     url: https://github.com/mkturkcan/constellation-benchmarks
     icon: github
