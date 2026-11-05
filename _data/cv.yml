@@ -8,7 +8,7 @@
 - title: Selected Contributions
   type: list
   contents:
-    - "<b>Physical AI and sim-to-real:</b> Built <a href=\"https://mehmetkeremturkcan.com/valdrada/\">Valdrada</a>, a real-time digital twin of New York City with pixel-exact ground truth and 258 GitHub stars in six weeks, and <a href=\"https://mehmetkeremturkcan.com/g1_patrol/\">G1 Patrol</a>, humanoid navigation through crowded sidewalks trained in Isaac Lab. Boundless synthetic data outperforms CARLA renders for training detectors on real cameras, a sim-to-real gap measured on Constellation (IJCV 2026)."
+    - "<b>Physical AI and sim-to-real:</b> Built <a href=\"https://mehmetkeremturkcan.com/valdrada/\">Valdrada</a>, a real-time digital twin of New York City that labels every frame with segmentation, depth, and 3D boxes (258 GitHub stars in six weeks), and <a href=\"https://mehmetkeremturkcan.com/g1_patrol/\">G1 Patrol</a>, humanoid navigation through crowded sidewalks trained in Isaac Lab. Boundless synthetic data outperforms CARLA renders for training detectors on real cameras, a sim-to-real gap measured on Constellation (IJCV 2026)."
     - "<b>Fielded AI systems:</b> Leading multimodal perception projects for sensing models intended to scale across 900+ New York City intersections and CS3's three urban testbeds: <a href=\"https://www.cosmos-lab.org/\">COSMOS PAWR</a> in New York City, <a href=\"https://cait.rutgers.edu/datacity/\">DataCity</a> in New Brunswick, and <a href=\"https://www.mobintel.org/\">FAU MobIntel</a> in West Palm Beach."
     - "<b>Work at leading venues:</b> Recent work in CVPR, ICML, ACM UIST, ACM/IEEE SEC, IEEE INFOCOM, IEEE PerCom, EDM, IJCV, eLife, and Surgical Endoscopy."
     - "<b>Publication and systems record:</b> 30+ public publications, preprints, software systems, and datasets spanning urban AI, medical robotics, neuroscience, and education."
@@ -137,7 +137,7 @@
     - "<b>Worst-Case Attacks in Reactive Edge-Cloud Systems: Expected Latency and SLA Violation</b>. IEEE INFOCOM 2026."
     - "<b>Digital Eyes on the Road: Using Street Cameras to Verify Traffic Integrity and Detect Sybil Attacks at City Scale</b>. USENIX VehicleSec 2026."
     - "<b>Detect Anything in Real Time: From Single-Prompt Segmentation to Multi-Class Detection</b>. DART, arXiv 2026. Public <a href=\"https://github.com/mkturkcan/DART\">code</a> and <a href=\"https://huggingface.co/mehmetkeremturkcan/DART\">models</a>."
-    - "<b>Valdrada</b>. A real-time digital twin of New York City compiled from public records, with pixel-exact ground truth and a Python API modeled on CARLA, 2026. Public <a href=\"https://github.com/mkturkcan/valdrada\">code</a> and <a href=\"https://huggingface.co/datasets/mehmetkeremturkcan/valdrada\">data</a>."
+    - "<b>Valdrada</b>. A real-time digital twin of New York City compiled from public records, with segmentation, depth, and 3D box labels for every frame and a Python API modeled on CARLA, 2026. Public <a href=\"https://github.com/mkturkcan/valdrada\">code</a> and <a href=\"https://huggingface.co/datasets/mehmetkeremturkcan/valdrada\">data</a>."
     - "<b>G1 Patrol: Humanoid Navigation in Dense Urban Pedestrian Environments</b>. Training and evaluation in Isaac Lab for the Unitree G1, 2026. Public <a href=\"https://github.com/mkturkcan/g1_patrol\">code</a>."
     - "<b>Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics</b>. arXiv 2026."
     - "<b>Harnessing Floating Car Data, Traffic Camera Observations, and Network Flow Analysis for Traffic Volume Estimation</b>. Discover Civil Engineering 3, 257, 2026."
@@ -171,7 +171,7 @@
         - name: Simulation
           level: Unreal Engine 5 (UE5), CARLA, OpenUSD, Blender, city-scale digital twins, traffic and pedestrian simulation
         - name: Synthetic data and testing
-          level: Photorealistic synthetic data with pixel-exact ground truth, scenario-based and hardware-in-the-loop testing
+          level: Photorealistic synthetic data with labels computed from the simulation, scenario-based and hardware-in-the-loop testing
     - category: Systems and Deployment
       icon: fa-solid fa-microchip
       items:

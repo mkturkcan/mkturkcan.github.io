@@ -54,7 +54,7 @@ acknowledgement: >-
   This work began while I was a postdoc in the <a href="https://www.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">Department of Electrical Engineering</a> (<a href="https://www.aidl.ee.columbia.edu/" target="_blank" rel="noopener noreferrer">AIDL Lab</a>) at Columbia University.
 ---
 
-Boundless is a photorealistic synthetic data pipeline for training object detectors in dense urban streetscapes. It extends the Unreal Engine 5 City Sample into a configurable research system that exports accurately projected 3D annotations across lighting, weather, camera, and scene variations, replacing large-scale real-world data collection and manual labeling with an automated process.
+Boundless is a photorealistic synthetic data pipeline for training object detectors in dense urban streetscapes. It extends the Unreal Engine 5 City Sample into a configurable research system that varies lighting, weather, camera placement, and scene content and computes every 2D and 3D box from the simulation state, replacing large-scale real-world data collection and manual labeling with an automated process.
 
 The system connects interactive world building in Unreal Engine with reproducible data pipeline design for applied computer vision. Detectors trained on Boundless data were evaluated on real-world footage from medium-altitude intersection cameras. In this cross-domain setting, a detector trained on Boundless improved mean average precision by 7.8 points over one trained on CARLA data, supporting synthetic data generation as a credible way to train and fine-tune scalable detectors for urban scenes.
 

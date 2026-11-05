@@ -11,7 +11,7 @@ repositories:
   - name: Valdrada
     github: https://github.com/mkturkcan/valdrada
     huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/valdrada
-    description: Real-time digital twin of New York City compiled from public records, with traffic simulation, pixel-exact ground truth, and a Python API modeled on CARLA.
+    description: Real-time digital twin of New York City compiled from public records. It simulates traffic and pedestrians, labels every frame with segmentation, depth, and 3D boxes, and has a Python API modeled on CARLA.
     tags: [WebGL2, Digital Twin, Simulation]
   - name: G1 Patrol
     github: https://github.com/mkturkcan/g1_patrol
