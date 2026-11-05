@@ -8,5 +8,6 @@ _site
 .tweet-cache
 vendor
 cv_source/
+teaching_source/
 
 CLAUDE.local.md

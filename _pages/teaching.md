@@ -17,34 +17,37 @@ I teach machine learning as an engineering discipline. I begin with the mathemat
     <span class="teaching-eyebrow">2024-2026</span>
     <h3>Main engineering instructor</h3>
   </div>
-  <p>For three annual cohorts of the NSF Center for Smart Streetscapes Research Experience for Teachers (RET), I have designed and led the core engineering curriculum for K-12 STEM educators. The four-week program turns current work in computer vision, urban data, and generative AI into material that teachers can adapt for their own classrooms.</p>
+  <p>For three annual cohorts of the NSF Center for Smart Streetscapes Research Experience for Teachers (RET), I have designed and led the core engineering curriculum for K-12 STEM educators. The four-week program turns current work in computer vision, urban data, and generative AI into material that teachers can adapt for their own classrooms. In 2026, the program introduced the CS3 AI Teaching Kit, and teachers worked with me to build their own kits that pair browser-based lessons with an offline NVIDIA Jetson Orin Nano Super kit.</p>
 </div>
 
 <div class="curriculum-map" aria-label="RET engineering curriculum">
   <div class="curriculum-stage">
     <span>01</span>
     <h3>ML foundations</h3>
-    <p>Neural networks, backpropagation, training workflows, validation, and model evaluation.</p>
+    <p>Neural networks, circuits, loss and backpropagation, the arithmetic of training, validation, and model evaluation.</p>
   </div>
   <div class="curriculum-stage">
     <span>02</span>
     <h3>Computer vision</h3>
-    <p>Convolutional networks, object detection and segmentation, tracking, annotation, and dataset design.</p>
+    <p>Convolutional networks, object detection and segmentation, tracking, depth estimation, annotation, and dataset design.</p>
   </div>
   <div class="curriculum-stage">
     <span>03</span>
-    <h3>Deployable AI</h3>
-    <p>YOLO training, Colab workflows, CVAT, edge deployment, Raspberry Pi systems, and reproducible experiments.</p>
+    <h3>Language and generative models</h3>
+    <p>Tokens and Markov chains, recurrent networks and transformers, attention, embeddings, diffusion, and responsible classroom use.</p>
   </div>
   <div class="curriculum-stage">
     <span>04</span>
-    <h3>Language systems</h3>
-    <p>Language model foundations, zero-shot methods, generative AI, and responsible classroom use.</p>
+    <h3>Deployable and agentic AI</h3>
+    <p>YOLO training, edge deployment on Jetson and Raspberry Pi, agents and tool use, and publishing web applications.</p>
   </div>
 </div>
 
 <div class="resource-row" aria-label="RET program resources">
   <a class="resource-link" href="https://cs3-erc.org/research-experience-for-teachers/"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> Program</a>
+  <a class="resource-link" href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i> 2026 course site</a>
+  <a class="resource-link" href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/calendar/"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2026 curriculum</a>
+  <a class="resource-link" href="https://cs3-erc.org/ret-2026/"><i class="fa-regular fa-newspaper" aria-hidden="true"></i> 2026 cohort</a>
   <a class="resource-link" href="https://center-for-smart-streetscapes-cs3.github.io/ret2025/calendar/"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2025 curriculum</a>
   <a class="resource-link" href="{{ '/assets/pdf/archive/cs3-ret-2025-calendar.pdf' | relative_url }}"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> 2025 archive</a>
   <a class="resource-link" href="https://center-for-smart-streetscapes-cs3.github.io/ret2024/calendar/"><i class="fa-regular fa-calendar" aria-hidden="true"></i> 2024 curriculum</a>
@@ -52,9 +55,51 @@ I teach machine learning as an engineering discipline. I begin with the mathemat
   <a class="resource-link" href="{{ '/assets/pdf/archive/cs3-ret-program-2026.pdf' | relative_url }}"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Program archive</a>
 </div>
 
-### Engineering materials
+### CS3 AI Teaching Kit
 
-The local curriculum archive preserves the instructor materials used across the 2024 and 2025 cohorts.
+The kit introduced in 2026 has two parts that teach the same ideas: browser lessons that run on any computer, and an offline kit that carries them to cameras and sensors on an NVIDIA Jetson Orin Nano Super. Coding agents help teachers read each program, change it, and build their own extensions.
+
+<div class="lesson-plan-columns">
+  <section>
+    <h3>Online: AI Training Toolkit</h3>
+    <p>A browser application that needs no installation. Four sets of guided lessons lead from fitting weights by hand, through decision boundaries, hidden layers, optimizers, and generalization in the Model Playground, to tokens, Markov chains, recurrent networks, masked attention, and a small GPT trained in the browser in the Text Lab.</p>
+    <p><a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/toolkit/">Open the toolkit</a></p>
+  </section>
+  <section>
+    <h3>Offline: Jetson teaching kit</h3>
+    <p>Thirteen camera lessons, from OpenCV basics and color recognition to face tracking, QR codes, and car recognition; twenty-five sensor lessons, from LEDs and buttons to ultrasonic ranging, NFC, and an accelerometer; and advanced programs such as a smart doorbell, a pose game, vision-based parking, and a TensorRT benchmark. Each lesson ships with an HTML deck, a printable PDF, notes, and the programs it teaches.</p>
+    <p><a href="https://huggingface.co/datasets/mehmetkeremturkcan/cs3-ai-teaching-kit">Download from Hugging Face</a>&emsp;<a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/cs3-teaching-kit/">Kit overview and Ubuntu setup</a></p>
+  </section>
+</div>
+
+### Intro to AI lecture series
+
+Self-contained HTML decks written for the 2026 cohort. Each one opens in any browser and carries its figures inside itself.
+
+<div class="material-list material-list--decks">
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part1_tokens_and_markov_chains.html">Part 1: Tokens and Markov Chains</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part2_rnns_and_transformers.html">Part 2: RNNs and Transformers</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part3_classifiers_and_embeddings.html">Part 3: Classifiers and Embeddings</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part4_loss_and_backpropagation.html">Part 4: Loss and Backpropagation</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part5_arithmetic_of_training.html">Part 5: The Arithmetic of Training</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part6_training_at_scale.html">Part 6: Training at Scale</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part7_agents_and_tool_use.html">Part 7: Agents and Tool Use</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part7_appendix_i_web_applications.html">Part 7, Appendix I: Building and Serving Web Applications</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part7_appendix_iii_github_to_live_page.html">Part 7, Appendix III: From a GitHub Repository to a Live Page</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part8_vision.html">Part 8: Vision</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part8_appendix_i_detection_and_segmentation.html">Part 8, Appendix I: Detection and Segmentation</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part9_attention.html">Part 9: Attention</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part9_appendix_i_attention_as_a_soft_lookup.html">Part 9, Appendix I: Attention as a Soft Lookup</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/intro_to_ai_part10_diffusion.html">Part 10: Diffusion</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/week1_overview.html">Week 1 Overview</a>
+  <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/ret2026_nyc_daylighting_hypotheses.html">Intersection Daylighting: NYC Hypotheses</a>
+</div>
+
+Companion material: the <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/cs3_ret_github_fresh_static_website_install.pdf">visual slide set</a> for publishing a static website from GitHub, sample agent instruction files (<a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/GUIDELINES.md"><code>GUIDELINES.md</code></a> and <a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/assets/lectures/REVIEW_AGENTS.md"><code>REVIEW_AGENTS.md</code></a>), and the <a href="https://mkturkcan.github.io/daylightinganalysis/explorer.html">Daylighting Explorer</a> and <a href="https://mkturkcan.github.io/daylightinganalysis/analysis.html">analysis</a> used in the daylighting lecture.
+
+### Lecture notes and handouts
+
+Notes, handouts, and tutorials from the 2024 and 2025 cohorts, which continued in the 2026 curriculum.
 
 <div class="material-list">
   <a href="{{ '/assets/pdf/ret/materials/01-neural-networks.pdf' | relative_url }}">Neural Networks</a>

@@ -2449,6 +2449,10 @@ textarea:focus-visible {
   }
 }
 
+.material-list--decks a::after {
+  content: "SLIDES";
+}
+
 .lesson-plan-columns {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));

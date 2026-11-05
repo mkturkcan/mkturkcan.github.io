@@ -9,7 +9,8 @@ layout: default
     <div class="cv-header-row">
       <h1 class="post-title">{{ page.title }}</h1>
       <div class="cv-downloads" aria-label="Download CV documents">
-        {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" title="Open full CV PDF"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Full CV</a>{% endif %}
+        {% if page.cv_full_pdf %}<a href="{{ page.cv_full_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" title="Open full academic CV PDF"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Full CV</a>{% endif %}
+        {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" title="Open four-page CV PDF"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> 4-page CV</a>{% endif %}
         {% if page.resume_pdf %}<a href="{{ page.resume_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" title="Open one-page resume PDF"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> One-page resume</a>{% endif %}
       </div>
     </div>
@@ -50,7 +51,8 @@ layout: default
     <div class="cv-header-row">
       <h1 class="post-title">{{ page.title }}</h1>
       <div class="cv-downloads" aria-label="Download CV documents">
-        {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" title="Open full CV PDF"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Full CV</a>{% endif %}
+        {% if page.cv_full_pdf %}<a href="{{ page.cv_full_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" title="Open full academic CV PDF"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Full CV</a>{% endif %}
+        {% if page.cv_pdf %}<a href="{{ page.cv_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" title="Open four-page CV PDF"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> 4-page CV</a>{% endif %}
         {% if page.resume_pdf %}<a href="{{ page.resume_pdf | prepend: 'assets/pdf/' | relative_url}}" target="_blank" rel="noopener noreferrer" title="Open one-page resume PDF"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> One-page resume</a>{% endif %}
       </div>
     </div>

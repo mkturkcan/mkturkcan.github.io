@@ -67,6 +67,7 @@ The camera is deliberately placed high enough that faces and license plates cann
 
 - **Small pedestrians are the bottleneck.** Vehicle AP is close to saturation for most architectures, while pedestrian AP varies by more than 25 points between them.
 - **Off-the-shelf models transfer poorly.** The strongest zero-shot open-vocabulary detector, SAM3, reaches 64.6 pedestrian AP. A YOLOv8x trained on VisDrone reaches 27.3, compared with 87.4 when trained on Constellation.
+- **Simulation alone falls short.** A YOLOv8x trained on 26,984 CARLA frames rendered from a replica of the same camera reaches 20.6 pedestrian AP on the real test set, against 87.4 when trained on Constellation. <a href="{{ '/projects/boundless/' | relative_url }}">Boundless</a> narrows this sim-to-real gap with photorealistic synthetic data.
 - **Domain-aware training closes the gap.** Scene-specific augmentations such as synthetic shadows, combined with VisDrone pretraining, raise YOLOv8x to 92.0 pedestrian AP and 95.4 mAP@0.5.
 - **Intersections drift over time.** A model trained only on 2020 data loses 7.1 mAP@0.5 on 2023 footage, and heavy snow (73.7) and heavy rain (82.7) remain the hardest conditions.
 
@@ -74,6 +75,7 @@ The camera is deliberately placed high enough that faces and license plates cann
 |:--|:--|--:|--:|--:|
 | SAM3 | Zero-shot | 64.6 | 97.8 | 81.2 |
 | YOLOv8x | VisDrone only | 27.3 | 88.6 | 57.9 |
+| YOLOv8x | CARLA only | 20.6 | 62.9 | 41.8 |
 | YOLOv8x | Constellation | 87.4 | 98.6 | 93.0 |
 | YOLOv8x | + domain-specific augmentations | 90.7 | 98.6 | 94.7 |
 | YOLOv8x | + VisDrone pretraining | 92.0 | 98.8 | 95.4 |

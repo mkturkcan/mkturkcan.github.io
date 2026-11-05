@@ -1,13 +1,14 @@
 - title: Summary
   type: list
   contents:
-    - Applied AI research scientist with 8+ years of experience deploying computer vision and multimodal AI systems in real-world, resource-constrained settings where latency and reliability matter.
+    - Research scientist in physical AI with 8+ years of experience building AI systems that perceive, simulate, and act in the physical world, for real-world, resource-constrained settings where latency and reliability matter.
     - >
-      I turn modern AI models into practical systems through large-scale data collection and annotation, edge inference, VLM/VLA workflows, synthetic data generation, object detection, trajectory forecasting, and deployable research software.
+      I turn modern AI models into practical systems: sim-to-real transfer with synthetic data and city-scale digital twins, robot learning in Isaac Lab, vision-language and vision-language-action models, LLM post-training, large-scale data collection and annotation, edge inference, object detection, trajectory forecasting, and deployable research software.
 
 - title: Selected Contributions
   type: list
   contents:
+    - "<b>Physical AI and sim-to-real:</b> Built <a href=\"https://mehmetkeremturkcan.com/valdrada/\">Valdrada</a>, a real-time digital twin of New York City with pixel-exact ground truth and 258 GitHub stars in six weeks, and <a href=\"https://mehmetkeremturkcan.com/g1_patrol/\">G1 Patrol</a>, humanoid navigation through crowded sidewalks trained in Isaac Lab. Boundless synthetic data outperforms CARLA renders for training detectors on real cameras, a sim-to-real gap measured on Constellation (IJCV 2026)."
     - "<b>Fielded AI systems:</b> Leading multimodal perception projects for sensing models intended to scale across 900+ New York City intersections and CS3's three urban testbeds: <a href=\"https://www.cosmos-lab.org/\">COSMOS PAWR</a> in New York City, <a href=\"https://cait.rutgers.edu/datacity/\">DataCity</a> in New Brunswick, and <a href=\"https://www.mobintel.org/\">FAU MobIntel</a> in West Palm Beach."
     - "<b>Work at leading venues:</b> Recent work in CVPR, ICML, ACM UIST, ACM/IEEE SEC, IEEE INFOCOM, IEEE PerCom, EDM, IJCV, eLife, and Surgical Endoscopy."
     - "<b>Publication and systems record:</b> 30+ public publications, preprints, software systems, and datasets spanning urban AI, medical robotics, neuroscience, and education."
@@ -22,11 +23,12 @@
       institution: Columbia University, Center for Smart Streetscapes and Civil Engineering & Engineering Mechanics
       year: 2024 - Present
       description:
-        - Lead large-scale applied ML projects for real-time urban perception, multimodal sensing, edge AI, vision-language systems, and medical robotics, including surgical world models.
+        - Lead large-scale applied ML projects in physical AI and robot learning, real-time urban perception, multimodal sensing, edge AI, vision-language systems, and medical robotics, including surgical world models.
         - Created DART, a real-time open-vocabulary detector with TensorRT deployment and 790+ GitHub stars; led UrbanOmniDetect, an oral paper at the CVPR 2026 DriveX Workshop with public code, models, and data.
+        - Lead work toward a civic robot system for CS3: Unitree G1 humanoid and B2-W quadruped navigation in dense pedestrian environments, trained in Isaac Lab with PPO teacher-student distillation, domain randomization, and a ROS 2 deployment stack.
         - Mentored the student first authors of papers at ICML 2025, IEEE INFOCOM 2026, and USENIX VehicleSec 2026, and released public work on distributed VLMs, real-time edge analytics, and medical robotics foundation model datasets.
         - Designed and led the engineering curriculum for the CS3 Research Experience for Teachers in 2024, 2025, and 2026.
-        - Contributed technical plans and engineering work supporting research awards from NVIDIA and EmpireAI and challenge recognition from INRIX x MetroLab.
+        - Secured two NVIDIA research grants, with Zoran Kostic in 2025 and Andrew Smyth in 2026, and EmpireAI project support; INRIX x MetroLab Challenge finalist.
     - title: Postdoctoral Research Scientist
       institution: Columbia University, Electrical Engineering
       year: 2022 - 2024
@@ -101,11 +103,17 @@
 - title: Awards and Recognition
   type: time_table
   contents:
+    - title: NVIDIA Research Grant
+      institution: Generative Edge AI for Dynamic Smart Urban Metropolises, with Andrew Smyth
+      year: 2026
     - title: Best Storytelling Runner-Up, MetaMorph AI Award
       institution: FLEA, Kedi Kat Studios
       year: 2026
     - title: Best Paper Award, ACM/IEEE Symposium on Edge Computing
       institution: Real-Time Video Analytics for Urban Safety
+      year: 2025
+    - title: NVIDIA Research Grant
+      institution: Edge AI for Equitable and Safe Intersections in Urban Metropolises, with Zoran Kostic
       year: 2025
     - title: INRIX x MetroLab Challenge Finalist
       institution: Transportation and traffic solutions for New York City
@@ -129,6 +137,8 @@
     - "<b>Worst-Case Attacks in Reactive Edge-Cloud Systems: Expected Latency and SLA Violation</b>. IEEE INFOCOM 2026."
     - "<b>Digital Eyes on the Road: Using Street Cameras to Verify Traffic Integrity and Detect Sybil Attacks at City Scale</b>. USENIX VehicleSec 2026."
     - "<b>Detect Anything in Real Time: From Single-Prompt Segmentation to Multi-Class Detection</b>. DART, arXiv 2026. Public <a href=\"https://github.com/mkturkcan/DART\">code</a> and <a href=\"https://huggingface.co/mehmetkeremturkcan/DART\">models</a>."
+    - "<b>Valdrada</b>. A real-time digital twin of New York City compiled from public records, with pixel-exact ground truth and a CARLA-style Python API, 2026. Public <a href=\"https://github.com/mkturkcan/valdrada\">code</a> and <a href=\"https://huggingface.co/datasets/mehmetkeremturkcan/valdrada\">data</a>."
+    - "<b>G1 Patrol: Humanoid Navigation in Dense Urban Pedestrian Environments</b>. Training and evaluation in Isaac Lab for the Unitree G1, 2026. Public <a href=\"https://github.com/mkturkcan/g1_patrol\">code</a>."
     - "<b>Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics</b>. arXiv 2026."
     - "<b>Harnessing Floating Car Data, Traffic Camera Observations, and Network Flow Analysis for Traffic Volume Estimation</b>. Discover Civil Engineering 3, 257, 2026."
     - "<b>Newell-Car-Following-Model-Informed Gaussian Process Regression Model for Ultra-Short-Term Arterial Vehicle Trajectory Prediction</b>. Transportation Research Record 2026, to appear."
@@ -157,7 +167,7 @@
       icon: fa-solid fa-robot
       items:
         - name: Robot learning
-          level: NVIDIA Isaac Lab and Isaac Sim, Newton (MuJoCo-Warp), PPO, teacher-student distillation, Unitree G1 humanoid navigation from lidar and depth sensing
+          level: NVIDIA Isaac Lab and Isaac Sim, Newton (MuJoCo-Warp), ROS 2, PPO, teacher-student distillation, domain randomization, sim-to-real transfer, Unitree G1 humanoid and B2-W quadruped navigation from lidar and depth sensing
         - name: Simulation
           level: Unreal Engine 5 (UE5), CARLA, OpenUSD, Blender, city-scale digital twins, traffic and pedestrian simulation
         - name: Synthetic data and testing
@@ -244,5 +254,6 @@
 - title: Professional Service
   type: list
   contents:
+    - "<b>Organizing committees:</b> Poster and Demo Co-Chair, IEEE SMARTCOMP 2027 (13th IEEE International Conference on Smart Computing), Boca Raton, Florida."
     - "<b>Conference reviewing:</b> CVPR 2026, ICML 2026, ICMLA 2026, WACV 2025, and ACM MobiCom 2024."
     - "<b>Journal reviewing:</b> IEEE/ACM Transactions on Networking, IEEE Transactions on Very Large Scale Integration Systems, Sensors (MDPI), Electronics (MDPI), and Smart Cities (MDPI)."

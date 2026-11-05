@@ -245,7 +245,15 @@ Counts and positions are as of October 2026, and every item links to its origina
     <div class="cv-row-body">
       <h3 class="cv-row-title">Main engineering instructor, CS3 Research Experience for Teachers</h3>
       <p class="cv-row-text">Three cohorts of K-12 teachers. In 2026 they built AI teaching kits that pair browser-based lessons with offline Jetson Orin Nano kits.</p>
-      <p class="cv-row-links"><a href="https://cs3-erc.org/ret-2026/" target="_blank" rel="noopener noreferrer">RET 2026</a><a href="{{ '/teaching/' | relative_url }}">Teaching</a></p>
+      <p class="cv-row-links"><a href="https://cs3-erc.org/ret-2026/" target="_blank" rel="noopener noreferrer">RET 2026</a><a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/cs3-teaching-kit/" target="_blank" rel="noopener noreferrer">AI Teaching Kit</a><a href="https://center-for-smart-streetscapes-cs3.github.io/ret2026/toolkit/" target="_blank" rel="noopener noreferrer">Online toolkit</a><a href="{{ '/teaching/' | relative_url }}">Teaching</a></p>
+    </div>
+  </div>
+  <div class="cv-row">
+    <div class="cv-row-date">2027</div>
+    <div class="cv-row-body">
+      <h3 class="cv-row-title">Poster and Demo Co-Chair, IEEE SMARTCOMP 2027</h3>
+      <p class="cv-row-text">The 13th IEEE International Conference on Smart Computing, June 14&ndash;17, 2027, in Boca Raton, Florida.</p>
+      <p class="cv-row-links"><a href="https://smartcomp2027.org" target="_blank" rel="noopener noreferrer">Conference</a></p>
     </div>
   </div>
   <div class="cv-row">

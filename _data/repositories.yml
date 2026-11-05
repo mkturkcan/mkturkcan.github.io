@@ -13,6 +13,10 @@ repositories:
     huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/valdrada
     description: Real-time digital twin of New York City compiled from public records, with traffic simulation, pixel-exact ground truth, and a CARLA-style Python API.
     tags: [WebGL2, Digital Twin, Simulation]
+  - name: G1 Patrol
+    github: https://github.com/mkturkcan/g1_patrol
+    description: Unitree G1 humanoid navigation through crowded sidewalks, crosswalks, and construction zones modeled on New York City streets, trained in Isaac Lab with teacher-student distillation to lidar and depth policies.
+    tags: [Isaac Lab, Humanoid, Robot Learning]
   - name: UrbanOmniDetect
     project: /projects/urbanomnidetect/
     paper: https://openaccess.thecvf.com/CVPR2026_workshops/DriveX
