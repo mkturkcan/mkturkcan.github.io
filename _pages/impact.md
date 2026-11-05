@@ -181,7 +181,7 @@ Counts and positions are as of October 2026, and every item links to its origina
       <p class="cv-row-meta">A real-time digital twin of New York City built from public data</p>
       <ul class="cv-row-items">
         <li>140 GitHub stars in its first three weeks.</li>
-        <li>Its streamed-tile architecture is followed by <a href="https://github.com/jeantimex/tokyo" target="_blank" rel="noopener noreferrer">Procedural Tokyo</a> and, through it, a San Juan port. <a href="https://github.com/3DStreet/3dstreet/pull/2093" target="_blank" rel="noopener noreferrer">3DStreet</a> documented it as prior art, and <a href="https://github.com/mkturkcan/valdrada/issues/2" target="_blank" rel="noopener noreferrer">Databook.nyc</a> asked to link it from its building pages.</li>
+        <li>Its design, which streams the city in tiles, is followed by <a href="https://github.com/jeantimex/tokyo" target="_blank" rel="noopener noreferrer">Procedural Tokyo</a> and, through it, a San Juan port. <a href="https://github.com/3DStreet/3dstreet/pull/2093" target="_blank" rel="noopener noreferrer">3DStreet</a> documented it as prior art, and <a href="https://github.com/mkturkcan/valdrada/issues/2" target="_blank" rel="noopener noreferrer">Databook.nyc</a> asked to link it from its building pages.</li>
       </ul>
     </div>
   </div>
@@ -203,7 +203,7 @@ Counts and positions are as of October 2026, and every item links to its origina
       <p class="cv-row-meta">Real-time open-vocabulary object detection</p>
       <ul class="cv-row-items">
         <li>796 GitHub stars and 93 forks in its first seven months; the launch announcement drew more than 2,500 reactions on LinkedIn.</li>
-        <li>Proposed for integration into Intel's <a href="https://github.com/open-edge-platform/geti-instant-learn/issues/887" target="_blank" rel="noopener noreferrer">Open Edge Platform</a>, with OpenVINO models, and into the <a href="https://github.com/OCTRON-tracking/OCTRON-GUI/issues/42" target="_blank" rel="noopener noreferrer">OCTRON</a> animal-tracking tool.</li>
+        <li>Proposed for integration into Intel's <a href="https://github.com/open-edge-platform/geti-instant-learn/issues/887" target="_blank" rel="noopener noreferrer">Open Edge Platform</a>, with OpenVINO models, and into the <a href="https://github.com/OCTRON-tracking/OCTRON-GUI/issues/42" target="_blank" rel="noopener noreferrer">OCTRON</a> tool for tracking animals.</li>
         <li>Benchmarked against DeepLabCut at the <a href="https://github.com/C-Achard/lls-hackathon-2026" target="_blank" rel="noopener noreferrer">Lemanic Life Sciences Hackathon 2026</a>, extended by <a href="https://github.com/AitorIriondo/DAIRT" target="_blank" rel="noopener noreferrer">DAIRT</a> to detect interactions between objects, and listed in Awesome Segment Anything.</li>
       </ul>
     </div>

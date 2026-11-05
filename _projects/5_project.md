@@ -57,4 +57,4 @@ keywords:
 
 My medical robotics work applies computer vision and generative models to surgical training, robotic manipulation, and future foundation models for healthcare robotics.
 
-The public work spans diffusion-based suturing world models, Open-H-Embodiment contributions, Surgical SAM 3.1 for text-prompted segmentation of instruments and anatomy, surgical phase recognition, and computer vision scoring for endoscopy training. Together, these projects show how deployed perception and generative modeling can support training, assessment, simulation, and eventually more capable medical robots.
+The public work spans diffusion-based suturing world models, Open-H-Embodiment contributions, Surgical SAM 3.1 for segmenting instruments and anatomy from text prompts, surgical phase recognition, and computer vision scoring for endoscopy training. Together, these projects show how deployed perception and generative modeling can support training, assessment, simulation, and eventually more capable medical robots.

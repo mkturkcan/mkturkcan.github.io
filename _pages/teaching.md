@@ -156,7 +156,7 @@ Participating teachers developed complete lesson plans that connect AI engineeri
     </div>
     <a class="course-download" href="{{ '/assets/pdf/E6691_Syllabus.pdf' | relative_url }}"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Syllabus</a>
   </div>
-  <p>An advanced, implementation-centered course on modern visual recognition. Students moved from evaluation and segmentation through two-stage and one-stage detection, tracking, transformers, vision-language models, diffusion, and open-vocabulary systems.</p>
+  <p>An advanced course on modern visual recognition, centered on implementation. Students moved from evaluation and segmentation through two-stage and one-stage detection, tracking, transformers, vision-language models, diffusion, and open-vocabulary systems.</p>
   <div class="course-facts">
     <span><strong>Format</strong> Weekly lectures and coding assignments</span>
     <span><strong>Capstone</strong> Conference-style project, reproducible code, and poster</span>
@@ -173,7 +173,7 @@ Participating teachers developed complete lesson plans that connect AI engineeri
     </div>
     <a class="course-download" href="{{ '/assets/pdf/E4040_Syllabus.pdf' | relative_url }}"><i class="fa-regular fa-file-pdf" aria-hidden="true"></i> Syllabus</a>
   </div>
-  <p>A theory-to-practice introduction to deep learning, covering mathematical foundations, implementation, model design, and the empirical habits needed to train and evaluate neural networks well.</p>
+  <p>An introduction to deep learning from theory to practice, covering mathematical foundations, implementation, model design, and the empirical habits needed to train and evaluate neural networks well.</p>
   <div class="course-facts">
     <span><strong>Format</strong> Lectures, assignments, exam, and team project</span>
     <span><strong>Coverage</strong> Core architectures and modern generative models</span>

@@ -9,7 +9,7 @@ img: assets/img/project_media/constellation.svg
 img_alt: Annotated high-altitude frame of a Manhattan intersection with vehicle and pedestrian boxes, a magnified crosswalk, and six views of the same intersection at dawn, in daytime, at night, and across changes to the pavement
 img_width: 1600
 img_height: 900
-img_caption: A Constellation test frame with its ground-truth labels and a magnified crosswalk, where pedestrians cover only a few pixels. Right, the same camera at dawn, in daytime, and at night, and across changes to the street surface between 2019 and 2023.
+img_caption: A Constellation test frame with its ground truth labels and a magnified crosswalk, where pedestrians cover only a few pixels. Right, the same camera at dawn, in daytime, and at night, and across changes to the street surface between 2019 and 2023.
 thumb: assets/img/project_thumbnails/constellation.webp
 og_image: assets/img/og/constellation.jpg
 importance: 8
@@ -84,7 +84,7 @@ The camera is deliberately placed high enough that faces and license plates cann
 
 ## Edge deployment
 
-The camera is meant to process video on site, so the paper also measures latency on embedded and mobile hardware. On a Jetson Orin Nano with TensorRT, a VisDrone-pretrained YOLOv8n reaches 94.5 mAP@0.5 at 27.5 ms per frame, within a point of the best server model.
+The camera is meant to process video on site, so the paper also measures latency on embedded and mobile hardware. On a Jetson Orin Nano with TensorRT, a YOLOv8n pretrained on VisDrone reaches 94.5 mAP@0.5 at 27.5 ms per frame, within a point of the best server model.
 
 | Platform | Runtime | YOLOv8n | YOLOv8x |
 |:--|:--|--:|--:|

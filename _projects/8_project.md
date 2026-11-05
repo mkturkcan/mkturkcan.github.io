@@ -51,4 +51,4 @@ keywords:
 
 bikeped is a real-time pedestrian and cyclist safety system built around wide-angle perception, edge inference, and reproducible scenario testing for urban intersections.
 
-The system combines fisheye calibration, fisheye-aware object detection, ground-plane projection, a decision layer for alerts, and a conformance testbed with paired schematic and simulator videos. The public materials include code, replication scripts, documentation, a simulator, and a companion dataset.
+The system combines fisheye calibration, object detection adapted to fisheye images, ground-plane projection, a decision layer for alerts, and a conformance testbed with paired schematic and simulator videos. The public materials include code, replication scripts, documentation, a simulator, and a companion dataset.

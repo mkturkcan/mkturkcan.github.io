@@ -45,7 +45,7 @@ artifacts: CVPR workshop paper, open-source code, the UrbanOmniView dataset, pre
 keywords:
   - Monocular 3D detection
   - Calibration-free perception
-  - Ordered 3D box-vertex projection
+  - Projection of ordered 3D box vertices
   - Heterogeneous camera viewpoints
   - Synthetic data
   - Infrastructure sensing
@@ -60,7 +60,7 @@ The work was presented as an oral paper at the CVPR 2026 DriveX workshop and is 
 
 ## Results
 
-- **Invariant to calibration error.** Calibration-dependent methods lose more than 80% of their accuracy with a 5% focal-length error. UrbanOmniDetect takes no camera intrinsics as input and is invariant to such errors by construction.
+- **Invariant to calibration error.** Calibration-dependent methods lose more than 80% of their accuracy with a 5% error in focal length. UrbanOmniDetect takes no camera intrinsics as input and is invariant to such errors by construction.
 - **Strongest on the harder KITTI splits.** Without calibration, it reaches 30.71 AP<sub>3D</sub> and 35.19 AP<sub>BEV</sub> on the Moderate split at IoU ≥ 0.7, ahead of the calibration-dependent baselines below on Moderate and Hard.
 - **Real-time inference.** A single forward pass takes under 11 ms per image on an A100 with TensorRT at 640 × 640.
 
@@ -77,7 +77,7 @@ The work was presented as an oral paper at the CVPR 2026 DriveX workshop and is 
 <section class="project-release" aria-labelledby="urbanomnidetect-2">
   <span class="project-release__eyebrow">Latest release&emsp;September 2026</span>
   <h2 id="urbanomnidetect-2">UrbanOmniDetect-2</h2>
-  <p>I have since released UrbanOmniDetect-2, my independent follow-up to the paper. It turns the pose-only detector into a single hybrid network for detection and 3D cuboids. One forward pass detects all 80 COCO classes and, for every road user, regresses the eight projected corners of its 3D box, on any viewpoint and still without calibration. The same output feeds tracking, a bird's-eye view, and an offline refinement stage that turns per-frame detections into rigid, physically consistent trajectories.</p>
+  <p>I have since released UrbanOmniDetect-2, my independent follow-up to the paper. It turns the paper's detector, which estimated only 3D poses, into a single hybrid network for detection and 3D cuboids. One forward pass detects all 80 COCO classes and, for every road user, regresses the eight projected corners of its 3D box, on any viewpoint and still without calibration. The same output feeds tracking, a bird's-eye view, and an offline refinement stage that turns per-frame detections into rigid, physically consistent trajectories.</p>
   <p>Training mixes 2D and 3D supervision. COCO and VisDrone ground the detector, while KITTI, DAIR-V2X, CDrone, and rendered vehicles teach the cuboids through a masked pose loss. The release includes five model scales from 2.6M to 57.6M parameters, along with training code, a real-time bird's-eye-view pipeline, and tools for producing labels and demo reels from raw footage.</p>
   <div class="project-actions">
     <a class="project-action" href="https://github.com/mkturkcan/urbanomnidetect#urbanomnidetect-2" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-github" aria-hidden="true"></i><span>UrbanOmniDetect-2 on GitHub</span></a>

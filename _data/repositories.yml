@@ -11,7 +11,7 @@ repositories:
   - name: Valdrada
     github: https://github.com/mkturkcan/valdrada
     huggingface: https://huggingface.co/datasets/mehmetkeremturkcan/valdrada
-    description: Real-time digital twin of New York City compiled from public records, with traffic simulation, pixel-exact ground truth, and a CARLA-style Python API.
+    description: Real-time digital twin of New York City compiled from public records, with traffic simulation, pixel-exact ground truth, and a Python API modeled on CARLA.
     tags: [WebGL2, Digital Twin, Simulation]
   - name: G1 Patrol
     github: https://github.com/mkturkcan/g1_patrol
@@ -29,7 +29,7 @@ repositories:
     paper: https://arxiv.org/abs/2604.08816
     github: https://github.com/mkturkcan/Loom
     huggingface: https://huggingface.co/mehmetkeremturkcan/Loom
-    description: Analytical looped-transformer computer with C compilation, ONNX/WebGPU demos, FPGA verification, and regression tests.
+    description: Analytical neural computer that runs compiled C programs inside a looped transformer, with ONNX/WebGPU demos, FPGA verification, and regression tests.
     tags: [Transformers, ONNX, WebGPU]
   - name: bikeped
     project: /projects/bikeped/

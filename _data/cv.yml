@@ -46,7 +46,7 @@
       institution: Columbia University
       year: 2017 - 2022
       description:
-        - Built FlyBrainLab from scratch as an early research-oriented AI workbench, combining free-form scientific querying with literature and ontology retrieval, an OrientDB-backed connectome knowledge graph, large-scale executable queries, GPU-accelerated neural simulation, and interactive 3D visualization through a TypeScript/JupyterLab interface.
+        - Built FlyBrainLab from scratch as an early AI workbench for research, combining free-form scientific querying with literature and ontology retrieval, a connectome knowledge graph in OrientDB, large-scale executable queries, GPU-accelerated neural simulation, and interactive 3D visualization through a TypeScript/JupyterLab interface.
         - Published connectome-scale computational neuroscience work in eLife and Frontiers in Neuroinformatics.
 
 - title: Sponsored Research Contributions
@@ -137,7 +137,7 @@
     - "<b>Worst-Case Attacks in Reactive Edge-Cloud Systems: Expected Latency and SLA Violation</b>. IEEE INFOCOM 2026."
     - "<b>Digital Eyes on the Road: Using Street Cameras to Verify Traffic Integrity and Detect Sybil Attacks at City Scale</b>. USENIX VehicleSec 2026."
     - "<b>Detect Anything in Real Time: From Single-Prompt Segmentation to Multi-Class Detection</b>. DART, arXiv 2026. Public <a href=\"https://github.com/mkturkcan/DART\">code</a> and <a href=\"https://huggingface.co/mehmetkeremturkcan/DART\">models</a>."
-    - "<b>Valdrada</b>. A real-time digital twin of New York City compiled from public records, with pixel-exact ground truth and a CARLA-style Python API, 2026. Public <a href=\"https://github.com/mkturkcan/valdrada\">code</a> and <a href=\"https://huggingface.co/datasets/mehmetkeremturkcan/valdrada\">data</a>."
+    - "<b>Valdrada</b>. A real-time digital twin of New York City compiled from public records, with pixel-exact ground truth and a Python API modeled on CARLA, 2026. Public <a href=\"https://github.com/mkturkcan/valdrada\">code</a> and <a href=\"https://huggingface.co/datasets/mehmetkeremturkcan/valdrada\">data</a>."
     - "<b>G1 Patrol: Humanoid Navigation in Dense Urban Pedestrian Environments</b>. Training and evaluation in Isaac Lab for the Unitree G1, 2026. Public <a href=\"https://github.com/mkturkcan/g1_patrol\">code</a>."
     - "<b>Open-H-Embodiment: A Large-Scale Dataset for Enabling Foundation Models in Medical Robotics</b>. arXiv 2026."
     - "<b>Harnessing Floating Car Data, Traffic Camera Observations, and Network Flow Analysis for Traffic Volume Estimation</b>. Discover Civil Engineering 3, 257, 2026."
@@ -162,7 +162,7 @@
         - name: Data-centric AI
           level: Large-scale collection, annotation (CVAT), synthetic data, benchmarks, adaptive sampling
         - name: Knowledge and graph systems
-          level: Ontology-backed retrieval, OrientDB/NeuroArch graph databases, large-scale graph querying
+          level: Ontology retrieval, OrientDB/NeuroArch graph databases, large-scale graph querying
     - category: Simulation and Robotics
       icon: fa-solid fa-robot
       items:

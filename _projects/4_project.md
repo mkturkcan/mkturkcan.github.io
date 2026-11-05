@@ -38,6 +38,6 @@ keywords:
   - City-scale sensing
 ---
 
-PAVE-style urban safety analytics combine street camera perception, edge computing, and end device alerts to support real-time pedestrian safety while preserving privacy.
+Urban safety analytics such as PAVE combine street camera perception, edge computing, and end device alerts to support real-time pedestrian safety while preserving privacy.
 
-The SEC 2025 paper received a Best Paper Award and demonstrates a scalable architecture for processing live video feeds, detecting pedestrians and vehicles, predicting vehicle trajectories, and sending anonymized danger-zone information to end-user devices.
+The SEC 2025 paper received a Best Paper Award and demonstrates a scalable architecture for processing live video feeds, detecting pedestrians and vehicles, predicting vehicle trajectories, and sending anonymized danger zone information to end-user devices.
